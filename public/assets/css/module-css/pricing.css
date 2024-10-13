@@ -93,7 +93,9 @@ h1 {
     justify-content: center;
     align-items: flex-start;
     width: 95%;
+    max-width: 1200px;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .pricing-head {
@@ -217,4 +219,52 @@ border: none;
 
 button.calculate-btn:hover {
     background-color: #218838;
+}
+
+/* Tablets: 768px and below */
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+
+    .personal-id-container,
+    .links-container,
+    .rest-container {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 100%; /* Prevents horizontal overflow */
+    }
+
+    .pricing-box {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px; /* Adjust header font size */
+    }
+}
+
+/* Mobile: 480px and below */
+@media (max-width: 480px) {
+    .pricing-head {
+        flex-direction: column; /* Stack content vertically */
+        height: auto; /* Adjust height */
+        text-align: center; /* Center text */
+    }
+
+    .personal-id-container h3,
+    .links-container h3,
+    .rest-container h3 {
+        font-size: 1.25rem; /* Smaller font size */
+    }
+
+    .pricing-box {
+        padding: 10px;
+        box-shadow: none; /* Simplify box-shadow for mobile */
+        margin: 20px 0;
+    }
+
+    .calculate-btn {
+        width: 100%; /* Button takes full width */
+        padding: 15px; /* Larger padding for touch screens */
+    }
 }

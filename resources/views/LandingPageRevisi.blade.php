@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="{{ asset('assets/vendor/custom-animate/custom-animate.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendor/jarallax/jarallax.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendor/odometer/odometer.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/module-css/landingpage.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
@@ -60,10 +61,12 @@
                 <div class="big-title">
                     <h1>NIKMATI KENYAMANAN DALAM<br> PROSES IMPORT DAN FLEKSIBILITAS<br> UNTUK TRAKSAKSI BISNIS ANDA<br> BERSAMA JENDRAL IMPORT</h1>
                 </div>
+                <img class="banner-desktop" src="assets/img/resource/banner-JI-looong.png" alt="Jenderal Import Business Product" />
+                <img class="banner-mobile" src="assets/img/resource/banner-JI-short.png" alt="Jenderal Import Business Product" />
             </div>
         </div>
         <!-- Gallery of 7 images -->
-        <div class="gallery-container">
+        {{-- <div class="gallery-container">
             <div class="gallery-item">
                 <img src="{{ asset('assets/img/homejendral/konsul.png') }}" alt="Gambar 1">
                 <div class="caption">Konsultasi Bisnis</div>
@@ -98,68 +101,72 @@
                 <img src="{{ asset('assets/img/homejendral/tracking.png') }}" alt="Gambar 7">
                 <div class="caption">Tracking</div>
             </div>
-        </div>
+        </div> --}}
 
     </section>
 
     <!--End Banner One-->
 
     <!-- Live Tracking Box -->
-    <section class="container live-tracking-box">
-        <div class="text-and-inputs">
-            <div class="text-content">
-                <h1>Live Tracking</h1>
-                <p>Silahkan masukkan kode resi Anda disini</p>
-            </div>
-            <div class="input-group">
-                <input type="text" id="noResi" placeholder="No. Resi" aria-label="No. Resi">
-                <input type="text" id="kodeMarking" placeholder="Kode Marking" aria-label="Kode Marking">
-                <button id="cekResi">Cek Resi</button>
+    <section class="container">
+        <div class="livetracking">
+            <div class="live-tracking-box">
+                <div class="text-and-inputs">
+                    <div class="text-content">
+                        <h1>Live Tracking</h1>
+                        <p>Silahkan masukkan kode resi Anda disini</p>
+                    </div>
+                    <div class="input-group-livetracking">
+                        <input type="text" id="noResi" placeholder="No. Resi" aria-label="No. Resi" class="noresi">
+                        <input type="text" id="kodeMarking" placeholder="Kode Marking" aria-label="Kode Marking">
+                        <button id="cekResi">Cek Resi</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </section>    
 
     <!--Live Tracking Box-->
 
 
     <!--kenapa harus jendral -->
 
-    <section>
+    <section class="swiper-banner-1">
         <div class="container-textkenapajendral">
             <h1>Kenapa <span class="highlight">Jenderal Import</span> <br> Menjadi Partner Terbaik Import Anda</h1>
             <p>Dipercayai oleh ratusan pelanggan baik individu maupun bisnis <br> sebagai partner import mereka. Dan berikut beberapa kelebihan <br> pelayanan yang kami berikan.</p>
         </div>
-    </section>
 
 
-    <section>
-        <div class="container-keunggulanjendral">
-            <!-- Swiper Container -->
-            <div id="swiper-benefit" class="swiper-container-keunggulanjendral">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="{{ asset('assets/img/landingpage/sea-lcl.png') }}" alt="Picture 1" class="picture-keunggulanjendral">
+        <section class="swiper-container-banner1">
+            <div class="container-keunggulanjendral">
+                <!-- Swiper Container -->
+                <div id="swiper-benefit" class="swiper-container-keunggulanjendral">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="{{ asset('assets/img/landingpage/sea-lcl.png') }}" alt="Picture 1" class="picture-keunggulanjendral">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ asset('assets/img/landingpage/sea-lcl.png') }}" alt="Picture 2" class="picture-keunggulanjendral">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ asset('assets/img/landingpage/sea-lcl.png') }}" alt="Picture 3" class="picture-keunggulanjendral">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ asset('assets/img/landingpage/sea-lcl.png') }}" alt="Picture 4" class="picture-keunggulanjendral">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ asset('assets/img/landingpage/sea-lcl.png') }}" alt="Picture 5" class="picture-keunggulanjendral">
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="{{ asset('assets/img/landingpage/sea-lcl.png') }}" alt="Picture 2" class="picture-keunggulanjendral">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="{{ asset('assets/img/landingpage/sea-lcl.png') }}" alt="Picture 3" class="picture-keunggulanjendral">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="{{ asset('assets/img/landingpage/sea-lcl.png') }}" alt="Picture 4" class="picture-keunggulanjendral">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="{{ asset('assets/img/landingpage/sea-lcl.png') }}" alt="Picture 5" class="picture-keunggulanjendral">
-                    </div>
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Navigation Arrows -->
+                    {{-- <div class="swiper-button-next"></div> --}}
+                    {{-- <div class="swiper-button-prev"></div> --}}
                 </div>
-                <!-- Pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Navigation Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
             </div>
-        </div>
+        </section>
     </section>
     
     <!-- Include Swiper JS -->
@@ -190,9 +197,9 @@
                 },
                 768: {
                     slidesPerView: 2,
-                    spaceBetween: 20,
+                    spaceBetween: 15,
                 },
-                1200: {
+                1300: {
                     slidesPerView: 3,
                     spaceBetween: 20,
                 },
@@ -205,8 +212,8 @@
     <!--Start Project One-->
     <section class="project-one">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-4">
+            <div class="project-one-row">
+                <div class="header-project-one">
                     <div class="project-one__content-box">
                         <div class="sec-title">
                             <div class="sub-title">
@@ -223,134 +230,32 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-8">
-                    <div class="row">
-
-                        <!--Start Project One Single-->
-                        {{-- <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".1s">
-                            <div class="project-one__single">
-                                <div class="project-one__single-img">
-                                    <div class="inner">
-                                        <img src="assets/img/project/project-one__img1.jpg" alt="#">
-                                    </div>
-                                    <div class="overlay-icon">
-                                        <a href="project-details.html">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="project-one__single-content text-center">
-                                    <div class="title-box">
-                                        <h3><a href="project-details.html">Jalur Udara</a></h3>
-                                        <p>Layanan Pengiriman barang impor via udara untuk ukuran barang kecil/sedang</p>
-                                    </div>
-                                    <div class="btn-box">
-                                        <a href="https://wa.link/7db3pi">Hubungi kami  <span
-                                                class="icon-right-arrow-2"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End Project One Single-->
-                        <!--Start Project One Single-->
-                        <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".1s">
-                            <div class="project-one__single">
-                                <div class="project-one__single-img">
-                                    <div class="inner">
-                                        <img src="assets/img/project/project-one__img2.jpg" alt="#">
-                                    </div>
-                                    <div class="overlay-icon">
-                                        <a href="project-details.html">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="project-one__single-content text-center">
-                                    <div class="title-box">
-                                        <h3><a href="project-details.html">Jalur Laut</a></h3>
-                                        <p>Layanan Pengiriman barang impor via udara untuk ukuran barang kecil/sedang/berat</p>
-                                    </div>
-                                    <div class="btn-box">
-                                        <a href="https://wa.link/7db3pi">Hubungi kami  <span
-                                                class="icon-right-arrow-2"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End Project One Single-->
-                        <!--Start Project One Single-->
-                        <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".1s">
-                            <div class="project-one__single">
-                                <div class="project-one__single-img">
-                                    <div class="inner">
-                                        <img src="assets/img/project/project-one__img3.jpg" alt="#">
-                                    </div>
-                                    <div class="overlay-icon">
-                                        <a href="project-details.html">
-
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="project-one__single-content text-center">
-                                    <div class="title-box">
-                                        <h3><a href="project-details.html">Air Freight</a></h3>
-                                        <p>Layanan kirim barang import dari china via udara</p>
-                                        <p></p>
-                                    </div>
-                                    <div class="btn-box">
-                                        <a href="https://wa.link/7db3pi">Hubungi kami  <span
-                                                class="icon-right-arrow-2"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End Project One Single-->
-                        <!--Start Project One Single-->
-                        <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".1s">
-                            <div class="project-one__single">
-                                <div class="project-one__single-img">
-                                    <div class="inner">
-                                        <img src="assets/img/project/project-one__img4.jpg" alt="#">
-                                    </div>
-                                    <div class="overlay-icon">
-                                        <a href="project-details.html">
-
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="project-one__single-content text-center">
-                                    <div class="title-box">
-                                        <h3><a href="project-details.html">Jasa Belanja</a></h3>
-                                        <p>Layanan jasa belanja china membantu pembelian barang</p>
-                                    </div>
-                                    <div class="btn-box">
-                                        <a href="https://wa.link/7db3pi">Hubungi kami  <span
-                                                class="icon-right-arrow-2"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>--}}
-
+                <section class="swiper-container-banner2">
+                    <div class="swiper-row-banner2">
                         <section class="container-projectjendral">
                             <div class="swiper-container-projectjendral project-swiper">
                                 <div class="swiper-wrapper">
                                     <!-- Start Project One Single -->
                                     <div class="swiper-slide">
-                                        <div class="col-xl-10 col-lg-10 col-md-10 wow fadeInUp" data-wow-delay=".1s">
-                                            <div class="project-one__single">
-                                                <div class="project-one__single-img">
-                                                    <div class="inner">
-                                                        <img src="assets/img/project/project-one__img1.jpg" alt="#">
+                                        <div class="swiper-slide-banner2">
+                                            <div class="wow fadeInUp" data-wow-delay=".1s">
+                                                <div class="project-one__single">
+                                                    <div class="project-one__single-img">
+                                                        <div class="inner">
+                                                            <img src="assets/img/project/project-one__img1.jpg" alt="#">
+                                                        </div>
+                                                        <div class="overlay-icon">
+                                                            <a href="project-details.html"></a>
+                                                        </div>
                                                     </div>
-                                                    <div class="overlay-icon">
-                                                        <a href="project-details.html"></a>
-                                                    </div>
-                                                </div>
-                                                <div class="project-one__single-content text-center">
-                                                    <div class="title-box">
-                                                        <h3><a href="project-details.html">Jalur Udara</a></h3>
-                                                        <p>Layanan Pengiriman barang impor via udara untuk ukuran barang kecil/sedang</p>
-                                                    </div>
-                                                    <div class="btn-box">
-                                                        <a href="https://wa.link/7db3pi">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                                    <div class="project-one__single-content text-center">
+                                                        <div class="title-box">
+                                                            <h3><a href="project-details.html">Jalur Udara</a></h3>
+                                                            <p>Layanan Pengiriman barang impor via udara untuk ukuran barang kecil/sedang</p>
+                                                        </div>
+                                                        <div class="btn-box">
+                                                            <a href="https://wa.link/7db3pi">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -360,23 +265,25 @@
                         
                                     <!-- Start Project Two Single -->
                                     <div class="swiper-slide">
-                                        <div class="col-xl-10 col-lg-10 col-md-10 wow fadeInUp" data-wow-delay=".1s">
-                                            <div class="project-one__single">
-                                                <div class="project-one__single-img">
-                                                    <div class="inner">
-                                                        <img src="assets/img/project/project-one__img2.jpg" alt="#">
+                                        <div class="swiper-slide-banner2">
+                                            <div class="wow fadeInUp" data-wow-delay=".1s">
+                                                <div class="project-one__single">
+                                                    <div class="project-one__single-img">
+                                                        <div class="inner">
+                                                            <img src="assets/img/project/project-one__img2.jpg" alt="#">
+                                                        </div>
+                                                        <div class="overlay-icon">
+                                                            <a href="project-details.html"></a>
+                                                        </div>
                                                     </div>
-                                                    <div class="overlay-icon">
-                                                        <a href="project-details.html"></a>
-                                                    </div>
-                                                </div>
-                                                <div class="project-one__single-content text-center">
-                                                    <div class="title-box">
-                                                        <h3><a href="project-details.html">Jalur Laut</a></h3>
-                                                        <p>Layanan Pengiriman barang impor via udara untuk ukuran barang kecil/sedang/berat</p>
-                                                    </div>
-                                                    <div class="btn-box">
-                                                        <a href="https://wa.link/7db3pi">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                                    <div class="project-one__single-content text-center">
+                                                        <div class="title-box">
+                                                            <h3><a href="project-details.html">Jalur Laut</a></h3>
+                                                            <p>Layanan Pengiriman barang impor via udara untuk ukuran barang kecil/sedang/berat</p>
+                                                        </div>
+                                                        <div class="btn-box">
+                                                            <a href="https://wa.link/7db3pi">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -386,23 +293,25 @@
                         
                                     <!-- Start Project Three Single -->
                                     <div class="swiper-slide">
-                                        <div class="col-xl-10 col-lg-10 col-md-10 wow fadeInUp" data-wow-delay=".1s">
-                                            <div class="project-one__single">
-                                                <div class="project-one__single-img">
-                                                    <div class="inner">
-                                                        <img src="assets/img/project/project-one__img3.jpg" alt="#">
+                                        <div class="swiper-slide-banner2">
+                                            <div class="wow fadeInUp" data-wow-delay=".1s">
+                                                <div class="project-one__single">
+                                                    <div class="project-one__single-img">
+                                                        <div class="inner">
+                                                            <img src="assets/img/project/project-one__img3.jpg" alt="#">
+                                                        </div>
+                                                        <div class="overlay-icon">
+                                                            <a href="project-details.html"></a>
+                                                        </div>
                                                     </div>
-                                                    <div class="overlay-icon">
-                                                        <a href="project-details.html"></a>
-                                                    </div>
-                                                </div>
-                                                <div class="project-one__single-content text-center">
-                                                    <div class="title-box">
-                                                        <h3><a href="project-details.html">Air Freight</a></h3>
-                                                        <p>Layanan kirim barang import dari china via udara</p>
-                                                    </div>
-                                                    <div class="btn-box">
-                                                        <a href="https://wa.link/7db3pi">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                                    <div class="project-one__single-content text-center">
+                                                        <div class="title-box">
+                                                            <h3><a href="project-details.html">Air Freight</a></h3>
+                                                            <p>Layanan kirim barang import dari china via udara</p>
+                                                        </div>
+                                                        <div class="btn-box">
+                                                            <a href="https://wa.link/7db3pi">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -412,23 +321,25 @@
                         
                                     <!-- Start Project Four Single -->
                                     <div class="swiper-slide">
-                                        <div class="col-xl-10 col-lg-10 col-md-10 wow fadeInUp" data-wow-delay=".1s">
-                                            <div class="project-one__single">
-                                                <div class="project-one__single-img">
-                                                    <div class="inner">
-                                                        <img src="assets/img/project/project-one__img4.jpg" alt="#">
+                                        <div class="swiper-slide-banner2">
+                                            <div class="wow fadeInUp" data-wow-delay=".1s">
+                                                <div class="project-one__single">
+                                                    <div class="project-one__single-img">
+                                                        <div class="inner">
+                                                            <img src="assets/img/project/project-one__img4.jpg" alt="#">
+                                                        </div>
+                                                        <div class="overlay-icon">
+                                                            <a href="project-details.html"></a>
+                                                        </div>
                                                     </div>
-                                                    <div class="overlay-icon">
-                                                        <a href="project-details.html"></a>
-                                                    </div>
-                                                </div>
-                                                <div class="project-one__single-content text-center">
-                                                    <div class="title-box">
-                                                        <h3><a href="project-details.html">Jasa Belanja</a></h3>
-                                                        <p>Layanan jasa belanja china membantu pembelian barang</p>
-                                                    </div>
-                                                    <div class="btn-box">
-                                                        <a href="https://wa.link/7db3pi">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                                    <div class="project-one__single-content text-center">
+                                                        <div class="title-box">
+                                                            <h3><a href="project-details.html">Jasa Belanja</a></h3>
+                                                            <p>Layanan jasa belanja china membantu pembelian barang</p>
+                                                        </div>
+                                                        <div class="btn-box">
+                                                            <a href="https://wa.link/7db3pi">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -438,8 +349,8 @@
                                 </div>
                                 <!-- Add pagination and navigation controls (optional) -->
                                 <div class="swiper-pagination"></div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
+                                {{-- <div class="swiper-button-next"></div> --}}
+                                {{-- <div class="swiper-button-prev"></div> --}}
                             </div>
                         </section>
                         
@@ -448,7 +359,7 @@
                         <!--End Project One Single--> 
 
                     </div>
-                </div>
+                </section>
 
             </div>
         </div>
@@ -477,10 +388,14 @@
                     slidesPerView: 1,
                     spaceBetween: 10,
                 },
-                768: {
+                650: {
                     slidesPerView: 2,
                     spaceBetween: 20,
                 },
+                1200: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                }
             },
         });
     </script>

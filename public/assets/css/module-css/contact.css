@@ -2,17 +2,65 @@
     Contact One Css
 ========================================*/
 
+.tracking-container {
+    width: 70%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* .sub-title {
+    margin-top: 20px;
+} */
+
+.contact-container {
+    margin: 40px auto;
+}
+
+.contact-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.contact-form-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .contact-one {
-    position: relative;
-    display: block;
-    background: var(--thm-white);
-    padding: 140px 0px 140px;
-    z-index: 1;
+    width: 70%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.contact-header {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically (if needed) */
+    flex-direction: column; /* Stack the elements vertically */
+    text-align: center; /* Center the text inside the container */
+    margin: 0 auto;
 }
 
 .contact-one__list-item {
     position: relative;
     display: block;
+    width: 35%;
+    justify-items: left;
+    flex-shrink: none;
+    order: 1;
+    flex: 1;
 }
 
 .contact-one__list-item ul {
@@ -85,17 +133,23 @@
     box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
     padding: 47px 40px 60px;
     z-index: 1;
+    width: 50%;
+    order: 2;
+    flex: 2;
 }
 
 .contact-one__form .contact-one__input-box {
     position: relative;
     display: block;
     margin-bottom: 37px;
+    width: 48%;
 }
 
 .contact-one__form .contact-one__input-box.text-message-box {
     line-height: 10px;
     margin-top: 3px;
+    width: 98%;
+    justify-content: left;
 }
 
 .contact-one__form .contact-one__input-box input[type="text"],
@@ -196,6 +250,8 @@
 .contact-one__socel-link {
     position: relative;
     display: block;
+    width: 5%;
+    order: 3;
 }
 
 .contact-one__socel-link-inner {
@@ -215,7 +271,7 @@
     width: 1px;
     height: 129px;
     margin: 0 auto;
-    background-color: #E3E3E3;
+    /* background-color: #E3E3E3; */
     z-index: 1;
 }
 
@@ -228,7 +284,7 @@
     width: 1px;
     height: 129px;
     margin: 0 auto;
-    background-color: #E3E3E3;
+    /* background-color: #E3E3E3; */
     z-index: 1;
 }
 
@@ -302,20 +358,96 @@
 }
 
 
-/*======================================
-Google Map One Css
-========================================*/
+/* Base styling for larger screens */
+/* Tablets: 768px and below */
+/* Tablets: 768px and below */
 
-.google-map-one {
-    position: relative;
-    display: block;
-    z-index: 1;
+
+/* Mobile: 480px and below */
+@media (max-width: 480px) {
+    .contact-one {
+        padding: 60px 15px; /* Further reduce padding for mobile */
+    }
+
+    .contact-one__list-item ul li {
+        flex-direction: column; /* Stack icons and text vertically */
+        align-items: flex-start; /* Align text to the left */
+    }
+
+    .contact-one__list-item ul li .icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .contact-one__list-item ul li .icon span {
+        font-size: 25px; /* Smaller icons for mobile */
+    }
+
+    .contact-one__list-item ul li .text {
+        padding-left: 0px; /* Remove padding on mobile */
+    }
+
+    .contact-one__list-item ul li .text h4 {
+        font-size: 14px; /* Further reduce font size for headings */
+    }
+
+    .contact-one__form {
+        padding: 30px 15px; /* Reduce padding for the form on mobile */
+    }
+
+    .contact-one__form .contact-one__input-box {
+        margin-bottom: 20px; /* Adjust margin between input fields */
+    }
+
+    .contact-one__btn-box {
+        padding-top: 10px; /* Adjust padding above the button */
+    }
+
+    .google-map-one__map {
+        height: 300px; /* Reduce the map height on mobile */
+    }
+
+    .contact-one__socel-link {
+        display: none;
+    }
 }
 
-.google-map-one__map {
-    position: relative;
-    display: block;
-    border: none;
-    height: 570px;
-    width: 100%;
+/* Hide social link section on larger screens */
+@media (max-width: 1200px) {
+    .contact-one__socel-link {
+        display: none;
+    }
+
+    .contact-body {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .contact-one__list-item {
+        order: 2;
+        margin-top: 30px;
+    }
+
+    .contact-one__form {
+        order: 1; /* Keep the form on top */
+    }
+
+    .contact-one__list-item,
+    .contact-one__form {
+        width: 100%; /* Make both elements take up full width */
+        /* flex: none; Remove any flex-grow behavior to avoid side-by-side positioning */
+    }
+
+    .contact-form-row {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .contact-one__form .contact-one__input-box {
+        width: 100%;
+    }
+
 }
+

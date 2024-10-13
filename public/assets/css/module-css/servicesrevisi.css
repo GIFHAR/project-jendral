@@ -1,0 +1,182 @@
+.service-first-row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.first-parent-banner {
+    width: 40%;
+}
+
+.first-child-banner {
+    width: 50%;
+}
+
+.service-blog-banner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.child-service-blog-banner{
+    width: 40%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.freight-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.card-airfreight {
+    width: 40%;
+}
+
+.freight-option {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    width: 610px;
+    box-sizing: border-box;
+    margin-left: 120px;
+}
+
+
+.freight-option h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.freight-option .detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.freight-option .detail img {
+    width: 30px;
+    margin-right: 15px;
+}
+
+.freight-option .detail p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 1200px) {    
+    .service-first-row{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 40px;
+        
+    }
+
+    .first-parent-banner {
+        width: 90%;
+    }
+    
+    .first-child-banner {
+        width: 90%;
+    }
+
+    .service-blog-banner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+        align-items: stretch;
+    }
+    
+    .child-service-blog-banner{
+        width: 90%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .freight-row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card-airfreight {
+        width: 100%;
+        justify-content: center;
+        padding: 0px;
+        margin: auto;
+    }
+    
+    .freight-option {
+        width: 100%;
+        justify-content: center;
+        padding: 20px;
+        margin: 15px auto;
+    }
+}
+
+    
+    
+    /* -------------------------------------------
+    .contact-one__socel-link {
+        display: none;
+    }
+
+    .contact-body {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .contact-one__list-item {
+        order: 2;
+        margin-top: 30px;
+    }
+
+    .contact-one__form {
+        order: 1; /* Keep the form on top 
+    }
+
+    .contact-one__list-item,
+    .contact-one__form {
+        width: 100%; /* Make both elements take up full width */
+        /* flex: none; Remove any flex-grow behavior to avoid side-by-side positioning 
+    }
+
+    .contact-form-row {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .contact-one__form .contact-one__input-box {
+        width: 100%;
+    } 
+
