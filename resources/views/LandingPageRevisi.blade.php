@@ -26,9 +26,9 @@
     <link rel="stylesheet" href="{{ asset('assets/vendor/custom-animate/custom-animate.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendor/jarallax/jarallax.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendor/odometer/odometer.min.css') }}">
-
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
 </head>
 
@@ -45,190 +45,9 @@
     <!-- preloader-end -->
 
 
-    <!-- Start Extra Info -->
-    <div class="extra-info">
-        <div class="close-icon menu-close">
-            <button>
-                <i class="icon-close"></i>
-            </button>
-        </div>
-        <div class="logo-side">
-            <a href="index.html"><img src="{{asset('assets/img/headerjendral/logojendral.png')}}" alt="Logo"">
-        </div>
-        <div class="side-info">
-            <div class="content-box">
-                <h3>Welcome to<br> Jendral Import</h3>
-            </div>
-            <!--Start Sidebar Contact Info -->
-            <div class="sidebar-contact-info">
-                <ul>
-                    <li>
-                        <div class="icon">
-                            <span class="icon-open-mail"></span>
-                        </div>
-                        <div class="text">
-                            <p><a href="mailto:jendralimport@gmail.com">jendralimport@gmail.com</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="fas fa-map-marker-alt"></span>
-                        </div>
-                        <div class="text">
-                            <p><a href="ALAMAT">ALAMAT</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="fab fa-instagram"></span>
-                        </div>
-                        <div class="text">
-                            <p>JENDRAL IMPORT</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="fab fa-facebook"></span>
-                        </div>
-                        <div class="text">
-                            <p>JENDRAL IMPORT</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="fab fa-youtube"></span>
-                        </div>
-                        <div class="text">
-                            <p>JENDRAL IMPORT</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="fab fa-tiktok"></span>
-                        </div>
-                        <div class="text">
-                            <p>JENDRAL IMPORT</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="fab fa-whatsapp"></span>
-                        </div>
-                        <div class="text">
-                            <p>KONTAK WA KONSULTASI</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="fab fa-whatsapp"></span>
-                        </div>
-                        <div class="text">
-                            <p>KONTAK WA PEMESANAN</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <!--End Sidebar Contact Info -->
-
-        </div>
+    <div>
+        @include('layout/header')
     </div>
-    <div class="offcanvas-overly"></div>
-    <!-- End Extra Info -->
-
-    <!--Start Main Header One -->
-    <header class="main-header main-header-one">
-        <div id="sticky-header" class="menu-area">
-            <div class="container">
-                <div class="main-header-one__inner">
-
-                    <!--Start Main Header one Inner Left -->
-                    <div class="main-header-one__inner-left">
-                        <div class="logo-box-one">
-                            <a href="index.html">
-                                <img src="{{asset('assets/img/headerjendral/logojendralHijau.png')}}" alt="Logo">
-                            </a>
-                        </div>
-                    </div>
-                    <!--End Main Header one Inner Left -->
-
-                    <!--Start Main Header one Inner Right -->
-                    <div class="main-header-one__inner-right">
-
-                        <div class="main-header-one__inner-right__bottom">
-
-                            <div class="menu-area__inner">
-                                <div class="mobile-nav-toggler">
-                                    <i class="fas fa-bars"></i>
-                                </div>
-                                <div class="menu-wrap">
-                                    <nav class="menu-nav">
-                                        <div class="navbar-wrap main-menu">
-                                            <ul class="navigation">
-                                                <li><a href="{{ route('home')}}">Home</a>
-
-                                                </li>
-                                                <li><a href="#">About Us</a></li>
-                                                <li><a href="{{ route('services')}}">Services</a>
-                                                </li>
-                                                <li><a href="{{ route('pricing')}}">Pricing</a></li>
-                                                <li><a href="{{ route('tracking')}}">Tracking</a></li>
-                                                <li><a href="{{ route('contact')}}">Contacts</a></li>
-                                            </ul>
-                                        </div>
-                                    </nav>
-                                </div>
-                            </div>
-
-                            <div class="main-menu-right-box-one">
-                                {{-- <div class="search-box-one">
-                                    <a href="#" class="main-menu__search search-toggler">
-                                        <span class="icon-search-interface-symbol"></span>
-                                    </a>
-                                </div> --}}
-                                <div class="side-content-button-one">
-                                    <a class="menu-tigger" href="#">
-                                        <span class="line"></span>
-                                        <span class="line two"></span>
-                                    </a>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <!--End Main Header one Inner Right Bottom-->
-                    </div>
-                    <!--End Main Header one Inner Right -->
-
-
-                </div>
-            </div>
-        </div>
-
-        <!--Start Mobile Menu  -->
-        <div class="mobile-menu">
-            <nav class="menu-box">
-                <div class="close-btn"><i class="fas fa-times"></i></div>
-                <div class="nav-logo">
-                    <a href="index.html"><img src="assets/img/resource/mobile-menu-logo.png" alt="Logo"></a>
-                </div>
-                <div class="menu-outer">
-                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
-                </div>
-                <div class="social-links">
-                    <ul class="clearfix list-wrap">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <div class="menu-backdrop"></div>
-        <!-- End Mobile Menu -->
-
-    </header>
     <!--End Main Header One -->
 
     <!--Start Banner One-->
@@ -317,49 +136,71 @@
         <div class="container-keunggulanjendral">
             <!-- Swiper Container -->
             <div id="swiper-benefit" class="swiper-container-keunggulanjendral">
-                <div class="swiper-wrapper-keunggulanjendral">
-                    <div class="swiper-slide-keunggulanjendral">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
                         <img src="{{ asset('assets/img/landingpage/sea-lcl.png') }}" alt="Picture 1" class="picture-keunggulanjendral">
                     </div>
-                    <div class="swiper-slide-keunggulanjendral">
+                    <div class="swiper-slide">
                         <img src="{{ asset('assets/img/landingpage/sea-lcl.png') }}" alt="Picture 2" class="picture-keunggulanjendral">
                     </div>
-                    <div class="swiper-slide-keunggulanjendral">
+                    <div class="swiper-slide">
                         <img src="{{ asset('assets/img/landingpage/sea-lcl.png') }}" alt="Picture 3" class="picture-keunggulanjendral">
                     </div>
-                    <div class="swiper-slide-keunggulanjendral">
+                    <div class="swiper-slide">
                         <img src="{{ asset('assets/img/landingpage/sea-lcl.png') }}" alt="Picture 4" class="picture-keunggulanjendral">
                     </div>
-                    <div class="swiper-slide-keunggulanjendral">
+                    <div class="swiper-slide">
                         <img src="{{ asset('assets/img/landingpage/sea-lcl.png') }}" alt="Picture 5" class="picture-keunggulanjendral">
                     </div>
                 </div>
                 <!-- Pagination -->
-                <div class="swiper-pagination-keunggulanjendral"></div>
+                <div class="swiper-pagination"></div>
+                <!-- Navigation Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next-keunggulanjendral"></div>
-            <div class="swiper-button-prev-keunggulanjendral"></div>
         </div>
     </section>
-
+    
     <!-- Include Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+    
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper('#swiper-benefit', {
             loop: true,
             pagination: {
-                el: '.swiper-pagination-keunggulanjendral',
+                el: '.swiper-pagination',
                 clickable: true,
             },
             navigation: {
-                nextEl: '.swiper-button-next-keunggulanjendral',
-                prevEl: '.swiper-button-prev-keunggulanjendral',
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 3,
+            spaceBetween: 20,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
             },
         });
     </script>
+    
+    
 
     <!--Start Project One-->
     <section class="project-one">
@@ -386,7 +227,7 @@
                     <div class="row">
 
                         <!--Start Project One Single-->
-                        <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".1s">
+                        {{-- <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".1s">
                             <div class="project-one__single">
                                 <div class="project-one__single-img">
                                     <div class="inner">
@@ -403,7 +244,7 @@
                                         <p>Layanan Pengiriman barang impor via udara untuk ukuran barang kecil/sedang</p>
                                     </div>
                                     <div class="btn-box">
-                                        <a href="project-details.html">Read More <span
+                                        <a href="https://wa.link/7db3pi">Hubungi kami  <span
                                                 class="icon-right-arrow-2"></span></a>
                                     </div>
                                 </div>
@@ -428,7 +269,7 @@
                                         <p>Layanan Pengiriman barang impor via udara untuk ukuran barang kecil/sedang/berat</p>
                                     </div>
                                     <div class="btn-box">
-                                        <a href="project-details.html">Read More <span
+                                        <a href="https://wa.link/7db3pi">Hubungi kami  <span
                                                 class="icon-right-arrow-2"></span></a>
                                     </div>
                                 </div>
@@ -452,9 +293,10 @@
                                     <div class="title-box">
                                         <h3><a href="project-details.html">Air Freight</a></h3>
                                         <p>Layanan kirim barang import dari china via udara</p>
+                                        <p></p>
                                     </div>
                                     <div class="btn-box">
-                                        <a href="project-details.html">Read More <span
+                                        <a href="https://wa.link/7db3pi">Hubungi kami  <span
                                                 class="icon-right-arrow-2"></span></a>
                                     </div>
                                 </div>
@@ -480,13 +322,130 @@
                                         <p>Layanan jasa belanja china membantu pembelian barang</p>
                                     </div>
                                     <div class="btn-box">
-                                        <a href="project-details.html">Read More <span
+                                        <a href="https://wa.link/7db3pi">Hubungi kami  <span
                                                 class="icon-right-arrow-2"></span></a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!--End Project One Single-->
+                        </div>--}}
+
+                        <section class="container-projectjendral">
+                            <div class="swiper-container-projectjendral project-swiper">
+                                <div class="swiper-wrapper">
+                                    <!-- Start Project One Single -->
+                                    <div class="swiper-slide">
+                                        <div class="col-xl-10 col-lg-10 col-md-10 wow fadeInUp" data-wow-delay=".1s">
+                                            <div class="project-one__single">
+                                                <div class="project-one__single-img">
+                                                    <div class="inner">
+                                                        <img src="assets/img/project/project-one__img1.jpg" alt="#">
+                                                    </div>
+                                                    <div class="overlay-icon">
+                                                        <a href="project-details.html"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="project-one__single-content text-center">
+                                                    <div class="title-box">
+                                                        <h3><a href="project-details.html">Jalur Udara</a></h3>
+                                                        <p>Layanan Pengiriman barang impor via udara untuk ukuran barang kecil/sedang</p>
+                                                    </div>
+                                                    <div class="btn-box">
+                                                        <a href="https://wa.link/7db3pi">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Project One Single -->
+                        
+                                    <!-- Start Project Two Single -->
+                                    <div class="swiper-slide">
+                                        <div class="col-xl-10 col-lg-10 col-md-10 wow fadeInUp" data-wow-delay=".1s">
+                                            <div class="project-one__single">
+                                                <div class="project-one__single-img">
+                                                    <div class="inner">
+                                                        <img src="assets/img/project/project-one__img2.jpg" alt="#">
+                                                    </div>
+                                                    <div class="overlay-icon">
+                                                        <a href="project-details.html"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="project-one__single-content text-center">
+                                                    <div class="title-box">
+                                                        <h3><a href="project-details.html">Jalur Laut</a></h3>
+                                                        <p>Layanan Pengiriman barang impor via udara untuk ukuran barang kecil/sedang/berat</p>
+                                                    </div>
+                                                    <div class="btn-box">
+                                                        <a href="https://wa.link/7db3pi">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Project Two Single -->
+                        
+                                    <!-- Start Project Three Single -->
+                                    <div class="swiper-slide">
+                                        <div class="col-xl-10 col-lg-10 col-md-10 wow fadeInUp" data-wow-delay=".1s">
+                                            <div class="project-one__single">
+                                                <div class="project-one__single-img">
+                                                    <div class="inner">
+                                                        <img src="assets/img/project/project-one__img3.jpg" alt="#">
+                                                    </div>
+                                                    <div class="overlay-icon">
+                                                        <a href="project-details.html"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="project-one__single-content text-center">
+                                                    <div class="title-box">
+                                                        <h3><a href="project-details.html">Air Freight</a></h3>
+                                                        <p>Layanan kirim barang import dari china via udara</p>
+                                                    </div>
+                                                    <div class="btn-box">
+                                                        <a href="https://wa.link/7db3pi">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Project Three Single -->
+                        
+                                    <!-- Start Project Four Single -->
+                                    <div class="swiper-slide">
+                                        <div class="col-xl-10 col-lg-10 col-md-10 wow fadeInUp" data-wow-delay=".1s">
+                                            <div class="project-one__single">
+                                                <div class="project-one__single-img">
+                                                    <div class="inner">
+                                                        <img src="assets/img/project/project-one__img4.jpg" alt="#">
+                                                    </div>
+                                                    <div class="overlay-icon">
+                                                        <a href="project-details.html"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="project-one__single-content text-center">
+                                                    <div class="title-box">
+                                                        <h3><a href="project-details.html">Jasa Belanja</a></h3>
+                                                        <p>Layanan jasa belanja china membantu pembelian barang</p>
+                                                    </div>
+                                                    <div class="btn-box">
+                                                        <a href="https://wa.link/7db3pi">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Project Four Single -->
+                                </div>
+                                <!-- Add pagination and navigation controls (optional) -->
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </section>
+                        
+                        
+                        
+                        <!--End Project One Single--> 
 
                     </div>
                 </div>
@@ -495,6 +454,36 @@
         </div>
     </section>
     <!--End Project One-->
+
+    <script>
+        var projectSwiper = new Swiper('.project-swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 2,
+            spaceBetween: 20,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+            },
+        });
+    </script>
 
     <!--Start Video One-->
     <section class="video-one">

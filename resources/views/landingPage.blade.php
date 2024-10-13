@@ -421,7 +421,7 @@
                                             <p>Layanan Pengiriman barang impor via laut dengan jumlah kecil/sedang</p>
                                         </div>
                                         <div class="btn-box">
-                                            <a href="project-details.html">Read More <span
+                                            <a href="https://wa.link/7db3pi">Hubungi kami  <span
                                                     class="icon-right-arrow-2"></span></a>
                                         </div>
                                     </div>
@@ -447,7 +447,7 @@
                                             <p>Layanan Pengiriman barang impor via laut dengan 1 kontainer full</p>
                                         </div>
                                         <div class="btn-box">
-                                            <a href="project-details.html">Read More <span
+                                            <a href="https://wa.link/7db3pi">Hubungi kami  <span
                                                     class="icon-right-arrow-2"></span></a>
                                         </div>
                                     </div>
@@ -473,7 +473,7 @@
                                             <p>Layanan kirim barang import dari china via udara</p>
                                         </div>
                                         <div class="btn-box">
-                                            <a href="project-details.html">Read More <span
+                                            <a href="https://wa.link/7db3pi">Hubungi kami  <span
                                                     class="icon-right-arrow-2"></span></a>
                                         </div>
                                     </div>
@@ -499,7 +499,7 @@
                                             <p>Layanan jasa belanja china membantu pembelian barang</p>
                                         </div>
                                         <div class="btn-box">
-                                            <a href="project-details.html">Read More <span
+                                            <a href="https://wa.link/7db3pi">Hubungi kami  <span
                                                     class="icon-right-arrow-2"></span></a>
                                         </div>
                                     </div>

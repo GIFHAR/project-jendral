@@ -45,192 +45,9 @@
     <!-- preloader-end -->
 
 
-    <!-- Start Extra Info -->
-    <div class="extra-info">
-        <div class="close-icon menu-close">
-            <button>
-                <i class="icon-close"></i>
-            </button>
-        </div>
-        <div class="logo-side">
-            <a href="index.html"><img src="{{asset('assets/img/headerjendral/logojendral.png')}}" alt="Logo"">
-        </div>
-        <div class="side-info">
-            <div class="content-box">
-                <h3>Welcome to<br> Jendral Import</h3>
-            </div>
-            <!--Start Sidebar Contact Info -->
-            <div class="sidebar-contact-info">
-                <ul>
-                    <li>
-                        <div class="icon">
-                            <span class="icon-open-mail"></span>
-                        </div>
-                        <div class="text">
-                            <p><a href="mailto:jendralimport@gmail.com">jendralimport@gmail.com</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="fas fa-map-marker-alt"></span>
-                        </div>
-                        <div class="text">
-                            <p><a href="ALAMAT">ALAMAT</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="fab fa-instagram"></span>
-                        </div>
-                        <div class="text">
-                            <p>JENDRAL IMPORT</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="fab fa-facebook"></span>
-                        </div>
-                        <div class="text">
-                            <p>JENDRAL IMPORT</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="fab fa-youtube"></span>
-                        </div>
-                        <div class="text">
-                            <p>JENDRAL IMPORT</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="fab fa-tiktok"></span>
-                        </div>
-                        <div class="text">
-                            <p>JENDRAL IMPORT</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="fab fa-whatsapp"></span>
-                        </div>
-                        <div class="text">
-                            <p>KONTAK WA KONSULTASI</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="fab fa-whatsapp"></span>
-                        </div>
-                        <div class="text">
-                            <p>KONTAK WA PEMESANAN</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <!--End Sidebar Contact Info -->
-
-        </div>
+    <div>
+        @include('layout/header')
     </div>
-    <div class="offcanvas-overly"></div>
-    <!-- End Extra Info -->
-
-    <!--Start Main Header One -->
-    <header class="main-header main-header-one">
-        <div id="sticky-header" class="menu-area">
-            <div class="container">
-                <div class="main-header-one__inner">
-
-                    <!--Start Main Header one Inner Left -->
-                    <div class="main-header-one__inner-left">
-                        <div class="logo-box-one">
-                            <a href="index.html">
-                                <img src="{{asset('assets/img/headerjendral/logojendralHijau.png')}}" alt="Logo">
-                            </a>
-                        </div>
-                    </div>
-                    <!--End Main Header one Inner Left -->
-
-                    <!--Start Main Header one Inner Right -->
-                    <div class="main-header-one__inner-right">
-
-                        <div class="main-header-one__inner-right__bottom">
-
-                            <div class="menu-area__inner">
-                                <div class="mobile-nav-toggler">
-                                    <i class="fas fa-bars"></i>
-                                </div>
-                                <div class="menu-wrap">
-                                    <nav class="menu-nav">
-                                        <div class="navbar-wrap main-menu">
-                                            <ul class="navigation">
-                                                <li><a href="#">Home</a>
-
-                                                </li>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="#">Services</a>
-                                                </li>
-                                                <li><a href="#">Pricing</a>
-                                                </li>
-                                                <li><a href="#">Tracking</a>
-                                                </li>
-                                                <li><a href="contact.html">contacts</a></li>
-                                            </ul>
-                                        </div>
-                                    </nav>
-                                </div>
-                            </div>
-
-                            <div class="main-menu-right-box-one">
-                                {{-- <div class="search-box-one">
-                                    <a href="#" class="main-menu__search search-toggler">
-                                        <span class="icon-search-interface-symbol"></span>
-                                    </a>
-                                </div> --}}
-                                <div class="side-content-button-one">
-                                    <a class="menu-tigger" href="#">
-                                        <span class="line"></span>
-                                        <span class="line two"></span>
-                                    </a>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <!--End Main Header one Inner Right Bottom-->
-                    </div>
-                    <!--End Main Header one Inner Right -->
-
-
-                </div>
-            </div>
-        </div>
-
-        <!--Start Mobile Menu  -->
-        <div class="mobile-menu">
-            <nav class="menu-box">
-                <div class="close-btn"><i class="fas fa-times"></i></div>
-                <div class="nav-logo">
-                    <a href="index.html"><img src="assets/img/resource/mobile-menu-logo.png" alt="Logo"></a>
-                </div>
-                <div class="menu-outer">
-                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
-                </div>
-                <div class="social-links">
-                    <ul class="clearfix list-wrap">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <div class="menu-backdrop"></div>
-        <!-- End Mobile Menu -->
-
-    </header>
     <!--End Main Header One -->
 
      <!--Start Blog One-->
@@ -259,8 +76,8 @@
                                     kami untuk mendapatkan servis dan harga yang sesuai dengan kebutuhan bisnis kamu.</p>
                             </div>
                             <div class="btn-box">
-                                <a class="thm-btn" href="#">
-                                    <span class="txt">Read More</span>
+                                <a class="thm-btn" href="https://wa.link/7db3pi" target="_blank">
+                                    <span class="txt">Hubungi kami</span>
                                     <i class="icon-next"></i>
                                 </a>
                             </div>
@@ -283,8 +100,8 @@
                                         <h3><a href="#">Diskusikan Kebutuhan Kamu</a></h3>
                                     </div>
                                     <div class="btn-box">
-                                        <a href="#">
-                                            <span class="txt">Read More</span>
+                                        <a href="https://wa.link/7db3pi">
+                                            <span class="txt">Hubungi kami</span>
                                             <i class="icon-next"></i>
                                         </a>
                                     </div>
@@ -302,8 +119,8 @@
                                         <h3><a href="#">Pilihan Terbaik Untuk Pembelian dan Pengiriman</a></h3>
                                     </div>
                                     <div class="btn-box">
-                                        <a href="#">
-                                            <span class="txt">Read More</span>
+                                        <a href="https://wa.link/7db3pi">
+                                            <span class="txt">Hubungi kami</span>
                                             <i class="icon-next"></i>
                                         </a>
                                     </div>
@@ -321,8 +138,8 @@
                                         <h3><a href="#">Perhitungan HPP Barang Kamu</a></h3>
                                     </div>
                                     <div class="btn-box">
-                                        <a href="#">
-                                            <span class="txt">Read More</span>
+                                        <a href="https://wa.link/7db3pi">
+                                            <span class="txt">Hubungi kami</span>
                                             <i class="icon-next"></i>
                                         </a>
                                     </div>
@@ -346,7 +163,7 @@
                     </div>
                 </div>
                 <div class="cta-one__btn cta-one__btn--style2">
-                    <a href="#" class="thm-btn">
+                    <a href="https://wa.link/7db3pi" class="thm-btn">
                         <span class="txt">
                             contact us
                         </span>
@@ -379,7 +196,7 @@
                                 </p>
                             </div>
                             <div class="btn-box">
-                                <a class="thm-btn" href="#">
+                                <a class="thm-btn" href="https://wa.link/7db3pi">
                                     <span class="txt">Hubungi Kami</span>
                                     <i class="icon-next"></i>
                                 </a>
@@ -406,7 +223,7 @@
                                 </p>
                             </div>
                             <div class="btn-box">
-                                <a class="thm-btn" href="blog-details.html">
+                                <a class="thm-btn" href="https://wa.link/7db3pi">
                                     <span class="txt">Hubungi Kami</span>
                                     <i class="icon-next"></i>
                                 </a>
@@ -422,63 +239,67 @@
 
     <!--Air Freight-->
 
-    <div class="container-airfreight">
-        <div class="row">
-        <!--Start Single Service Three-->
-        <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInRight" data-wow-delay="200ms"
-            data-wow-duration="1500ms">
-            <div class="service-three__single">
-                <div class="service-three__single-img">
-                    <img src="assets/img/service/service-three__img2.jpg" alt="#">
-                    <div class="service-three__single-img-bg"></div>
-                </div>
-                <div class="service-three__single-content">
-                    <div class="icon">
-                        <span class="icon-shipping1"></span>
-                    </div>
-                    <div class="title">
-                        <h3><a href="service-details.html">Jalur Udara</a></h3>
-                    </div>
-                    <div class="text">
-                        <p>
-                            Gunakan pengiriman udara untuk pengiriman yang lebih cepat. Untuk kebutuhan pengiriman cepat dengan barang yang tidak terlalu berat
-                        </p>
+    <div class="airfreight">
+        <div class="container">
+            <div class="row">
+            <!--Start Single Service Three-->
+            <div class="card-airfreight">
+                <div class="col-xl-12 col-lg-8 col-md-6 mx-auto wow fadeInRight" data-wow-delay="200ms"
+                    data-wow-duration="1500ms">
+                    <div class="service-three__single">
+                        <div class="service-three__single-img">
+                            <img src="assets/img/service/service-three__img2.jpg" alt="#">
+                            <div class="service-three__single-img-bg"></div>
+                        </div>
+                        <div class="service-three__single-content">
+                            <div class="icon">
+                                <span class="icon-shipping1"></span>
+                            </div>
+                            <div class="title">
+                                <h3><a href="service-details.html">Jalur Udara</a></h3>
+                            </div>
+                            <div class="text">
+                                <p>
+                                    Gunakan pengiriman udara untuk pengiriman yang lebih cepat. Untuk kebutuhan pengiriman cepat dengan barang yang tidak terlalu berat
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--End Single Service Three-->
+            <!--End Single Service Three-->
 
-        <div class="freight-options">
-            <!-- Air Freight - Regular -->
-            <div class="freight-option">
-                <h2>Jalur Udara - Reguler</h2>
-                <div class="detail">
-                    <img src="price-icon.jpg" alt="Price">
-                    <p>Barang dengan berat Min. 30 kg. Harga Pengiriman: Rp. 150,000</p>
+            <div class="freight-options">
+                <!-- Air Freight - Regular -->
+                <div class="freight-option">
+                    <h2>Jalur Udara - Reguler</h2>
+                    <div class="detail">
+                        <img src="assets/img/resource/icon-30kg.png" alt="Weight">
+                        <p>Barang dengan berat Min. 30 kg. Harga Pengiriman: Rp. 150,000</p>
+                    </div>
+                    <div class="detail">
+                        <img src="assets/img/resource/icon-100kg.png" alt="Category">
+                        <p>Barang dengan berat lebih dari 100 kg bisa dinego</p>
+                    </div>
+                    <div class="time-estimation regular">
+                        <p>Time Estimation: 14 Hari</p>
+                    </div>
                 </div>
-                <div class="detail">
-                    <img src="category-icon.jpg" alt="Category">
-                    <p>Barang dengan berat lebih dari 100 kg bisa dinego</p>
-                </div>
-                <div class="time-estimation regular">
-                    <p>Time Estimation: 14 Hari</p>
-                </div>
-            </div>
 
-            <!-- Air Freight - Express -->
-            <div class="freight-option">
-                <h2>Jalur Udara - Express</h2>
-                <div class="detail">
-                    <img src="price-icon.jpg" alt="Price">
-                    <p>Barang dengan berat Min. 1 kg. Harga Pengiriman: Rp. 205,000</p>
-                </div>
-                <div class="detail">
-                    <img src="category-icon.jpg" alt="Category">
-                    <p>Barang dengan berat lebih dari 100 kg bisa dinego</p>
-                </div>
-                <div class="time-estimation express">
-                    <p>Time Estimation: 4-6 Hari</p>
+                <!-- Air Freight - Express -->
+                <div class="freight-option">
+                    <h2>Jalur Udara - Express</h2>
+                    <div class="detail">
+                        <img src="assets/img/resource/icon-1kg.png" alt="Price">
+                        <p>Barang dengan berat Min. 1 kg. Harga Pengiriman: Rp. 205,000</p>
+                    </div>
+                    <div class="detail">
+                        <img src="assets/img/resource/icon-100kg.png" alt="Category">
+                        <p>Barang dengan berat lebih dari 100 kg bisa dinego</p>
+                    </div>
+                    <div class="time-estimation express">
+                        <p>Time Estimation: 4-6 Hari</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -490,120 +311,128 @@
     <!--sea freight-->
 
     <div class="container-seafreight">
-        <div class="row">
-            <!--Start Single Service Three-->
-            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
-                <div class="service-three__single">
-                    <div class="service-three__single-img">
-                        <img src="assets/img/service/service-three__img2.jpg" alt="#">
-                        <div class="service-three__single-img-bg"></div>
-                    </div>
-                    <div class="service-three__single-content">
-                        <div class="icon">
-                            <span class="icon-shipping1"></span>
-                        </div>
-                        <div class="title">
-                            <h3><a href="service-details.html">Jalur Laut</a></h3>
-                        </div>
-                        <div class="text">
-                            <p>Untuk pengiriman dalam jumlah banyak, pengiriman lewat laut menjadi pilihan yang tepat karena harga yang murah dan kemampuannya untuk mengirim lebih banyak juga barang-barang berat</p>
+        <div class="container">
+            <div class="row">
+                <div class="card-airfreight">
+                    <!--Start Single Service Three-->
+                    <div class="col-xl-12 col-lg-4 col-md-6 wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <div class="service-three__single">
+                            <div class="service-three__single-img">
+                                <img src="assets/img/service/service-three__img2.jpg" alt="#">
+                                <div class="service-three__single-img-bg"></div>
+                            </div>
+                            <div class="service-three__single-content">
+                                <div class="icon">
+                                    <span class="icon-shipping1"></span>
+                                </div>
+                                <div class="title">
+                                    <h3><a href="service-details.html">Jalur Laut</a></h3>
+                                </div>
+                                <div class="text">
+                                    <p>Untuk pengiriman dalam jumlah banyak, pengiriman lewat laut menjadi pilihan yang tepat karena harga yang murah dan kemampuannya untuk mengirim lebih banyak juga barang-barang berat</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--End Single Service Three-->
+                <!--End Single Service Three-->
 
-            <!-- Start Content Text 3 -->
-            <div class="col-xl-8 col-lg-8 col-md-6">
-                <div class="service-details__content-text3">
-                    <div class="service-details__content-text3-single">
-                        <div class="inner">
-                            <div class="icon">
-                                <span class="icon-packages3"></span>
-                            </div>
-                            <div class="content-box">
-                                <h3><a href="#">Umum</a></h3>
-                                <p>Harga mulai dari Rp.4,500/cbm</p>
+                <!-- Start Content Text 3 -->
+                <div class="freight-options">
+                    <!-- Air Freight - Regular -->
+                    <div class="freight-option">
+                        <div class="col-xl-12 col-lg-8 col-md-6">
+                            <div class="service-details__content-text3">
+                                <div class="service-details__content-text3-single">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <span class="icon-packages3"></span>
+                                        </div>
+                                        <div class="content-box">
+                                            <h3><a href="#">Umum</a></h3>
+                                            <p>Harga mulai dari Rp.4,500/cbm</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="service-details__content-text3-single">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <span class="icon-packages5"></span>
+                                        </div>
+                                        <div class="content-box">
+                                            <h3><a href="#">Garment</a></h3>
+                                            <p>Harga mulai dari Rp.7,5000/cbm</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="service-details__content-text3-single">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <span class="icon-order1"></span>
+                                        </div>
+                                        <div class="content-box">
+                                            <h3><a href="#">Lartas Ringan</a></h3>
+                                            <p>Harga mulai dari Rp.5,000/cbm</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="service-details__content-text3-single">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <span class="icon-mobile1"></span>
+                                        </div>
+                                        <div class="content-box">
+                                            <h3><a href="#">Lartas Berat</a></h3>
+                                            <p>Harga mulai dari Rp.6,000/cbm</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-details__content-text3-single">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <span class="icon-mobile1"></span>
+                                        </div>
+                                        <div class="content-box">
+                                            <h3><a href="#">Obat</a></h3>
+                                            <p>Harga mulai dari Rp.8,500/cbm</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="service-details__content-text3-single">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <span class="icon-mobile1"></span>
+                                        </div>
+                                        <div class="content-box">
+                                            <h3><a href="#">Makanan</a></h3>
+                                            <p>Harga mulai dari Rp.7,000/cbm</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="info-item">
+                                    <h3>Harga</h3>
+                                    <p>Dihitung mulai dari<strong>0.1 cbm</strong></p>
+                                    <p>Biaya konsolidasi:<strong>Rp. 50,000/0.1 cbm</strong></p>
+                                    <p class="note">*Harga tergantung ketentuan dan kondisi</p>
+                                </div>
+
+
+                                <div class="info-item-time">
+                                    <h3>Estimasi Waktu</h3>
+                                    <p class="time-estimation">3-4 Minggu</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="service-details__content-text3-single">
-                        <div class="inner">
-                            <div class="icon">
-                                <span class="icon-packages5"></span>
-                            </div>
-                            <div class="content-box">
-                                <h3><a href="#">Garment</a></h3>
-                                <p>Harga mulai dari Rp.7,5000/cbm</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="service-details__content-text3-single">
-                        <div class="inner">
-                            <div class="icon">
-                                <span class="icon-order1"></span>
-                            </div>
-                            <div class="content-box">
-                                <h3><a href="#">Lartas Ringan</a></h3>
-                                <p>Harga mulai dari Rp.5,000/cbm</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="service-details__content-text3-single">
-                        <div class="inner">
-                            <div class="icon">
-                                <span class="icon-mobile1"></span>
-                            </div>
-                            <div class="content-box">
-                                <h3><a href="#">Lartas Berat</a></h3>
-                                <p>Harga mulai dari Rp.6,000/cbm</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service-details__content-text3-single">
-                        <div class="inner">
-                            <div class="icon">
-                                <span class="icon-mobile1"></span>
-                            </div>
-                            <div class="content-box">
-                                <h3><a href="#">Obat</a></h3>
-                                <p>Harga mulai dari Rp.8,500/cbm</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="service-details__content-text3-single">
-                        <div class="inner">
-                            <div class="icon">
-                                <span class="icon-mobile1"></span>
-                            </div>
-                            <div class="content-box">
-                                <h3><a href="#">Makanan</a></h3>
-                                <p>Harga mulai dari Rp.7,000/cbm</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="info-item">
-                        <h3>Harga</h3>
-                        <p>Dihitung mulai dari<strong>0.1 cbm</strong></p>
-                        <p>Biaya konsolidasi:<strong>Rp. 50,000/0.1 cbm</strong></p>
-                        <p class="note">*Harga tergantung ketentuan dan kondisi</p>
-                    </div>
-
-
-                    <div class="info-item-time">
-                        <h3>Estimasi Waktu</h3>
-                        <p class="time-estimation">3-4 Minggu</p>
-                    </div>
-
                 </div>
+                <!-- End Content Text 3 -->
             </div>
-            <!-- End Content Text 3 -->
         </div>
     </div>
 

@@ -713,9 +713,16 @@
     z-index: 1;
 }
 
+.container-blogpage1 {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
 .row {
     display: flex;
     /* Display the blog posts in a single line */
+    justify-content: center;
     flex-wrap: nowrap;
     /* Prevent wrapping */
     gap: 20px;

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+@import url('module-css/header.css');
+@import url('module-css/footer.css');
+@import url('module-css/services.css');
+@import url('module-css/about.css');
+@import url('module-css/banner.css');
+@import url('module-css/blog.css');
+@import url('module-css/breadcrumb.css');
+@import url('module-css/contact.css');
+@import url('module-css/fact-counter.css');
+@import url('module-css/partner.css');
+@import url('module-css/testimonial.css');
+@import url('module-css/team.css');
+
+/* General body styles */
+body {
+    font-family: 'Rubik', Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Pricing result container */
+.pricing-box {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* Pricing result content */
+.pricing-result {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Paragraph styling for the results */
+.pricing-result p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Make labels bold and highlight important text */
+.pricing-result p strong {
+    color: #333;
+}
+
+.time-estimation {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.price-estimation.regular {
+    background-color: #f0f9e9;
+    color: #0d6f1d;
+}
+
+.price-estimation.express {
+    background-color: #f9f5e9;
+    color: #d6a10e;
+}
+
+.price-estimation p {
+    margin: 0;
+    font-weight: bold;
+    color: #0a0a0a;
+    text-align: center;
+}
+
+/* Style for the button container */
+.cta-one__btn {
+    margin-top: 20px;
+    width: 100%; /* Ensures the button container is 100% width */
+    display: flex;
+    justify-content: center; /* Centers the button within the container */
+}
+
+.cta-one__btn--style2 a.thm-btn {
+    width: 100%; /* Ensures the button takes up 100% of the container width */
+    text-align: center; /* Centers the text inside the button */
+    display: block; /* Makes the <a> behave like a block-level element */
+    padding: 5px; /* Add padding for better spacing */
+    background-color: #ffffff; /* Button background color */
+    color: rgb(0, 0, 0); /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for the button text */
+    font-weight: bold; /* Make the text bold */
+}
+
+.cta-one__btn--style2 a.thm-btn:hover {
+    background-color: #ffffff; /* Slightly darker green on hover */
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    .cta-one__btn--style2 a.thm-btn {
+        width: 100%; /* Ensures the button remains 100% on smaller screens */
+    }
+}
+
+
+/* Add media queries for responsiveness */
+@media (max-width: 600px) {
+    .pricing-box {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .pricing-result {
+        font-size: 1rem;
+    }
+}

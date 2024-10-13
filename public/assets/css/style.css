@@ -241,7 +241,8 @@
 ===============================*/
 
 .container-textkenapajendral {
-    width: 85%;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     position: relative;
@@ -300,9 +301,10 @@
 }
 
 .swiper-slide-keunggulanjendral {
-    flex: 0 0 33.33%;
+    flex: 0 0 33.33%; 
     margin-right: 20px;
-    /* Adjusts the spacing between slides */
+    width: auto;
+    flex-shrink: 0;
 }
 
 .picture-keunggulanjendral {
@@ -329,7 +331,7 @@
     height: 44px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
-    z-index: 10;
+    z-index: 9999;
     cursor: pointer;
 }
 
@@ -341,31 +343,17 @@
     left: 10px;
 }
 
-.page-point {
-    font-size: 24px;
-    cursor: pointer;
-    margin: 0 5px;
-    color: #888;
+.container-projectjendral {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
 }
 
-.page-point.active {
-    color: #000;
+.swiper-container-projectjendral {
+    width: 100%;
+    overflow: hidden;
 }
-
-.swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: #007aff;
-    /* Custom color */
-    opacity: 0.5;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: #ff6600;
-    /* Different color for active bullet */
-    opacity: 1;
-}
-
 
 /*=============================
 	whatsapp
@@ -382,7 +370,7 @@
     background-color: transparent;
     /* No background color for the container */
     text-decoration: none;
-    z-index: 1000;
+    z-index: 9999;
     /* Ensure it stays on top of other elements */
 }
 
@@ -438,20 +426,28 @@
 	Air Freight
 ===============================*/
 
-.container-airfreight {
+.airfreight {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 80px 0 80px;
+    margin: 0 auto;
 }
 
 .row {
     display: flex;
     /* Display the blog posts in a single line */
+    justify-content: center;
     flex-wrap: nowrap;
     /* Prevent wrapping */
     gap: 20px;
     /* Space between the two blog posts */
+}
+
+.card-airfreight {
+    max-width: 540px;
 }
 
 .freight-options {
@@ -469,13 +465,11 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 50px;
-    width: 770px;
-    /* Set the width of each card */
-    height: 300px;
-    /* Set the height of each card */
+    width: 610px;
     box-sizing: border-box;
     margin-left: 120px;
 }
+
 
 .freight-option h2 {
     font-size: 1.5rem;
@@ -2861,7 +2855,7 @@ label {
     position: relative;
     display: block;
     padding: 245px 0px 245px;
-    z-index: 3;
+    z-index: 1;
 }
 
 .video-one__bg {

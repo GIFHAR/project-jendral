@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PricingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,8 +19,6 @@ Route::get('/', function () {
     return view('LandingPageRevisi');
 });
 
-
-
 Route::get('/home', [App\Http\Controllers\HeaderController::class, 'home'])->name('home');
 
 // Route::get('/aboutus', [App\Http\Controllers\HeaderController::class, 'aboutus'])->name('aboutus');
@@ -35,6 +34,10 @@ Route::get('/services', [App\Http\Controllers\HeaderController::class, 'services
 // Route::get('/jasapengiriman', [App\Http\Controllers\HeaderController::class, 'jasapengiriman'])->name('jasapengiriman');
 
 Route::get('/pricing', [App\Http\Controllers\HeaderController::class, 'pricing'])->name('pricing');
+
+Route::match(['get', 'post'], '/calculatePricing', [App\Http\Controllers\HeaderController::class, 'pricing'])->name('calculatePricing');
+
+Route::post('/calculateResult', [PricingController::class, 'calculate'])->name('calculateResult');
 
 Route::get('/tracking', [App\Http\Controllers\HeaderController::class, 'tracking'])->name('tracking');
 

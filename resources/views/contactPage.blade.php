@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="{{ asset('assets/vendor/odometer/odometer.min.css') }}">
 
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/contact.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
 
 </head>
@@ -45,190 +46,9 @@
     <!-- preloader-end -->
 
 
-    <!-- Start Extra Info -->
-    <div class="extra-info">
-        <div class="close-icon menu-close">
-            <button>
-                <i class="icon-close"></i>
-            </button>
-        </div>
-        <div class="logo-side">
-            <a href="index.html"><img src="{{asset('assets/img/headerjendral/logojendral.png')}}" alt="Logo"">
-        </div>
-        <div class="side-info">
-            <div class="content-box">
-                <h3>Welcome to<br> Jendral Import</h3>
-            </div>
-            <!--Start Sidebar Contact Info -->
-            <div class="sidebar-contact-info">
-                <ul>
-                    <li>
-                        <div class="icon">
-                            <span class="icon-open-mail"></span>
-                        </div>
-                        <div class="text">
-                            <p><a href="mailto:jendralimport@gmail.com">jendralimport@gmail.com</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="fas fa-map-marker-alt"></span>
-                        </div>
-                        <div class="text">
-                            <p><a href="ALAMAT">ALAMAT</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="fab fa-instagram"></span>
-                        </div>
-                        <div class="text">
-                            <p>JENDRAL IMPORT</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="fab fa-facebook"></span>
-                        </div>
-                        <div class="text">
-                            <p>JENDRAL IMPORT</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="fab fa-youtube"></span>
-                        </div>
-                        <div class="text">
-                            <p>JENDRAL IMPORT</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="fab fa-tiktok"></span>
-                        </div>
-                        <div class="text">
-                            <p>JENDRAL IMPORT</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="fab fa-whatsapp"></span>
-                        </div>
-                        <div class="text">
-                            <p>KONTAK WA KONSULTASI</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <span class="fab fa-whatsapp"></span>
-                        </div>
-                        <div class="text">
-                            <p>KONTAK WA PEMESANAN</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <!--End Sidebar Contact Info -->
-
-        </div>
+    <div>
+        @include('layout/header')
     </div>
-    <div class="offcanvas-overly"></div>
-    <!-- End Extra Info -->
-
-    <!--Start Main Header One -->
-    <header class="main-header main-header-one">
-        <div id="sticky-header" class="menu-area">
-            <div class="container">
-                <div class="main-header-one__inner">
-
-                    <!--Start Main Header one Inner Left -->
-                    <div class="main-header-one__inner-left">
-                        <div class="logo-box-one">
-                            <a href="index.html">
-                                <img src="{{asset('assets/img/headerjendral/logojendralHijau.png')}}" alt="Logo">
-                            </a>
-                        </div>
-                    </div>
-                    <!--End Main Header one Inner Left -->
-
-                    <!--Start Main Header one Inner Right -->
-                    <div class="main-header-one__inner-right">
-
-                        <div class="main-header-one__inner-right__bottom">
-
-                            <div class="menu-area__inner">
-                                <div class="mobile-nav-toggler">
-                                    <i class="fas fa-bars"></i>
-                                </div>
-                                <div class="menu-wrap">
-                                    <nav class="menu-nav">
-                                        <div class="navbar-wrap main-menu">
-                                            <ul class="navigation">
-                                                <li><a href="{{ route('home')}}">Home</a>
-
-                                                </li>
-                                                <li><a href="#">About Us</a></li>
-                                                <li><a href="{{ route('services')}}">Services</a>
-                                                </li>
-                                                <li><a href="{{ route('pricing')}}">Pricing</a></li>
-                                                <li><a href="{{ route('tracking')}}">Tracking</a></li>
-                                                <li><a href="{{ route('contact')}}">Contacts</a></li>
-                                            </ul>
-                                        </div>
-                                    </nav>
-                                </div>
-                            </div>
-
-                            <div class="main-menu-right-box-one">
-                                {{-- <div class="search-box-one">
-                                    <a href="#" class="main-menu__search search-toggler">
-                                        <span class="icon-search-interface-symbol"></span>
-                                    </a>
-                                </div> --}}
-                                <div class="side-content-button-one">
-                                    <a class="menu-tigger" href="#">
-                                        <span class="line"></span>
-                                        <span class="line two"></span>
-                                    </a>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <!--End Main Header one Inner Right Bottom-->
-                    </div>
-                    <!--End Main Header one Inner Right -->
-
-
-                </div>
-            </div>
-        </div>
-
-        <!--Start Mobile Menu  -->
-        <div class="mobile-menu">
-            <nav class="menu-box">
-                <div class="close-btn"><i class="fas fa-times"></i></div>
-                <div class="nav-logo">
-                    <a href="index.html"><img src="assets/img/resource/mobile-menu-logo.png" alt="Logo"></a>
-                </div>
-                <div class="menu-outer">
-                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
-                </div>
-                <div class="social-links">
-                    <ul class="clearfix list-wrap">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <div class="menu-backdrop"></div>
-        <!-- End Mobile Menu -->
-
-    </header>
     <!--End Main Header One -->
 
     <!--Contact One Start-->
@@ -300,11 +120,7 @@
                                         <input type="email" placeholder="Email Address" name="email">
                                     </div>
                                 </div>
-                                <div class="col-xl-6 col-lg-6">
-                                    <div class="contact-one__input-box">
-                                        <input type="number" placeholder="Mobile" name="number">
-                                    </div>
-                                </div>
+                                
                                 {{-- <div class="col-xl-6 col-lg-6">
                                     <div class="contact-one__input-box">
                                         <input type="text" placeholder="Company" name="company">
@@ -333,13 +149,8 @@
                         <div class="contact-one__socel-link-inner">
                             <ul>
                                 <li>
-                                    <a href="#">
-                                        <span class="icon-twitter"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="color1">
-                                        <span class="icon-facebook-app-symbol"></span>
+                                    <a href="https://wa.link/7db3pi">
+                                        <img src="assets/img/resource/icon-wa.png" alt="Weight Icon" class="icon-contact" />
                                     </a>
                                 </li>
                                 <li>
@@ -361,11 +172,11 @@
 
 
     <!--Start Google Map One-->
-    <section class="google-map-one">
+    {{-- <section class="google-map-one">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4562.753041141002!2d-118.80123790098536!3d34.152323469614075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e82469c2162619%3A0xba03efb7998eef6d!2sCostco+Wholesale!5e0!3m2!1sbn!2sbd!4v1562518641290!5m2!1sbn!2sbd"
             class="google-map-one__map" allowfullscreen></iframe>
-    </section>
+    </section> --}}
     <!--End Google Map One-->
 
 
