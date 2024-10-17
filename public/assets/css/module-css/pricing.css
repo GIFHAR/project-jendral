@@ -42,10 +42,11 @@
 @import url('module-css/partner.css');
 @import url('module-css/testimonial.css');
 @import url('module-css/team.css');
+@import url('style.css');
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+.body-color {
+    /* font-family: Arial, sans-serif; */
+    background-color: var(--thm-body-background);
     margin: 0;
     padding: 20px;
 }
@@ -118,7 +119,12 @@ h1 {
 .rest-container {
     flex: 1;
     max-width: 40%;
+    padding-right: 30px;
 }
+
+/* #freight_type {
+    margin-right: 1000px;
+} */
 
 
 .personal-id-container h3,
@@ -162,7 +168,7 @@ select {
 }
 
 .calculate-btn {
-    background-color: #4CAF50;
+    background-color: #f68b21;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -171,7 +177,7 @@ select {
 }
 
 .calculate-btn:hover {
-    background-color: #45a049;
+    background-color: #f68b21;
 }
 
 /* Responsive layout for smaller screens */
@@ -208,7 +214,7 @@ input[type="text"], input[type="number"], input[type="email"], input[type="url"]
 }
 
 button.calculate-btn {
-    background-color: #28a745;
+    background-color: #f68b21;
     color: white;
 border: none;
     padding: 10px 20px;
@@ -218,7 +224,7 @@ border: none;
 }
 
 button.calculate-btn:hover {
-    background-color: #218838;
+    background-color: #edb884;
 }
 
 /* Tablets: 768px and below */

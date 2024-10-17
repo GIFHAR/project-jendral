@@ -28,7 +28,7 @@
                         <span class="fas fa-map-marker-alt"></span>
                     </div>
                     <div class="text">
-                        <p>ALAMAT</p>
+                        <p>Jl. Tasikmalaya No.2 Kacapiring, Kec. Batununggal, Kota Bandung, Jawa Barat 40271</p>
                     </div>
                 </li>
                 <li>
@@ -36,31 +36,7 @@
                         <span class="fab fa-instagram"></span>
                     </div>
                     <div class="text">
-                        <p>JENDRAL IMPORT</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon">
-                        <span class="fab fa-facebook"></span>
-                    </div>
-                    <div class="text">
-                        <p>JENDRAL IMPORT</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon">
-                        <span class="fab fa-youtube"></span>
-                    </div>
-                    <div class="text">
-                        <p>JENDRAL IMPORT</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon">
-                        <span class="fab fa-tiktok"></span>
-                    </div>
-                    <div class="text">
-                        <p>JENDRAL IMPORT</p>
+                        <p>@jenderalimport</p>
                     </div>
                 </li>
                 <li>
@@ -68,15 +44,7 @@
                         <span class="fab fa-whatsapp"></span>
                     </div>
                     <div class="text">
-                        <p>KONTAK WA KONSULTASI</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon">
-                        <span class="fab fa-whatsapp"></span>
-                    </div>
-                    <div class="text">
-                        <p>KONTAK WA PEMESANAN</p>
+                        <p>+62 823-1819-2056</p>
                     </div>
                 </li>
             </ul>
@@ -166,12 +134,12 @@
             <div class="social-links">
                 <ul class="clearfix list-wrap">
                     <li>
-                        <a href="https://wa.link/7db3pi">
+                        <a href="https://wa.link/kl0gdo">
                             <img src="assets/img/resource/icon-wa.png" alt="Weight Icon" class="icon-contact" />
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="color2">
+                        <a href="https://www.instagram.com/jenderalimport" class="color2">
                             <span class="icon-instagram"></span>
                         </a>
                     </li>

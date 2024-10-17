@@ -32,7 +32,7 @@
 
 </head>
 
-<body class="body-gray-bg">
+<body>
     <!-- preloader -->
     <div id="preloader">
         <div id="loading-center">
@@ -66,7 +66,7 @@
                     <div class="wow fadeInLeft" data-wow-delay="100ms" data-wow-duration="1500ms">
                         <div class="blog-one__left-box">
                             <div class="blog-one__left-box-img">
-                                <img src="assets/img/blog/blog-one__img1.jpg" alt="#">
+                                <img src="assets\img\PHOTO\PHOTO\001 A.jpg" alt="#">
                             </div>
                             <div class="blog-one__left-box-content">
 
@@ -76,7 +76,7 @@
                                         kami untuk mendapatkan servis dan harga yang sesuai dengan kebutuhan bisnis kamu.</p>
                                 </div>
                                 <div class="btn-box">
-                                    <a class="thm-btn" href="https://wa.link/7db3pi" target="_blank">
+                                    <a class="thm-btn" href="https://wa.link/kl0gdo" target="_blank">
                                         <span class="txt">Hubungi kami</span>
                                         <i class="icon-next"></i>
                                     </a>
@@ -93,7 +93,9 @@
                             <li class="blog-one__sidebar-box__inner wow fadeInRight" data-wow-delay="100ms"
                                 data-wow-duration="1500ms">
                                 <div class="img-box">
-                                    <img src="assets/img/blog/blog-one__sidebar-box__img1.jpg" alt="#">
+                                    <div class="img-box-services">
+                                        <img src="assets\img\PHOTO\PHOTO 1\001 A.png" alt="#">
+                                    </div>
                                 </div>
                                 <div class="content-box">
 
@@ -101,7 +103,7 @@
                                         <h3><a href="#">Diskusikan Kebutuhan Kamu</a></h3>
                                     </div>
                                     <div class="btn-box">
-                                        <a href="https://wa.link/7db3pi">
+                                        <a href="https://wa.link/kl0gdo">
                                             <span class="txt">Hubungi kami</span>
                                             <i class="icon-next"></i>
                                         </a>
@@ -112,7 +114,9 @@
                             <li class="blog-one__sidebar-box__inner wow fadeInRight" data-wow-delay="200ms"
                                 data-wow-duration="1500ms">
                                 <div class="img-box">
-                                    <img src="assets/img/blog/blog-one__sidebar-box__img2.jpg" alt="#">
+                                    <div class="img-box-services">
+                                        <img src="assets\img\PHOTO\PHOTO 3\003.png" alt="#">
+                                    </div>
                                 </div>
                                 <div class="content-box">
 
@@ -120,7 +124,7 @@
                                         <h3><a href="#">Pilihan Terbaik Untuk Pembelian dan Pengiriman</a></h3>
                                     </div>
                                     <div class="btn-box">
-                                        <a href="https://wa.link/7db3pi">
+                                        <a href="https://wa.link/kl0gdo">
                                             <span class="txt">Hubungi kami</span>
                                             <i class="icon-next"></i>
                                         </a>
@@ -131,7 +135,9 @@
                             <li class="blog-one__sidebar-box__inner wow fadeInRight" data-wow-delay="300ms"
                                 data-wow-duration="1500ms">
                                 <div class="img-box">
-                                    <img src="assets/img/blog/blog-one__sidebar-box__img3.jpg" alt="#">
+                                    <div class="img-box-services">
+                                        <img src="assets\img\PHOTO\PHOTO 4\004.jpg" alt="#">
+                                    </div>
                                 </div>
                                 <div class="content-box">
 
@@ -139,7 +145,7 @@
                                         <h3><a href="#">Perhitungan HPP Barang Kamu</a></h3>
                                     </div>
                                     <div class="btn-box">
-                                        <a href="https://wa.link/7db3pi">
+                                        <a href="https://wa.link/kl0gdo">
                                             <span class="txt">Hubungi kami</span>
                                             <i class="icon-next"></i>
                                         </a>
@@ -164,7 +170,7 @@
                     </div>
                 </div>
                 <div class="cta-one__btn cta-one__btn--style2">
-                    <a href="https://wa.link/7db3pi" class="thm-btn">
+                    <a href="https://wa.link/kl0gdo" class="thm-btn">
                         <span class="txt">
                             contact us
                         </span>
@@ -185,7 +191,9 @@
                     <!--Start Blog Page Single-->
                     <div class="blog-one__left-box blog-page__single">
                         <div class="blog-one__left-box-img blog-page1__img">
-                            <img src="assets/img/blog/blog-page1__img1.jpg" alt="#">
+                            <div class="blog-services">
+                                <img src="assets\img\PHOTO\PHOTO 5\005.png" alt="#">
+                            </div>
                         </div>
                         <div class="blog-one__left-box-content blog-page1__content">
                             <div class="title-box">
@@ -197,7 +205,7 @@
                                 </p>
                             </div>
                             <div class="btn-box">
-                                <a class="thm-btn" href="https://wa.link/7db3pi">
+                                <a class="thm-btn" href="https://wa.link/kl0gdo">
                                     <span class="txt">Hubungi Kami</span>
                                     <i class="icon-next"></i>
                                 </a>
@@ -212,7 +220,9 @@
                     <!--Start Blog Page Single-->
                     <div class="blog-one__left-box blog-page__single">
                         <div class="blog-one__left-box-img blog-page1__img">
-                            <img src="assets/img/blog/blog-page1__img2.jpg" alt="#">
+                            <div class="blog-services">
+                                <img src="assets\img\PHOTO\PHOTO 6 DAN 7\007.png" alt="#">
+                            </div>
                         </div>
                         <div class="blog-one__left-box-content blog-page1__content">
                             <div class="title-box">
@@ -224,7 +234,7 @@
                                 </p>
                             </div>
                             <div class="btn-box">
-                                <a class="thm-btn" href="https://wa.link/7db3pi">
+                                <a class="thm-btn" href="https://wa.link/kl0gdo">
                                     <span class="txt">Hubungi Kami</span>
                                     <i class="icon-next"></i>
                                 </a>
@@ -249,7 +259,7 @@
                     data-wow-duration="1500ms">
                     <div class="service-three__single">
                         <div class="service-three__single-img">
-                            <img src="assets/img/service/service-three__img2.jpg" alt="#">
+                            <img src="assets\img\LISTSERVICE\ASSET PHOTO\AIR FREIGHT.png" alt="#">
                             <div class="service-three__single-img-bg"></div>
                         </div>
                         <div class="service-three__single-content">
@@ -319,7 +329,7 @@
                     <div class="wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
                         <div class="service-three__single">
                             <div class="service-three__single-img">
-                                <img src="assets/img/service/service-three__img2.jpg" alt="#">
+                                <img src="assets\img\LISTSERVICE\ASSET PHOTO\SEA LCL.png" alt="#">
                                 <div class="service-three__single-img-bg"></div>
                             </div>
                             <div class="service-three__single-content">

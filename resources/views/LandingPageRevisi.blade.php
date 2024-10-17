@@ -144,19 +144,19 @@
                 <div id="swiper-benefit" class="swiper-container-keunggulanjendral">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="{{ asset('assets/img/landingpage/sea-lcl.png') }}" alt="Picture 1" class="picture-keunggulanjendral">
+                            <img src="{{ asset('assets\img\CAROUSEL\001 KONSUL.png') }}" alt="Picture 1" class="picture-keunggulanjendral">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{ asset('assets/img/landingpage/sea-lcl.png') }}" alt="Picture 2" class="picture-keunggulanjendral">
+                            <img src="{{ asset('assets\img\CAROUSEL\002 MUDAH.png') }}" alt="Picture 2" class="picture-keunggulanjendral">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{ asset('assets/img/landingpage/sea-lcl.png') }}" alt="Picture 3" class="picture-keunggulanjendral">
+                            <img src="{{ asset('assets\img\CAROUSEL\003 TRANSPARAN.png') }}" alt="Picture 3" class="picture-keunggulanjendral">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{ asset('assets/img/landingpage/sea-lcl.png') }}" alt="Picture 4" class="picture-keunggulanjendral">
+                            <img src="{{ asset('assets\img\CAROUSEL\004 LIVE.png') }}" alt="Picture 4" class="picture-keunggulanjendral">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{ asset('assets/img/landingpage/sea-lcl.png') }}" alt="Picture 5" class="picture-keunggulanjendral">
+                            <img src="{{ asset('assets\img\CAROUSEL\005 TANPA.png') }}" alt="Picture 5" class="picture-keunggulanjendral">
                         </div>
                     </div>
                     <!-- Pagination -->
@@ -242,7 +242,7 @@
                                                 <div class="project-one__single">
                                                     <div class="project-one__single-img">
                                                         <div class="inner">
-                                                            <img src="assets/img/project/project-one__img1.jpg" alt="#">
+                                                            <img src="assets\img\LISTSERVICE\ASSET PHOTO\AIR FREIGHT.png" alt="#">
                                                         </div>
                                                         <div class="overlay-icon">
                                                             <a href="project-details.html"></a>
@@ -254,7 +254,7 @@
                                                             <p>Layanan Pengiriman barang impor via udara untuk ukuran barang kecil/sedang</p>
                                                         </div>
                                                         <div class="btn-box">
-                                                            <a href="https://wa.link/7db3pi">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                                            <a href="https://wa.link/kl0gdo">Hubungi kami <span class="icon-right-arrow-2"></span></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -270,7 +270,7 @@
                                                 <div class="project-one__single">
                                                     <div class="project-one__single-img">
                                                         <div class="inner">
-                                                            <img src="assets/img/project/project-one__img2.jpg" alt="#">
+                                                            <img src="assets\img\LISTSERVICE\ASSET PHOTO\SEA LCL.png" alt="#">
                                                         </div>
                                                         <div class="overlay-icon">
                                                             <a href="project-details.html"></a>
@@ -279,10 +279,10 @@
                                                     <div class="project-one__single-content text-center">
                                                         <div class="title-box">
                                                             <h3><a href="project-details.html">Jalur Laut</a></h3>
-                                                            <p>Layanan Pengiriman barang impor via udara untuk ukuran barang kecil/sedang/berat</p>
+                                                            <p>Layanan Pengiriman barang impor via laut untuk ukuran barang kecil/sedang/berat</p>
                                                         </div>
                                                         <div class="btn-box">
-                                                            <a href="https://wa.link/7db3pi">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                                            <a href="https://wa.link/kl0gdo">Hubungi kami <span class="icon-right-arrow-2"></span></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -292,7 +292,7 @@
                                     <!-- End Project Two Single -->
                         
                                     <!-- Start Project Three Single -->
-                                    <div class="swiper-slide">
+                                    {{-- <div class="swiper-slide">
                                         <div class="swiper-slide-banner2">
                                             <div class="wow fadeInUp" data-wow-delay=".1s">
                                                 <div class="project-one__single">
@@ -310,7 +310,7 @@
                                                             <p>Layanan kirim barang import dari china via udara</p>
                                                         </div>
                                                         <div class="btn-box">
-                                                            <a href="https://wa.link/7db3pi">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                                            <a href="https://wa.link/kl0gdo">Hubungi kami <span class="icon-right-arrow-2"></span></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -338,13 +338,13 @@
                                                             <p>Layanan jasa belanja china membantu pembelian barang</p>
                                                         </div>
                                                         <div class="btn-box">
-                                                            <a href="https://wa.link/7db3pi">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                                            <a href="https://wa.link/kl0gdo">Hubungi kami <span class="icon-right-arrow-2"></span></a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <!-- End Project Four Single -->
                                 </div>
                                 <!-- Add pagination and navigation controls (optional) -->
@@ -420,7 +420,7 @@
                     <h4>Testimoni Pelanggan</h4>
                 </div>
                 <h2>
-                    Jargon jargon jargon<br>jendral jendral
+                    Jendral Import
                 </h2>
             </div>
             <div class="testimonials-one__inner">
@@ -470,7 +470,7 @@
                                 <div class="testimonials-one__single-img">
                                     <div class="testimonials-one__single-img__inner">
                                         <div class="inner">
-                                            <img src="assets/img/testimonial/testimonials-one__img1.jpg" alt="">
+                                            <img src="assets/img/testimonial/mockupprofile.jpg" alt="">
                                         </div>
                                         <div class="overlay-box">
                                             <span class="icon-quote-right"></span>
@@ -530,7 +530,7 @@
                                 <div class="testimonials-one__single-img">
                                     <div class="testimonials-one__single-img__inner">
                                         <div class="inner">
-                                            <img src="assets/img/testimonial/testimonials-one__img2.jpg" alt="">
+                                            <img src="assets/img/testimonial/mockupprofile2.jpg" alt="">
                                         </div>
                                         <div class="overlay-box">
                                             <span class="icon-quote-right"></span>
@@ -593,7 +593,7 @@
 
     <!--whatsapp-->
     <section>
-        <a href="https://wa.link/7db3pi" class="whatsapp-button" target="_blank">
+        <a href="https://wa.link/kl0gdo" class="whatsapp-button" target="_blank">
             <span class="whatsapp-popup">Konsultasi Gratis Sekarang</span>
             <div class="whatsapp-icon">
                 <img src="assets\img\konsultasibisnisjendral\walogoputih.png" alt="WhatsApp" />

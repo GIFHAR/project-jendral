@@ -515,6 +515,7 @@
     position: relative;
     display: block;
     z-index: 11;
+    background-color: #ffffff;
 }
 
 .main-header-one__inner {

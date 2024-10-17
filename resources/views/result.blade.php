@@ -57,7 +57,7 @@
             <p>Rp {{ number_format($length * $width * $height * 150000, 0, ',', '.') }}</p>
         </div>
         <div class="cta-one__btn cta-one__btn--style2 ">
-            <a href="https://wa.link/7db3pi" class="thm-btn">
+            <a href="https://wa.link/kl0gdo" class="thm-btn">
                 <span class="txt">
                     contact us
                 </span>

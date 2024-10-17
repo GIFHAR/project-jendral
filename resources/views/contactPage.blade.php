@@ -78,7 +78,7 @@
                                     <div class="text">
                                         <h4>Address</h4>
                                         <p>
-                                            Dhaka 102, 8000 sent behaibior utl<br>1216, road 45 house of street
+                                            Jl. Tasikmalaya No.2 Kacapiring, Kec. Batununggal, Kota Bandung, Jawa Barat 40271
                                         </p>
                                     </div>
                                 </li>
@@ -87,9 +87,8 @@
                                         <span class="icon-phone-call-1"></span>
                                     </div>
                                     <div class="text">
-                                        <h4>Lets Talk us</h4>
-                                        <p>Phone number: <a href="tel:32566-800-890">+32566 - 800 - 890</a></p>
-                                        <p>Fax: <a href="tel:1234-58963-007">1234 -58963 - 007</a></p>
+                                        <h4>Lets Talk With Us</h4>
+                                        <p>Whatsapp number: <br><a href="tel:62823-1819-2056">+62 823-1819-2056</a></p>
                                     </div>
                                 </li>
                                 <li>
@@ -99,7 +98,7 @@
                                     <div class="text">
                                         <h4>Send us email</h4>
                                         <p>
-                                            <a href="mailto:demo0023yourmailhotmail.com">Click to send email</a>
+                                            <a href="mailto:jenderalimport@gmail.com">jenderalimport@gmail.com</a>
                                         </p>
                                     </div>
                                 </li>
@@ -152,12 +151,12 @@
                             <div class="contact-one__socel-link-inner">
                                 <ul>
                                     <li>
-                                        <a href="https://wa.link/7db3pi">
+                                        <a href="https://wa.link/kl0gdo">
                                             <img src="assets/img/resource/icon-wa.png" alt="Weight Icon" class="icon-contact" />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="color2">
+                                        <a href="https://www.instagram.com/jenderalimport" class="color2">
                                             <span class="icon-instagram"></span>
                                         </a>
                                     </li>

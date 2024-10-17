@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PricingController;
 
@@ -46,3 +47,7 @@ Route::get('/tracking', [App\Http\Controllers\HeaderController::class, 'tracking
 // Route::get('/pengirimanudara', [App\Http\Controllers\HeaderController::class, 'pengirimanudara'])->name('pengirimanudara');
 
 Route::get('/contact', [App\Http\Controllers\HeaderController::class, 'contact'])->name('contact');
+
+// Route for tracking orders
+Route::get('/orders', [OrderController::class, 'index']);
+Route::get('/orders/{marking_code}', [OrderController::class, 'show']);
