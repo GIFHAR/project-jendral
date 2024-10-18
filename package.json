@@ -11,6 +11,7 @@
         "vite": "^5.0.0"
     },
     "dependencies": {
+        "notiflix": "^3.2.7",
         "swiper": "^11.1.14"
     }
 }

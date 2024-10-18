@@ -1,3 +1,17 @@
+.testimonials-one__inner {
+	display: flex;
+    align-items: stretch; /* Make sure all items have equal height */
+    gap: 20px;
+}
+
+.testimonials-one__single {
+	display: flex;
+	border: 2px solid #E3E3E3;
+	padding: 40px 40px 40px;
+	flex-grow: 1;
+    height: 100%;
+}
+
 @media only screen and (min-width: 1351px) and (max-width: 1800px) {}
 
 
@@ -26,6 +40,8 @@
 	.faq-one__bg {
 		display: none;
 	}
+
+	
 
 
 
@@ -989,7 +1005,7 @@
 
 
 	.testimonials-one__single {
-		display: block;
+		display: flex;
 		border: 2px solid #E3E3E3;
 		padding: 40px 40px 40px;
 	}

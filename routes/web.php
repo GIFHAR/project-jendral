@@ -36,7 +36,7 @@ Route::get('/services', [App\Http\Controllers\HeaderController::class, 'services
 
 // Route::get('/jasapengiriman', [App\Http\Controllers\HeaderController::class, 'jasapengiriman'])->name('jasapengiriman');
 
-Route::get('/pricing', [App\Http\Controllers\HeaderController::class, 'pricing'])->name('pricing');
+// Route::get('/pricing', [App\Http\Controllers\HeaderController::class, 'pricing'])->name('pricing');
 
 Route::match(['get', 'post'], '/calculatePricing', [App\Http\Controllers\HeaderController::class, 'pricing'])->name('calculatePricing');
 
@@ -56,6 +56,3 @@ Route::get('/orders/{marking_code}', [OrderController::class, 'show']);
 
 // Route for submitting email
 Route::post('/contact-form-submit', [ContactFormController::class, 'send'])->name('contact.submit');
-Route::get('/check-mailer', function () {
-    dd(config('mail.default'));
-});

@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notiflix@3.2.6/dist/notiflix-3.2.6.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/notiflix@3.2.6/dist/notiflix-3.2.6.min.js"></script>
 
 </head>
 
@@ -50,6 +52,36 @@
         @include('layout/header')
     </div>
     <!--End Main Header One -->
+
+    <!--Alert message from contact form -->
+    @if(session('success') || session('error'))
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                @if(session('success'))
+                    Notiflix.Notify.success("{{ session('success') }}", {
+                        position: 'right-top',
+                        width: '480px',
+                        timeout: 5000,
+                        clickToClose: true,
+                        fontSize: '20px',
+                        fontFamily: 'Quicksand',
+                    });
+                @endif
+                @if(session('error'))
+                    Notiflix.Notify.failure("{{ session('error') }}", {
+                        position: 'right-top',
+                        width: '480px',
+                        timeout: 5000,
+                        clickToClose: true,
+                        fontSize: '20px',
+                        fontFamily: 'Quicksand',
+                    });
+                @endif
+            });
+        </script>
+    @endif
+    <!--End of alert message -->
+
 
     <!--Start Banner One-->
     <section class="banner-one" style="background-image: url('{{ asset('assets/img/homejendral/backgroundutama.png') }}');  background-size: cover; background-position: center;">
@@ -495,8 +527,8 @@
                                         </div>
                                     </div>
                                     <div class="title-box">
-                                        <h3><a href="#">Savannah Nguyen</a></h3>
-                                        <p>President of Sales</p>
+                                        <h3><a href="#">Fanny Pratama</a></h3>
+                                        <p>Customer</p>
                                     </div>
                                 </div>
                                 <div class="testimonials-one__single-content">
@@ -532,9 +564,7 @@
                                     </div>
                                     <div class="text">
                                         <p>
-                                            It is a long establishd fact that a reader will beinl distracted by the
-                                            hjli
-                                            readable content of a page jklilk when looking at its layout loren ipsum
+                                            Udah sampe kak. Terima Kasih atas banntuannya kak. Paket sesuai denngan pesanan, ukurann dan type sesuai dengan yang diharapkan. Sangat luar biasa. Sekali lagi terima kasih bannyak atas bantuannya
                                         </p>
                                     </div>
                                 </div>
@@ -555,8 +585,8 @@
                                         </div>
                                     </div>
                                     <div class="title-box">
-                                        <h3><a href="#">Savannah Nguyen</a></h3>
-                                        <p>President of Sales</p>
+                                        <h3><a href="#">Fiqri</a></h3>
+                                        <p>Customer</p>
                                     </div>
                                 </div>
                                 <div class="testimonials-one__single-content">
@@ -592,9 +622,69 @@
                                     </div>
                                     <div class="text">
                                         <p>
-                                            It is a long establishd fact that a reader will beinl distracted by the
-                                            hjli
-                                            readable content of a page jklilk when looking at its layout loren ipsum
+                                            Sudah saya terima, pas banget sebelum hujan. Mantap jumlahya sesuai, beli disini lebih cepat sampai. Respon admin dalam komunikasi dan transaksi sangat baik, sangat amann transaksi bisa rekber melalui aplikasi online shop
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Single Testimonials One-->
+
+                        <!--Start Single Testimonials One-->
+                        <div class="swiper-slide">
+                            <div class="testimonials-one__single">
+                                <div class="testimonials-one__single-img">
+                                    <div class="testimonials-one__single-img__inner">
+                                        <div class="inner">
+                                            <img src="assets/img/testimonial/mockupprofile2.jpg" alt="">
+                                        </div>
+                                        <div class="overlay-box">
+                                            <span class="icon-quote-right"></span>
+                                        </div>
+                                    </div>
+                                    <div class="title-box">
+                                        <h3><a href="#">Immanuel O. D. P.</a></h3>
+                                        <p>Customer</p>
+                                    </div>
+                                </div>
+                                <div class="testimonials-one__single-content">
+                                    <div class="ster-icon">
+                                        <ul>
+                                            <li>
+                                                <div class="icon">
+                                                    <span class="icon-star-1"></span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <span class="icon-star-1"></span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <span class="icon-star-1"></span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <span class="icon-star-1"></span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <span class="icon-star-1"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <p>Reviews (05)</p>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            Pengirimannya cepet om…
+                                            Barang juga sampai lebih cepat dari estimasi…
+                                            Puas banget...
+                                            Next saya akan order lagi ya om…
+                                            Mantap...
                                         </p>
                                     </div>
                                 </div>

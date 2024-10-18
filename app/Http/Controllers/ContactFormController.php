@@ -9,7 +9,8 @@ use Illuminate\Support\Facades\Mail;
 class ContactFormController extends Controller
 {
     public function send(Request $request)
-    {
+{
+    try {
         $details = [
             'name' => $request->name,
             'email' => $request->email,
@@ -18,6 +19,9 @@ class ContactFormController extends Controller
 
         Mail::to('jenderalimport@gmail.com')->send(new ContactFormMail($details));
 
-        return back()->with('success', 'Your message has been sent successfully!');
+        return redirect('/contact')->with('success', 'Your message has been sent successfully!');
+    } catch (\Exception $e) {
+        return redirect('/contact')->with('error', 'Failed to send your message. Please try again.');
     }
+}
 }

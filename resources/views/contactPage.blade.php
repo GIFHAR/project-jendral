@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/module-css/contact.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notiflix@3.2.6/dist/notiflix-3.2.6.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/notiflix@3.2.6/dist/notiflix-3.2.6.min.js"></script>
 
 </head>
 
@@ -51,8 +53,43 @@
     </div>
     <!--End Main Header One -->
 
+    <!--Alert message from contact form -->
+    @if(session('success') || session('error'))
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                @if(session('success'))
+                    Notiflix.Notify.success("{{ session('success') }}", {
+                        position: 'right-top',
+                        width: '480px',
+                        timeout: 5000,
+                        clickToClose: true,
+                        fontSize: '20px',
+                        fontFamily: 'Quicksand',
+                    });
+                @endif
+                @if(session('error'))
+                    Notiflix.Notify.failure("{{ session('error') }}", {
+                        position: 'right-top',
+                        width: '480px',
+                        timeout: 5000,
+                        clickToClose: true,
+                        fontSize: '20px',
+                        fontFamily: 'Quicksand',
+                    });
+                @endif
+            });
+        </script>
+    @endif
+    <!--End of alert message -->
+
     <!--Contact One Start-->
     <section class="contact-one">
+        {{-- @if(session('success'))
+            <p class="alert alert-success">
+                {{ session('success') }}
+            </p>
+        @endif --}}
+        {{-- {{ dd(session('success')) }} --}}
         <div class="container">
             <div class="contact-container">
                 <section class="contact-header">
@@ -108,30 +145,29 @@
 
                     {{-- <div class="col-xl-6 col-lg-12"> --}}
                         <div class="contact-one__form">
-                            <form id="contact-form" action="{{ route('contact.submit') }}" method="POST">
+                            <form action="{{ route('contact.submit') }}" method="POST">
                                 @csrf
                                 <div class="contact-form-row">
-                                        <div class="contact-one__input-box">
-                                            <input type="text" placeholder="Full name" name="name" required>
-                                        </div>
-                                        <div class="contact-one__input-box">
-                                            <input type="email" placeholder="Email Address" name="email" required>
-                                        </div>
+                                    <div class="contact-one__input-box">
+                                        <input type="text" placeholder="Full name" name="name" required>
+                                    </div>
+                                    <div class="contact-one__input-box">
+                                        <input type="email" placeholder="Email Address" name="email" required>
+                                    </div>
                                 </div>
                                 <div class="row">
-                                        <div class="contact-one__input-box text-message-box">
-                                            <textarea name="message" placeholder="Message" required></textarea>
-                                        </div>
+                                    <div class="contact-one__input-box text-message-box">
+                                        <textarea name="message" placeholder="Message" required></textarea>
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="contact-one__btn-box">
-                                        <button class="thm-btn" type="submit" data-loading-text="Please wait...">
+                                        <button class="thm-btn" type="submit">
                                             <span class="txt">Submit Now</span>
                                         </button>
                                     </div>
                                 </div>
                             </form>
-                            <p class="ajax-response mb-0"></p>
                         </div>
                         <div class="contact-one__socel-link">
                             <div class="contact-one__socel-link-inner">
