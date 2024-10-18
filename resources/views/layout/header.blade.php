@@ -10,7 +10,7 @@
     </div>
     <div class="side-info">
         <div class="content-box">
-            <h3>Welcome to<br> Jendral Import</h3>
+            <h3>Welcome to<br> Jenderal Import</h3>
         </div>
         <!--Start Sidebar Contact Info -->
         <div class="sidebar-contact-info">

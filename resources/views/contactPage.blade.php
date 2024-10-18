@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Jendral Website</title>
+    <title>Jenderal Website</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -108,31 +108,20 @@
 
                     {{-- <div class="col-xl-6 col-lg-12"> --}}
                         <div class="contact-one__form">
-                            <form id="contact-form" action="assets/inc/mail.php" method="POST">
+                            <form id="contact-form" action="{{ route('contact.submit') }}" method="POST">
+                                @csrf
                                 <div class="contact-form-row">
-                                    {{-- <div class="col-xl-6 col-lg-6"> --}}
                                         <div class="contact-one__input-box">
-                                            <input type="text" placeholder="Full name" name="name">
+                                            <input type="text" placeholder="Full name" name="name" required>
                                         </div>
-                                    {{-- </div> --}}
-                                    {{-- <div class="col-xl-6 col-lg-6"> --}}
                                         <div class="contact-one__input-box">
-                                            <input type="email" placeholder="Email Address" name="email">
+                                            <input type="email" placeholder="Email Address" name="email" required>
                                         </div>
-                                    {{-- </div> --}}
-                                    
-                                    {{-- <div class="col-xl-6 col-lg-6">
-                                        <div class="contact-one__input-box">
-                                            <input type="text" placeholder="Company" name="company">
-                                        </div>
-                                    </div> --}}
                                 </div>
                                 <div class="row">
-                                    {{-- <div class="col-xl-12"> --}}
                                         <div class="contact-one__input-box text-message-box">
-                                            <textarea name="message" placeholder="Message"></textarea>
+                                            <textarea name="message" placeholder="Message" required></textarea>
                                         </div>
-                                    {{-- </div> --}}
                                 </div>
                                 <div class="row">
                                     <div class="contact-one__btn-box">
@@ -144,9 +133,6 @@
                             </form>
                             <p class="ajax-response mb-0"></p>
                         </div>
-                    {{-- </div> --}}
-
-                    {{-- <div class="col-xl-1"> --}}
                         <div class="contact-one__socel-link">
                             <div class="contact-one__socel-link-inner">
                                 <ul>

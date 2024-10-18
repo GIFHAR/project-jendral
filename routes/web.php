@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PricingController;
+use Illuminate\Support\Facades\Mail;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,3 +53,9 @@ Route::get('/contact', [App\Http\Controllers\HeaderController::class, 'contact']
 // Route for tracking orders
 Route::get('/orders', [OrderController::class, 'index']);
 Route::get('/orders/{marking_code}', [OrderController::class, 'show']);
+
+// Route for submitting email
+Route::post('/contact-form-submit', [ContactFormController::class, 'send'])->name('contact.submit');
+Route::get('/check-mailer', function () {
+    dd(config('mail.default'));
+});

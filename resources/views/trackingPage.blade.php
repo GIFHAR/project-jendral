@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Jendral Website</title>
+    <title>Jenderal Website</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="{{asset ('assets/img/favicon.png')}}">
@@ -45,68 +45,86 @@
     </div>
 
     <div class="tracking-container">
-        <div class="tracking-header">
-            <input type="text" placeholder="Marking Code" class="tracking-input">
-            <button class="tracking-button">Tracking</button>
-        </div>
+        <form id="tracking-form" method="GET" class="tracking-header">
+            <input type="text" id="marking_code" name="marking_code" placeholder="Marking Code" class="tracking-input" value="{{ request()->marking_code }}">
+            <button type="submit" class="tracking-button"><strong>Track</strong></button>
+        </form>
+        
+        <script>
+            document.getElementById('tracking-form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent default form submission
+                
+                var markingCode = document.getElementById('marking_code').value; // Get the marking code value
+        
+                if(markingCode) {
+                    // Redirect to the desired URL format
+                    window.location.href = `/orders/${markingCode}`;
+                }
+            });
+        </script>
 
-        <div class="order-info">
-            <h2>Order Number <span class="order-number">#X28930LI</span></h2>
-        </div>
+        @if(isset($order))
+            <div class="order-info">
+                <h2>Order Number <span class="order-number">{{ $order->order_number }}</span></h2>
+            </div>
 
-        <div class="tracking-timeline">
-            <ul class="timeline">
-                <li class="completed">
-                    <img src="assets/img/resource/icon-check.png" alt="Completed" class="status-icon">
-                    <div class="timeline-content">
-                        <h4>Orders are processed by the seller</h4>
-                        <p>Order date : 01/01/2022</p>
-                    </div>
-                </li>
-                <li class="completed">
-                    <img src="assets/img/resource/icon-check.png" alt="Completed" class="status-icon">
-                    <div class="timeline-content">
-                        <h4>The order is on its way to the China warehouse</h4>
-                        <p>Delivery time : 01/01/2022<br>Estimated time : 01/01/2022</p>
-                    </div>
-                </li>
-                <li class="completed">
-                    <img src="assets/img/resource/icon-check.png" alt="Completed" class="status-icon">
-                    <div class="timeline-content">
-                        <h4>The order has arrived at the Chinese warehouse</h4>
-                        <p>Time arrives : 01/01/2022<br>Estimated complete loading: 01/01/2022</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="assets/img/resource/icon-uncheck.png" alt="Uncomplete" class="status-icon">
-                    <div class="timeline-content">
-                        <h4>Order is in transit via (air/sea)</h4>
-                        <p>Delivery time : 01/01/2022<br>Estimated time : 01/01/2022</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="assets/img/resource/icon-uncheck.png" alt="Uncomplete" class="status-icon">
-                    <div class="timeline-content">
-                        <h4>The order arrived at the Jakarta warehouse</h4>
-                        <p>Time arrives : 01/01/2022<br>Estimated time : 01/01/2022</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="assets/img/resource/icon-uncheck.png" alt="Uncomplete" class="status-icon">
-                    <div class="timeline-content">
-                        <h4>Orders are in the process of being sent by local couriers</h4>
-                        <p>Receipt number : 124343524636436</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="assets/img/resource/icon-uncheck.png" alt="Uncomplete" class="status-icon">
-                    <div class="timeline-content">
-                        <h4>The order has arrived at your house</h4>
-                        <p>Please confirm if you have received it</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
+            <div class="tracking-timeline">
+                <ul class="timeline">
+                    <li class="completed">
+                        <img src="{{ asset('assets/img/resource/icon-check.png') }}" alt="Completed" class="status-icon">
+                        <div class="timeline-content">
+                            <h4>Orders are processed by the seller</h4>
+                            <p>Order date : {{ $order->order_date }}</p>
+                        </div>
+                    </li>
+                    <li class="{{ $order->current_location >= 1 ? 'completed' : '' }}">
+                        <img src="{{ asset('assets/img/resource/icon-' . ($order->current_location >= 1 ? 'check' : 'uncheck') . '.png') }}" alt="Status" class="status-icon">
+                        <div class="timeline-content">
+                            <h4>The order is on its way to the {{ $order->origin_warehouse }}</h4>
+                            <p>Delivery time : {{ $order->order_date }}</p>
+                        </div>
+                    </li>
+                    <li class="{{ $order->current_location >= 2 ? 'completed' : '' }}">
+                        <img src="{{ asset('assets/img/resource/icon-' . ($order->current_location >= 2 ? 'check' : 'uncheck') . '.png') }}" alt="Status" class="status-icon">
+                        <div class="timeline-content">
+                            <h4>The order has arrived at the {{ $order->origin_warehouse }}</h4>
+                        </div>
+                    </li>
+                    <li class="{{ $order->current_location >= 3 ? 'completed' : '' }}">
+                        <img src="{{ asset('assets/img/resource/icon-' . ($order->current_location >= 3 ? 'check' : 'uncheck') . '.png') }}" alt="Status" class="status-icon">
+                        <div class="timeline-content">
+                            <h4>Order is in transit via {{ $order->delivery_method == 1 ? 'Air' : 'Sea' }}</h4>
+                        </div>
+                    </li>
+                    <li class="{{ $order->current_location >= 4 ? 'completed' : '' }}">
+                        <img src="{{ asset('assets/img/resource/icon-' . ($order->current_location >= 4 ? 'check' : 'uncheck') . '.png') }}" alt="Status" class="status-icon">
+                        <div class="timeline-content">
+                            <h4>The order arrived at the {{ $order->destination_warehouse }}</h4>
+                        </div>
+                    </li>
+                    <li class="{{ $order->current_location >= 5 ? 'completed' : '' }}">
+                        <img src="{{ asset('assets/img/resource/icon-' . ($order->current_location >= 5 ? 'check' : 'uncheck') . '.png') }}" alt="Status" class="status-icon">
+                        <div class="timeline-content">
+                            <h4>Orders are in the process of being sent by local couriers</h4>
+                            @if($order->receipt_number)
+                                <p>Receipt number: {{ $order->receipt_number }}</p>
+                            @endif
+                        </div>
+                    </li>
+                    <li class="{{ $order->current_location >= 6 ? 'completed' : '' }}">
+                        <img src="{{ asset('assets/img/resource/icon-' . ($order->current_location >= 6 ? 'check' : 'uncheck') . '.png') }}" alt="Status" class="status-icon">
+                        <div class="timeline-content">
+                            <h4>The order has arrived at your house</h4>
+                        </div>
+                    </li>
+                    <li>
+                        {{-- spacer, do not remove --}}
+                    </li>
+                </ul>
+            </div>
+        @elseif(isset($error))
+            <p>{{ $error }}</p>
+        @endif
     </div>
 
     <script src="{{ asset('js/scripts.js') }}"></script>

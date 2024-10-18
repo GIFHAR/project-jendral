@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Jendral Website</title>
+    <title>Jenderal Website</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -59,7 +59,7 @@
                     <h5>SELAMAT DATANG</h5>
                 </div>
                 <div class="big-title">
-                    <h1>NIKMATI KENYAMANAN DALAM<br> PROSES IMPORT DAN FLEKSIBILITAS<br> UNTUK TRAKSAKSI BISNIS ANDA<br> BERSAMA JENDRAL IMPORT</h1>
+                    <h1>NIKMATI KENYAMANAN DALAM<br> PROSES IMPORT DAN FLEKSIBILITAS<br> UNTUK TRAKSAKSI BISNIS ANDA<br> BERSAMA JENDERAL IMPORT</h1>
                 </div>
                 <img class="banner-desktop" src="assets/img/resource/banner-JI-looong.png" alt="Jenderal Import Business Product" />
                 <img class="banner-mobile" src="assets/img/resource/banner-JI-short.png" alt="Jenderal Import Business Product" />
@@ -117,9 +117,27 @@
                         <p>Silahkan masukkan kode resi Anda disini</p>
                     </div>
                     <div class="input-group-livetracking">
-                        <input type="text" id="noResi" placeholder="No. Resi" aria-label="No. Resi" class="noresi">
-                        <input type="text" id="kodeMarking" placeholder="Kode Marking" aria-label="Kode Marking">
-                        <button id="cekResi">Cek Resi</button>
+                        <form id="tracking-form" method="GET" class="tracking-header">
+                            <div class="tracking-form-input">
+                                <input type="text" id="noResi" placeholder="No. Resi" aria-label="No. Resi">
+                                <input type="text" id="kodeMarking" placeholder="Kode Marking" aria-label="Kode Marking">
+                            </div>
+                            <button id="cekResi" type="submit">Cek Resi</button>
+                        </form>
+                        
+                        <script>
+                            document.getElementById('tracking-form').addEventListener('submit', function(event) {
+                                event.preventDefault(); // Prevent default form submission
+                                
+                                var noResi = document.getElementById('noResi').value; // Get the No. Resi value
+                                var kodeMarking = document.getElementById('kodeMarking').value; // Get the Kode Marking value
+                        
+                                if(noResi && kodeMarking) {
+                                    // Redirect to the desired URL format, including both noResi and kodeMarking
+                                    window.location.href = `/orders/${kodeMarking}`;
+                                }
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
@@ -129,7 +147,7 @@
     <!--Live Tracking Box-->
 
 
-    <!--kenapa harus jendral -->
+    <!--kenapa harus Jenderal -->
 
     <section class="swiper-banner-1">
         <div class="container-textkenapajendral">
@@ -217,7 +235,7 @@
                     <div class="project-one__content-box">
                         <div class="sec-title">
                             <div class="sub-title">
-                                <h4>Jendral Import</h4>
+                                <h4>Jenderal Import</h4>
                             </div>
                             <h2>
                                 Melayani Jasa Import Barang<br>Dari China Terpercaya
@@ -420,7 +438,7 @@
                     <h4>Testimoni Pelanggan</h4>
                 </div>
                 <h2>
-                    Jendral Import
+                    Jenderal Import
                 </h2>
             </div>
             <div class="testimonials-one__inner">

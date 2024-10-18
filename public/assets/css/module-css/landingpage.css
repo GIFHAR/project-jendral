@@ -57,10 +57,8 @@
     margin-top: 20px;
     flex-wrap: wrap;
     width: 65%;
-}
-
-.noresi, #kodeMarking {
-    width: 48%; /* Adjust width to fit within container */
+    align-items:center;
+    justify-items: stretch;
 }
 
 .live-tracking-box input[type="text"] {
@@ -68,6 +66,7 @@
     font-size: 1.2em;
     border: 1px solid #ccc;
     border-radius: 4px;
+    flex: 1;
 }
 
 .live-tracking-box button {
@@ -84,6 +83,16 @@
 
 .live-tracking-box button:hover {
     background-color: #3aa75d;
+}
+
+.tracking-form-input {
+    display: flex; /* Make it a flex container */
+    width: 100%;
+    gap: 30px;
+    flex-wrap: wrap; /* Allow content to wrap if needed */
+    flex: auto;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
 }
 
 .swiper-banner-1 {
@@ -180,6 +189,15 @@
     overflow: hidden;
 }
 
+.tracking-header {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 40px;
+    width: 100%;
+}
 
 @media (max-width: 1200px) {
     .banner-desktop {
@@ -205,7 +223,7 @@
     }
 
     .noresi, #kodeMarking {
-        width: 100%;
+        width: 48%;
     }
 
     .live-tracking-box button {

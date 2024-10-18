@@ -34,10 +34,10 @@ class OrderController extends Controller
 
         // If the order is not found, return a 404 error
         if (!$order) {
-            return response()->json(['message' => 'Order not found'], 404);
+            return view('trackingPage')->with('error', 'Order not found');
         }
 
-        // Return the order as a JSON response
-        return response()->json($order);
+        // Pass the order data to the trackingPage Blade view
+        return view('trackingPage', compact('order'));
     }
 }

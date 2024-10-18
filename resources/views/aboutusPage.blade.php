@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Jendral Website</title>
+    <title>Jenderal Website</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -83,7 +83,7 @@
                             <span class="fab fa-instagram"></span>
                         </div>
                         <div class="text">
-                            <p>JENDRAL IMPORT</p>
+                            <p>Jenderal IMPORT</p>
                         </div>
                     </li>
                     <li>
@@ -91,7 +91,7 @@
                             <span class="fab fa-facebook"></span>
                         </div>
                         <div class="text">
-                            <p>JENDRAL IMPORT</p>
+                            <p>Jenderal IMPORT</p>
                         </div>
                     </li>
                     <li>
@@ -99,7 +99,7 @@
                             <span class="fab fa-youtube"></span>
                         </div>
                         <div class="text">
-                            <p>JENDRAL IMPORT</p>
+                            <p>Jenderal IMPORT</p>
                         </div>
                     </li>
                     <li>
@@ -107,7 +107,7 @@
                             <span class="fab fa-tiktok"></span>
                         </div>
                         <div class="text">
-                            <p>JENDRAL IMPORT</p>
+                            <p>Jenderal IMPORT</p>
                         </div>
                     </li>
                     <li>
@@ -226,7 +226,7 @@
                     <div class="banner-two__text">
                         <div class="sub-title-aboutus">
                             <h3 class="about-heading">About Us</h3>
-                            <p>Jendral Import adalah agensi profesional yang telah lebih dari<br>
+                            <p>Jenderal Import adalah agensi profesional yang telah lebih dari<br>
                                 5 tahun bergerak di bidang import dan pengadaan barang.<br>
                                 Kami menyediakan berbagai kemudahan, mulai dari konsultasi bisnis,<br>
                                 pencarian barang dan supplier, pembelian dari marketplace luar<br>
@@ -651,7 +651,7 @@
                 <div class="container">
                     <div class="footer-bottom__inner">
                         <div class="copyright-text">
-                            <p>© Jendral Import 2024 | <a href="index.html">Jendral Importn</a>, All Rights Reserved.</p>
+                            <p>© Jenderal Import 2024 | <a href="index.html">Jenderal import</a>, All Rights Reserved.</p>
                         </div>
 
 
