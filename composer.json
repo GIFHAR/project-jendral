@@ -12,6 +12,7 @@
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
         "monolog/monolog": "^3.0",
+        "revolution/laravel-google-sheets": "^6.4",
         "symfony/mailer": "^6.4"
     },
     "require-dev": {

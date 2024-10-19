@@ -4,10 +4,19 @@ namespace App\Http\Controllers;
 
 use App\Services\GoogleSheetService;
 use App\Models\Order;
+use Google\Service\Sheets as ServiceSheets;
 use Illuminate\Http\Request;
+use Revolution\Google\Sheets\Facades\Sheets as FacadesSheets;
+use Revolution\Google\Sheets\Sheets as SheetsSheets;
+use Google\Service\Sheets;
 
 class GoogleSheetController extends Controller
-{
+{   
+    // public function index() {
+    //     $values = Sheets::spreadsheet('spreadsheetId')->sheet('Sheet 1')->all();
+        
+    // }
+
     public function importData()
     {
         $spreadsheetId = '1iWMH2JPqfTmE02Vt6ljYTr9fBN8dsDcVQW-bv6a_fSk';
