@@ -29,8 +29,10 @@ class OrderController extends Controller
      */
     public function show($marking_code)
     {
+        $decodedMarkingCode = urldecode($marking_code);
+        
         // Find the order by marking code
-        $order = Order::where('marking_code', $marking_code)->first();
+        $order = Order::where('marking_code', $decodedMarkingCode)->first();
 
         // If the order is not found, return a 404 error
         if (!$order) {

@@ -52,7 +52,9 @@ Route::get('/contact', [App\Http\Controllers\HeaderController::class, 'contact']
 
 // Route for tracking orders
 Route::get('/orders', [OrderController::class, 'index']);
-Route::get('/orders/{marking_code}', [OrderController::class, 'show']);
+// Route::get('/orders/{marking_code}', [OrderController::class, 'show']);
+Route::get('/orders/{marking_code}', [OrderController::class, 'show'])
+    ->where('marking_code', '.*');
 
 // Route for submitting email
 Route::post('/contact-form-submit', [ContactFormController::class, 'send'])->name('contact.submit');

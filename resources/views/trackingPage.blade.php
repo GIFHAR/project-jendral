@@ -58,65 +58,70 @@
         
                 if(markingCode) {
                     // Redirect to the desired URL format
-                    window.location.href = `/orders/${markingCode}`;
+                    window.location.href = `/orders/${encodeURIComponent(markingCode)}`;
                 }
             });
         </script>
-
+    
         @if(isset($order))
             <div class="order-info">
-                <h2>Order Number <span class="order-number">{{ $order->order_number }}</span></h2>
+                <h2>Order Information for  <span class="order-number">{{ $order->marking_code }}</span></h2>
+                {{-- <div class="order-info-summary">
+                    <p><strong>Order Date:</strong> {{ $order->tanggal_order }}</p>
+                    <p><strong>Month:</strong> {{ $order->bulan ?? '-' }}</p>
+                    <p><strong>Buyer Name:</strong> {{ $order->nama_buyer }}</p>
+                    <p><strong>Marking Code:</strong> {{ $order->marking_code }}</p>
+                    <p><strong>Shipping Via:</strong> {{ $order->pengiriman_via }}</p>
+                    <p><strong>Product Position:</strong> {{ $order->posisi_produk ?? '-' }}</p>
+                    @if($order->estimasi_bongkar)
+                        <p><strong>Estimated Unloading Date:</strong> {{ $order->estimasi_bongkar }}</p>
+                    @endif
+                </div> --}}
             </div>
-
+    
             <div class="tracking-timeline">
                 <ul class="timeline">
                     <li class="completed">
                         <img src="{{ asset('assets/img/resource/icon-check.png') }}" alt="Completed" class="status-icon">
                         <div class="timeline-content">
-                            <h4>Orders are processed by the seller</h4>
-                            <p>Order date : {{ $order->order_date }}</p>
+                            <h4>Order is processed by the seller</h4>
+                            <p>Order date: {{ $order->tanggal_order }}</p>
                         </div>
                     </li>
-                    <li class="{{ $order->current_location >= 1 ? 'completed' : '' }}">
-                        <img src="{{ asset('assets/img/resource/icon-' . ($order->current_location >= 1 ? 'check' : 'uncheck') . '.png') }}" alt="Status" class="status-icon">
-                        <div class="timeline-content">
-                            <h4>The order is on its way to the {{ $order->origin_warehouse }}</h4>
-                            <p>Delivery time : {{ $order->order_date }}</p>
-                        </div>
-                    </li>
-                    <li class="{{ $order->current_location >= 2 ? 'completed' : '' }}">
-                        <img src="{{ asset('assets/img/resource/icon-' . ($order->current_location >= 2 ? 'check' : 'uncheck') . '.png') }}" alt="Status" class="status-icon">
-                        <div class="timeline-content">
-                            <h4>The order has arrived at the {{ $order->origin_warehouse }}</h4>
-                        </div>
-                    </li>
-                    <li class="{{ $order->current_location >= 3 ? 'completed' : '' }}">
-                        <img src="{{ asset('assets/img/resource/icon-' . ($order->current_location >= 3 ? 'check' : 'uncheck') . '.png') }}" alt="Status" class="status-icon">
-                        <div class="timeline-content">
-                            <h4>Order is in transit via {{ $order->delivery_method == 1 ? 'Air' : 'Sea' }}</h4>
-                        </div>
-                    </li>
-                    <li class="{{ $order->current_location >= 4 ? 'completed' : '' }}">
-                        <img src="{{ asset('assets/img/resource/icon-' . ($order->current_location >= 4 ? 'check' : 'uncheck') . '.png') }}" alt="Status" class="status-icon">
-                        <div class="timeline-content">
-                            <h4>The order arrived at the {{ $order->destination_warehouse }}</h4>
-                        </div>
-                    </li>
-                    <li class="{{ $order->current_location >= 5 ? 'completed' : '' }}">
-                        <img src="{{ asset('assets/img/resource/icon-' . ($order->current_location >= 5 ? 'check' : 'uncheck') . '.png') }}" alt="Status" class="status-icon">
-                        <div class="timeline-content">
-                            <h4>Orders are in the process of being sent by local couriers</h4>
-                            @if($order->receipt_number)
-                                <p>Receipt number: {{ $order->receipt_number }}</p>
-                            @endif
-                        </div>
-                    </li>
-                    <li class="{{ $order->current_location >= 6 ? 'completed' : '' }}">
-                        <img src="{{ asset('assets/img/resource/icon-' . ($order->current_location >= 6 ? 'check' : 'uncheck') . '.png') }}" alt="Status" class="status-icon">
-                        <div class="timeline-content">
-                            <h4>The order has arrived at your house</h4>
-                        </div>
-                    </li>
+                    
+                    @php
+                        $statuses = [
+                            'SELLER' => 'Order is being prepared by the seller',
+                            'OTW GUDANG CHINA' => 'Order is on its way to the China warehouse',
+                            'GUDANG CHINA' => 'Order has arrived at the China warehouse',
+                            'SHIP CHINA - INDO' => 'Order is being shipped from China to Indonesia',
+                            'GUDANG JAKARTA' => 'Order has arrived at the Jakarta warehouse',
+                            'SHIPPING TO BUYER' => 'Order is on its way to the buyer',
+                            'DONE' => 'Order has been delivered'
+                        ];
+                    
+                        $currentStatusIndex = array_search($order->posisi_produk, array_keys($statuses));
+                    @endphp
+                    
+                    @foreach($statuses as $status => $description)
+                        @if($status != 'SELLER')
+                            <li class="{{ $currentStatusIndex !== false && array_search($status, array_keys($statuses)) <= $currentStatusIndex ? 'completed' : '' }}">
+                                <img src="{{ asset('assets/img/resource/icon-' . ($currentStatusIndex !== false && array_search($status, array_keys($statuses)) <= $currentStatusIndex ? 'check' : 'uncheck') . '.png') }}" alt="Status" class="status-icon">
+                                <div class="timeline-content">
+                                    <h4>{{ $description }}</h4>
+                                    @if($status == 'SHIP CHINA - INDO')
+                                        <p>Via: {{ $order->pengiriman_via }}</p>
+                                    @endif
+                                    @if($status == 'GUDANG JAKARTA')
+                                        @if($order->estimasi_bongkar)
+                                            <p><strong>Estimated Unloading Date:</strong> {{ $order->estimasi_bongkar }}</p>
+                                        @endif
+                                    @endif
+                                </div>
+                            </li>
+                        @endif
+                    @endforeach
+                    
                     <li>
                         {{-- spacer, do not remove --}}
                     </li>
@@ -126,6 +131,7 @@
             <p>{{ $error }}</p>
         @endif
     </div>
+    
 
     <script src="{{ asset('js/scripts.js') }}"></script>
     <!-- JS here -->
