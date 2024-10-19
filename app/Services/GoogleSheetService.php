@@ -20,7 +20,7 @@ class GoogleSheetService
         $client = new Google_Client();
         $client->setApplicationName('Laravel Google Sheets Integration');
         $client->setScopes(Google_Service_Sheets::SPREADSHEETS_READONLY);
-        $client->setAuthConfig(storage_path('storage/credentials.json'));
+        $client->setAuthConfig(storage_path('client_secret_440015246460-g52i48g84jjjpo1namlsjg8qcfiqhja7.apps.googleusercontent.com.json'));
         $client->setAccessType('offline');
         return $client;
     }

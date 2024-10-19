@@ -19,39 +19,43 @@ class GoogleSheetController extends Controller
 
     public function importData()
     {
+        Order::truncate(); //drop all rows first
+        
         $spreadsheetId = '1iWMH2JPqfTmE02Vt6ljYTr9fBN8dsDcVQW-bv6a_fSk';
-        $range = 'DATA FORWARDER!A7:H'; // Adjust range as necessary
-
-        $googleSheetService = new GoogleSheetService($spreadsheetId);
-        $sheetData = $googleSheetService->getSheetData($range);
-
-        foreach ($sheetData as $index => $row) {
-            // Skip the first 6 rows (headers)
-            if ($index < 6) {
-                continue;
+        $gid = '0';
+        $csvUrl = "https://docs.google.com/spreadsheets/d/$spreadsheetId/export?format=csv&gid=$gid";
+    
+        if (($handle = fopen($csvUrl, 'r')) !== FALSE) {
+            $rowIndex = 0;
+    
+            while (($row = fgetcsv($handle, 1000, ",")) !== FALSE) {
+                $rowIndex++;
+    
+                if ($rowIndex < 7) {
+                    continue;
+                }
+    
+                if (isset($row[1], $row[2], $row[3], $row[4], $row[5], $row[6], $row[7])) {
+                    Order::updateOrCreate(
+                        ['marking_code' => $row[4]],
+                        [
+                            'tanggal_order' => \Carbon\Carbon::parse($row[1])->format('Y-m-d'),
+                            'bulan' => $row[2] ?? null,
+                            'nama_buyer' => $row[3] ?? null,
+                            'marking_code' => $row[4],
+                            'pengiriman_via' => $row[5] ?? null,
+                            'posisi_produk' => $row[6] ?? null,
+                            'estimasi_bongkar' => $row[7] ?? null,
+                            'remark' => $row[8] ?? null
+                        ]
+                    );
+                }
             }
-        
-            // Ensure that the row has enough columns to prevent errors
-            if (isset($row[1], $row[2], $row[3], $row[4], $row[5], $row[6], $row[7])) {
-        
-                // Map Google Sheets row to database columns
-                Order::updateOrCreate(
-                    ['marking_code' => $row[4]], // Use 'marking_code' as a unique identifier
-                    [
-                        'tanggal_order'  => \Carbon\Carbon::parse($row[1])->format('Y-m-d'), // Parse the date to 'Y-m-d' format
-                        'bulan'          => $row[2] ?? null,
-                        'nama_buyer'     => $row[3] ?? null,
-                        'marking_code'   => $row[4],
-                        'pengiriman_via' => $row[5] ?? null,
-                        'posisi_produk'  => $row[6] ?? null,
-                        'estimasi_bongkar' => $row[7] ?? null,
-                        'remark'         => $row[8] ?? null // Handle an optional remark column
-                    ]
-                );
-            }
+    
+            fclose($handle);
         }
-        
-
+    
         return response()->json(['message' => 'Data imported successfully!']);
     }
+    
 }

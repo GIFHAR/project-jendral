@@ -151,7 +151,6 @@
                     <div class="input-group-livetracking">
                         <form id="tracking-form" method="GET" class="tracking-header">
                             <div class="tracking-form-input">
-                                <input type="text" id="noResi" placeholder="No. Resi" aria-label="No. Resi">
                                 <input type="text" id="kodeMarking" placeholder="Kode Marking" aria-label="Kode Marking">
                             </div>
                             <button id="cekResi" type="submit">Cek Resi</button>
@@ -159,14 +158,12 @@
                         
                         <script>
                             document.getElementById('tracking-form').addEventListener('submit', function(event) {
-                                event.preventDefault(); // Prevent default form submission
+                                event.preventDefault();
                                 
-                                var noResi = document.getElementById('noResi').value; // Get the No. Resi value
-                                var kodeMarking = document.getElementById('kodeMarking').value; // Get the Kode Marking value
+                                var markingCode = document.getElementById('kodeMarking').value;
                         
-                                if(noResi && kodeMarking) {
-                                    // Redirect to the desired URL format, including both noResi and kodeMarking
-                                    window.location.href = `/orders/${kodeMarking}`;
+                                if(markingCode) {
+                                    window.location.href = `/orders/${encodeURIComponent(markingCode)}`;
                                 }
                             });
                         </script>

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactFormController;
+use App\Http\Controllers\GoogleSheetController;
 use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PricingController;
@@ -58,3 +59,5 @@ Route::get('/orders/{marking_code}', [OrderController::class, 'show'])
 
 // Route for submitting email
 Route::post('/contact-form-submit', [ContactFormController::class, 'send'])->name('contact.submit');
+
+Route::get('/import-data', [GoogleSheetController::class, 'importData']);
