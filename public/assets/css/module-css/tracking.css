@@ -102,6 +102,10 @@ body {
 .order-info h2 {
     text-align: center;
     margin-top: 30px;
+}
+
+.order-info p {
+    text-align: center;
     margin-bottom: 40px;
 }
 

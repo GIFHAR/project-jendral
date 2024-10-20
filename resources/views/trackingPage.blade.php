@@ -64,19 +64,23 @@
         </script>
     
         @if(isset($order))
+            @php
+                $statuses = [
+                    'SELLER' => 'Preparing order',
+                    'OTW GUDANG CHINA' => 'In transit to China warehouse',
+                    'GUDANG CHINA' => 'At China warehouse',
+                    'SHIP CHINA - INDO' => 'Shipping to Indonesia',
+                    'GUDANG JAKARTA' => 'At Jakarta warehouse',
+                    'SHIPPING TO BUYER' => 'Shipping to buyer',
+                    'DONE' => 'Delivered'
+                ];
+            
+                $currentStatusIndex = array_search($order->posisi_produk, array_keys($statuses));
+                $currentStatus = $statuses[$order->posisi_produk] ?? '-';
+            @endphp
             <div class="order-info">
                 <h2>Order Information for  <span class="order-number">{{ $order->marking_code }}</span></h2>
-                {{-- <div class="order-info-summary">
-                    <p><strong>Order Date:</strong> {{ $order->tanggal_order }}</p>
-                    <p><strong>Month:</strong> {{ $order->bulan ?? '-' }}</p>
-                    <p><strong>Buyer Name:</strong> {{ $order->nama_buyer }}</p>
-                    <p><strong>Marking Code:</strong> {{ $order->marking_code }}</p>
-                    <p><strong>Shipping Via:</strong> {{ $order->pengiriman_via }}</p>
-                    <p><strong>Product Position:</strong> {{ $order->posisi_produk ?? '-' }}</p>
-                    @if($order->estimasi_bongkar)
-                        <p><strong>Estimated Unloading Date:</strong> {{ $order->estimasi_bongkar }}</p>
-                    @endif
-                </div> --}}
+                <p><strong>Product Position:</strong> {{ $currentStatus }}</p>
             </div>
     
             <div class="tracking-timeline">
@@ -89,19 +93,6 @@
                         </div>
                     </li>
                     
-                    @php
-                        $statuses = [
-                            'SELLER' => 'Order is being prepared by the seller',
-                            'OTW GUDANG CHINA' => 'Order is on its way to the China warehouse',
-                            'GUDANG CHINA' => 'Order has arrived at the China warehouse',
-                            'SHIP CHINA - INDO' => 'Order is being shipped from China to Indonesia',
-                            'GUDANG JAKARTA' => 'Order has arrived at the Jakarta warehouse',
-                            'SHIPPING TO BUYER' => 'Order is on its way to the buyer',
-                            'DONE' => 'Order has been delivered'
-                        ];
-                    
-                        $currentStatusIndex = array_search($order->posisi_produk, array_keys($statuses));
-                    @endphp
                     
                     @foreach($statuses as $status => $description)
                         @if($status != 'SELLER')
