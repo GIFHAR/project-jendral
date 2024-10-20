@@ -175,3 +175,10 @@ body {
     color: #666;
     font-size: 14px;
 }
+
+@media (max-width: 1200px) {
+    .tracking-container {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
