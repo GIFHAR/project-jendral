@@ -290,7 +290,7 @@
     display: block;
     margin-bottom: 40px;
     margin-top: 50px;
-    transform: translateX(110px);
+    transform: translateX(0px);
     /* Initial horizontal translation */
     transition: all 200ms linear 0.1s;
     /* Smooth transition for transform */
@@ -623,14 +623,14 @@
     /* Membuat item membungkus ke baris berikutnya */
     gap: 10px;
     /* Jarak antara item */
-    margin-left: 120px;
+    margin-left: 0px;
     margin-top: 50px;
 }
 
 .service-details__content-text3-single {
     flex: 1 1 calc(50% - 10px);
     /* 50% lebar kolom, mengurangi gap */
-    max-width: calc(50% - 55px);
+    max-width: 100;
     /* Lebar maksimum item */
     box-sizing: border-box;
     /* Menghindari padding dan border mempengaruhi lebar total */

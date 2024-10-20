@@ -12,7 +12,12 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
     {
-        // $schedule->command('inspire')->hourly();
+        {
+            $schedule->call(function () {
+                app(\App\Http\Controllers\GoogleSheetController::class)->importData();
+            })->daily();
+        }
+        
     }
 
     /**
@@ -24,4 +29,5 @@ class Kernel extends ConsoleKernel
 
         require base_path('routes/console.php');
     }
+
 }

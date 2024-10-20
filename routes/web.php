@@ -1,6 +1,11 @@
 <?php
 
+use App\Http\Controllers\ContactFormController;
+use App\Http\Controllers\GoogleSheetController;
+use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PricingController;
+use Illuminate\Support\Facades\Mail;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,8 +23,6 @@ Route::get('/', function () {
     return view('LandingPageRevisi');
 });
 
-
-
 Route::get('/home', [App\Http\Controllers\HeaderController::class, 'home'])->name('home');
 
 // Route::get('/aboutus', [App\Http\Controllers\HeaderController::class, 'aboutus'])->name('aboutus');
@@ -34,7 +37,11 @@ Route::get('/services', [App\Http\Controllers\HeaderController::class, 'services
 
 // Route::get('/jasapengiriman', [App\Http\Controllers\HeaderController::class, 'jasapengiriman'])->name('jasapengiriman');
 
-Route::get('/pricing', [App\Http\Controllers\HeaderController::class, 'pricing'])->name('pricing');
+// Route::get('/pricing', [App\Http\Controllers\HeaderController::class, 'pricing'])->name('pricing');
+
+Route::match(['get', 'post'], '/calculatePricing', [App\Http\Controllers\HeaderController::class, 'pricing'])->name('calculatePricing');
+
+Route::post('/calculateResult', [PricingController::class, 'calculate'])->name('calculateResult');
 
 Route::get('/tracking', [App\Http\Controllers\HeaderController::class, 'tracking'])->name('tracking');
 
@@ -43,3 +50,14 @@ Route::get('/tracking', [App\Http\Controllers\HeaderController::class, 'tracking
 // Route::get('/pengirimanudara', [App\Http\Controllers\HeaderController::class, 'pengirimanudara'])->name('pengirimanudara');
 
 Route::get('/contact', [App\Http\Controllers\HeaderController::class, 'contact'])->name('contact');
+
+// Route for tracking orders
+Route::get('/orders', [OrderController::class, 'index']);
+// Route::get('/orders/{marking_code}', [OrderController::class, 'show']);
+Route::get('/orders/{marking_code}', [OrderController::class, 'show'])
+    ->where('marking_code', '.*');
+
+// Route for submitting email
+Route::post('/contact-form-submit', [ContactFormController::class, 'send'])->name('contact.submit');
+
+Route::get('/import-data', [GoogleSheetController::class, 'importData']);

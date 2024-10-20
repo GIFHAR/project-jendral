@@ -1,3 +1,17 @@
+.testimonials-one__inner {
+	display: flex;
+    align-items: stretch; /* Make sure all items have equal height */
+    gap: 20px;
+}
+
+.testimonials-one__single {
+	display: flex;
+	border: 2px solid #E3E3E3;
+	padding: 40px 40px 40px;
+	flex-grow: 1;
+    height: 100%;
+}
+
 @media only screen and (min-width: 1351px) and (max-width: 1800px) {}
 
 
@@ -26,6 +40,8 @@
 	.faq-one__bg {
 		display: none;
 	}
+
+	
 
 
 
@@ -526,13 +542,13 @@
 		padding-left: 0;
 	}
 
-	.blog-one__sidebar-box ul .blog-one__sidebar-box__inner {
+	/* .blog-one__sidebar-box ul .blog-one__sidebar-box__inner {
 		padding-left: 160px;
 		border-bottom: none;
 		padding-bottom: 31px;
 		margin-bottom: 30px;
 		min-height: 170px;
-	}
+	} */
 
 
 
@@ -989,7 +1005,7 @@
 
 
 	.testimonials-one__single {
-		display: block;
+		display: flex;
 		border: 2px solid #E3E3E3;
 		padding: 40px 40px 40px;
 	}
@@ -1053,24 +1069,24 @@
 		margin-right: 0px;
 	}
 
-	.blog-one__sidebar-box {
+	/* .blog-one__sidebar-box {
 		max-width: 770px;
 		margin: 50px auto 0;
 		padding-left: 0;
-	}
+	} */
 
-	.blog-one__sidebar-box ul .blog-one__sidebar-box__inner {
+	/* .blog-one__sidebar-box ul .blog-one__sidebar-box__inner {
 		padding-left: 0px;
 		border-bottom: none;
 		padding-bottom: 31px;
 		margin-bottom: 30px;
 		min-height: 170px;
-	}
+	} */
 
-	.blog-one__sidebar-box ul li .img-box {
+	/* .blog-one__sidebar-box ul li .img-box {
 		position: relative;
 		margin-bottom: 40px;
-	}
+	} */
 
 	.blog-one__left-box-content .meta-box .meta-info {
 		align-items: flex-start;
@@ -2195,10 +2211,10 @@
 		color: var(--thm-white);
 	}
 
-	.banner-one__content .sub-title h5 {
+	/* .banner-one__content .sub-title h5 {
 		color: var(--thm-white);
 		opacity: 0.80;
-	}
+	} */
 
 	.banner-one__content .text p {
 		color: var(--thm-white);
@@ -2291,10 +2307,10 @@
 		display: none;
 	}
 
-	.banner-one__content .sub-title h5 {
+	/* .banner-one__content .sub-title h5 {
 		color: var(--thm-white);
 		opacity: 0.80;
-	}
+	} */
 
 	.banner-one__content .text p {
 		color: var(--thm-white);

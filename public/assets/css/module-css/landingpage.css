@@ -1,0 +1,273 @@
+.banner-mobile {
+    display: none;
+}
+
+.banner-desktop {
+    max-width: 80%;
+}
+
+.livetracking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 50px;
+}
+
+.live-tracking-box {
+    width: 1200px;
+    padding: 50px 40px 50px 40px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-and-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.text-content {
+    /* flex-grow: 1; */
+    margin-right: 20px;
+    width: 30%;
+}
+
+.live-tracking-box h1 {
+    font-size: 2.3em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+    color: #194627;
+}
+
+.live-tracking-box p {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.input-group-livetracking {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    width: 65%;
+    align-items:center;
+    justify-items: stretch;
+}
+
+.live-tracking-box input[type="text"] {
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+}
+
+.live-tracking-box button {
+    padding: 10px 20px; /* Adjust padding */
+    font-size: 1em;
+    color: #fff;
+    background-color: #194627;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%; /* Ensure button spans full width in flex layout */
+}
+
+.live-tracking-box button:hover {
+    background-color: #3aa75d;
+}
+
+.tracking-form-input {
+    display: flex; /* Make it a flex container */
+    width: 100%;
+    gap: 30px;
+    flex-wrap: wrap; /* Allow content to wrap if needed */
+    flex: auto;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+}
+
+.swiper-banner-1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-textkenapajendral {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.container-textkenapajendral::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    width: 10px;
+    height: 40%;
+    background-color: #194627;
+    z-index: 1;
+}
+
+.container-textkenapajendral h1 {
+    text-align: center;
+    color: #333;
+    text-align: left;
+    font-size: 2em;
+    margin-left: 10px;
+}
+
+.container-textkenapajendral p {
+    line-height: 1.6;
+    text-align: left;
+    font-size: 1.5em;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.container-textkenapajendral .highlight {
+    color: #194627;
+    font-weight: bold;
+}
+
+.project-one-row {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* width: 80%; */
+}
+
+.header-project-one {
+    width: 30%;
+}
+
+/* .project-one__content-box::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    width: 10px;
+    height: 75%;
+    background-color: #194627;
+    z-index: 1;
+} */
+
+.swiper-row-banner2 {
+    width: 100%;
+}
+
+.swiper-slide-banner2 {
+    width: 90%;
+}
+
+.container-projectjendral {
+    width: 100%;
+    max-width: 800px;
+    margin: 0;
+    position: relative;
+}
+
+.swiper-container-projectjendral {
+    width:  100%;
+    overflow: hidden;
+}
+
+.tracking-header {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 40px;
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .banner-desktop {
+        display: none;
+    }
+    .banner-mobile {
+        display: block;
+        width: 100%;
+        max-width: 70%;
+    }
+
+    .text-content {
+        margin-right: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .input-group-livetracking {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .noresi, #kodeMarking {
+        width: 48%;
+    }
+
+    .live-tracking-box button {
+        width: 100%;
+    }
+
+    .container-textkenapajendral {
+        width: 80%;
+        margin: 0 auto;
+        padding: auto;
+        position: relative;
+    }
+
+    .container-keunggulanjendral {
+        width: 80%;
+        overflow: hidden;
+    }
+
+    .swiper-container-banner1 {
+        width: 80%;
+    }
+
+    .header-project-one {
+        width: 100%;
+    }
+
+    .swiper-container-banner2 {
+        width: 80%;
+    }
+
+    .swiper-row-banner2 {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .swiper-slide-banner2 {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .swiper-container-banner1 {
+        width: 60%;
+    }
+}
