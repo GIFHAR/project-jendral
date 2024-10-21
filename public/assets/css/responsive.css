@@ -2383,17 +2383,28 @@
 	.banner-two__shape4 {
 		display: none;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
+/* Hide the gallery on small/mobile screens */
+@media (max-width: 768px) {
+  .gallery-container {
+    visibility: hidden;
+  }
+
+  .banner-one__content .big-title h2 {
+    color: black;
+  }
+
+  .banner-one .banner-one__bg {
+    opacity: 0.5;
+  }
+}
+
+/* Show the gallery on larger screens (desktop) */
+@media (min-width: 769px) {
+  .gallery-container {
+    visibility: visible;
+  }
+}
+

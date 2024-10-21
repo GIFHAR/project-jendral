@@ -3,7 +3,7 @@
 ===============================*/
 
 .service-one {
-    padding: 140px 0 100px;
+    padding: 140px 0px 140px;
     background-color: var(--thm-body-background);
     z-index: 10;
 }

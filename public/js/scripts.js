@@ -1,26 +1,69 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const gallery = document.querySelector('.image-gallery-keunggulanjendral');
-    const points = document.querySelectorAll('.page-point');
-    const images = document.querySelectorAll('.image-container-keunggulanjendral');
-    const imagesPerPage = 3;
-    const totalImages = images.length;
-    const totalPages = Math.ceil(totalImages / imagesPerPage);
+$(document).ready(function () {
+    // In-memory state management
+    var courierState = {};  // Courier state
+    var paymentState = {};  // Payment state
 
-    function showPage(page) {
-        const offset = (page - 1) * (100 / totalPages); // Calculate offset based on total number of pages
-        gallery.style.transform = `translateX(-${offset}%)`;
-        points.forEach(point => point.classList.remove('active'));
-        points[page - 1].classList.add('active');
+    // Function to apply active or inactive styles
+    function modifyButton(buttonId, isActive) {
+        const button = $('#' + buttonId);
+        if (isActive) {
+            button.removeClass('inactive').addClass('active');
+        } else {
+            button.removeClass('active').addClass('inactive');
+        }
     }
 
-    points.forEach(point => {
-        point.addEventListener('click', () => {
-            const page = parseInt(point.getAttribute('data-page'), 10);
-            if (page >= 1 && page <= totalPages) {
-                showPage(page);
-            }
-        });
+    // Handle click event for courier buttons
+    $('.courier').click(function () {
+        var clickedButtonId = $(this).attr('id');
+        var isClicked = !courierState[clickedButtonId];
+
+        // Reset all courier buttons to inactive except clicked one
+        $('.courier').removeClass('active').addClass('inactive');
+        for (var buttonId in courierState) {
+            courierState[buttonId] = false;
+        }
+
+        // Update clicked button state
+        courierState[clickedButtonId] = isClicked;
+
+        // Apply active class to the clicked button
+        modifyButton(clickedButtonId, isClicked);
     });
 
-    showPage(1); // Initial display
+    // Handle click event for payment buttons
+    $('.payment').click(function () {
+        var clickedButtonId = $(this).attr('id');
+        var isClicked = !paymentState[clickedButtonId];
+
+        // Reset all payment buttons to inactive except clicked one
+        $('.payment').removeClass('active').addClass('inactive');
+        for (var buttonId in paymentState) {
+            paymentState[buttonId] = false;
+        }
+
+        // Update clicked button state
+        paymentState[clickedButtonId] = isClicked;
+
+        // Apply active class to the clicked button
+        modifyButton(clickedButtonId, isClicked);
+    });
+
+    // Function to add/remove active class based on input value
+    document.querySelectorAll('.floating-label-group input, .floating-label-group textarea').forEach(function (input) {
+        input.addEventListener('focus', function () {
+            input.parentNode.classList.add('active');
+        });
+
+        input.addEventListener('blur', function () {
+            if (input.value === '') {
+                input.parentNode.classList.remove('active');
+            }
+        });
+
+        // If the input already has value (page reload), keep label floated
+        if (input.value !== '') {
+            input.parentNode.classList.add('active');
+        }
+    });
 });
