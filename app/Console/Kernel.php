@@ -15,7 +15,7 @@ class Kernel extends ConsoleKernel
         {
             $schedule->call(function () {
                 app(\App\Http\Controllers\GoogleSheetController::class)->importData();
-            })->daily();
+            })->everyMinute();
         }
         
     }
