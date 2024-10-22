@@ -76,7 +76,7 @@
                                         kami untuk mendapatkan servis dan harga yang sesuai dengan kebutuhan bisnis kamu.</p>
                                 </div>
                                 <div class="btn-box">
-                                    <a class="thm-btn" href="https://wa.link/kl0gdo" target="_blank">
+                                    <a class="thm-btn" href="https://wa.link/mkbx1j" target="_blank">
                                         <span class="txt">Hubungi kami</span>
                                         <i class="icon-next"></i>
                                     </a>
@@ -103,7 +103,7 @@
                                         <h3><a href="#">Diskusikan Kebutuhan Kamu</a></h3>
                                     </div>
                                     <div class="btn-box">
-                                        <a href="https://wa.link/kl0gdo">
+                                        <a href="https://wa.link/mkbx1j">
                                             <span class="txt">Hubungi kami</span>
                                             <i class="icon-next"></i>
                                         </a>
@@ -124,7 +124,7 @@
                                         <h3><a href="#">Pilihan Terbaik Untuk Pembelian dan Pengiriman</a></h3>
                                     </div>
                                     <div class="btn-box">
-                                        <a href="https://wa.link/kl0gdo">
+                                        <a href="https://wa.link/mkbx1j">
                                             <span class="txt">Hubungi kami</span>
                                             <i class="icon-next"></i>
                                         </a>
@@ -145,7 +145,7 @@
                                         <h3><a href="#">Perhitungan HPP Barang Kamu</a></h3>
                                     </div>
                                     <div class="btn-box">
-                                        <a href="https://wa.link/kl0gdo">
+                                        <a href="https://wa.link/mkbx1j">
                                             <span class="txt">Hubungi kami</span>
                                             <i class="icon-next"></i>
                                         </a>
@@ -170,7 +170,7 @@
                     </div>
                 </div>
                 <div class="cta-one__btn cta-one__btn--style2">
-                    <a href="https://wa.link/kl0gdo" class="thm-btn">
+                    <a href="https://wa.link/mkbx1j" class="thm-btn">
                         <span class="txt">
                             contact us
                         </span>
@@ -205,7 +205,7 @@
                                 </p>
                             </div>
                             <div class="btn-box">
-                                <a class="thm-btn" href="https://wa.link/kl0gdo">
+                                <a class="thm-btn" href="https://wa.link/mkbx1j">
                                     <span class="txt">Hubungi Kami</span>
                                     <i class="icon-next"></i>
                                 </a>
@@ -234,7 +234,7 @@
                                 </p>
                             </div>
                             <div class="btn-box">
-                                <a class="thm-btn" href="https://wa.link/kl0gdo">
+                                <a class="thm-btn" href="https://wa.link/mkbx1j">
                                     <span class="txt">Hubungi Kami</span>
                                     <i class="icon-next"></i>
                                 </a>

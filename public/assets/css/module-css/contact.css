@@ -415,6 +415,10 @@
 
 /* Hide social link section on larger screens */
 @media (max-width: 1200px) {
+    .contact-one {
+        width: 90%;
+    }
+    
     .contact-one__socel-link {
         display: none;
     }

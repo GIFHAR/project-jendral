@@ -58,7 +58,7 @@
         
                 if(markingCode) {
                     // Redirect to the desired URL format
-                    window.location.href = `/orders/${encodeURIComponent(markingCode)}`;
+                    window.location.href = `/orders/${markingCode}`;
                 }
             });
         </script>

@@ -163,7 +163,7 @@
                                 var markingCode = document.getElementById('kodeMarking').value;
                         
                                 if(markingCode) {
-                                    window.location.href = `/orders/${encodeURIComponent(markingCode)}`;
+                                    window.location.href = `/orders/${markingCode}`;
                                 }
                             });
                         </script>
@@ -301,7 +301,7 @@
                                                             <p>Layanan Pengiriman barang impor via udara untuk ukuran barang kecil/sedang</p>
                                                         </div>
                                                         <div class="btn-box">
-                                                            <a href="https://wa.link/kl0gdo">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                                            <a href="https://wa.link/mkbx1j">Hubungi kami <span class="icon-right-arrow-2"></span></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -329,7 +329,7 @@
                                                             <p>Layanan Pengiriman barang impor via laut untuk ukuran barang kecil/sedang/berat</p>
                                                         </div>
                                                         <div class="btn-box">
-                                                            <a href="https://wa.link/kl0gdo">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                                            <a href="https://wa.link/mkbx1j">Hubungi kami <span class="icon-right-arrow-2"></span></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -357,7 +357,7 @@
                                                             <p>Layanan kirim barang import dari china via udara</p>
                                                         </div>
                                                         <div class="btn-box">
-                                                            <a href="https://wa.link/kl0gdo">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                                            <a href="https://wa.link/mkbx1j">Hubungi kami <span class="icon-right-arrow-2"></span></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -385,7 +385,7 @@
                                                             <p>Layanan jasa belanja china membantu pembelian barang</p>
                                                         </div>
                                                         <div class="btn-box">
-                                                            <a href="https://wa.link/kl0gdo">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                                            <a href="https://wa.link/mkbx1j">Hubungi kami <span class="icon-right-arrow-2"></span></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -447,7 +447,7 @@
         });
     </script>
 
-    <!--Start Video One-->
+    <!--Start Video One
     <section class="video-one">
         <div class="video-one__bg" data-jarallax data-speed="0.1" data-imgPosition="0% 0%"
             style="background-image: url(assets/img/resource/video-one__img1.jpg);"></div>
@@ -457,7 +457,7 @@
             </a>
         </div>
     </section>
-    <!--End Video One-->
+    End Video One-->
 
     <!--Start Testimonials One-->
     <section class="testimonials-one">
@@ -517,7 +517,7 @@
                                 <div class="testimonials-one__single-img">
                                     <div class="testimonials-one__single-img__inner">
                                         <div class="inner">
-                                            <img src="assets/img/testimonial/mockupprofile.jpg" alt="">
+                                            <img src="assets/img/testimonial/profile.png" alt="">
                                         </div>
                                         <div class="overlay-box">
                                             <span class="icon-quote-right"></span>
@@ -575,7 +575,7 @@
                                 <div class="testimonials-one__single-img">
                                     <div class="testimonials-one__single-img__inner">
                                         <div class="inner">
-                                            <img src="assets/img/testimonial/mockupprofile2.jpg" alt="">
+                                            <img src="assets/img/testimonial/profile.png" alt="">
                                         </div>
                                         <div class="overlay-box">
                                             <span class="icon-quote-right"></span>
@@ -633,7 +633,7 @@
                                 <div class="testimonials-one__single-img">
                                     <div class="testimonials-one__single-img__inner">
                                         <div class="inner">
-                                            <img src="assets/img/testimonial/mockupprofile2.jpg" alt="">
+                                            <img src="assets/img/testimonial/profile.png" alt="">
                                         </div>
                                         <div class="overlay-box">
                                             <span class="icon-quote-right"></span>
@@ -698,7 +698,7 @@
 
     <!--whatsapp-->
     <section>
-        <a href="https://wa.link/kl0gdo" class="whatsapp-button" target="_blank">
+        <a href="https://wa.link/mkbx1j" class="whatsapp-button" target="_blank">
             <span class="whatsapp-popup">Konsultasi Gratis Sekarang</span>
             <div class="whatsapp-icon">
                 <img src="assets\img\konsultasibisnisjendral\walogoputih.png" alt="WhatsApp" />
