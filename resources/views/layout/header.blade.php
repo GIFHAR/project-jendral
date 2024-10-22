@@ -6,7 +6,7 @@
         </button>
     </div>
     <div class="logo-side">
-        <a href="home"><img src="{{asset('assets/img/headerjendral/logojendral.png')}}" alt="Logo"">
+        <a href="/home"><img src="{{asset('assets/img/headerjendral/logojendral.png')}}" alt="Logo"">
     </div>
     <div class="side-info">
         <div class="content-box">
@@ -65,7 +65,7 @@
                 <!--Start Main Header one Inner Left -->
                 <div class="main-header-one__inner-left">
                     <div class="logo-box-one">
-                        <a href="home">
+                        <a href="/home">
                             <img src="{{asset('/assets/img/headerjendral/logojendralHijau.png')}}" alt="Logo">
                         </a>
                     </div>
@@ -126,7 +126,7 @@
         <nav class="menu-box">
             <div class="close-btn"><i class="fas fa-times"></i></div>
             <div class="nav-logo">
-                <a href="home"><img src="/assets/img/headerjendral/logojendralHijau.png" alt="Logo"></a>
+                <a href="/home"><img src="/assets/img/headerjendral/logojendralHijau.png" alt="Logo"></a>
             </div>
             <div class="menu-outer">
                 <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
