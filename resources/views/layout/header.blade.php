@@ -66,7 +66,7 @@
                 <div class="main-header-one__inner-left">
                     <div class="logo-box-one">
                         <a href="home">
-                            <img src="{{asset('assets/img/headerjendral/logojendralHijau.png')}}" alt="Logo">
+                            <img src="{{asset('/assets/img/headerjendral/logojendralHijau.png')}}" alt="Logo">
                         </a>
                     </div>
                 </div>
@@ -126,7 +126,7 @@
         <nav class="menu-box">
             <div class="close-btn"><i class="fas fa-times"></i></div>
             <div class="nav-logo">
-                <a href="home"><img src="assets/img/headerjendral/logojendralHijau.png" alt="Logo"></a>
+                <a href="home"><img src="/assets/img/headerjendral/logojendralHijau.png" alt="Logo"></a>
             </div>
             <div class="menu-outer">
                 <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
@@ -135,7 +135,7 @@
                 <ul class="clearfix list-wrap">
                     <li>
                         <a href="https://wa.link/mkbx1j">
-                            <img src="assets/img/resource/icon-wa.png" alt="Weight Icon" class="icon-contact" />
+                            <img src="/assets/img/resource/icon-wa.png" alt="Weight Icon" class="icon-contact" />
                         </a>
                     </li>
                     <li>
