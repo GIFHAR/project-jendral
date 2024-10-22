@@ -173,7 +173,7 @@
                             <div class="contact-one__socel-link-inner">
                                 <ul>
                                     <li>
-                                        <a href="https://wa.link/kl0gdo">
+                                        <a href="https://wa.link/mkbx1j">
                                             <img src="assets/img/resource/icon-wa.png" alt="Weight Icon" class="icon-contact" />
                                         </a>
                                     </li>
