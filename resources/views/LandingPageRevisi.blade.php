@@ -91,7 +91,7 @@
                     <h5>SELAMAT DATANG</h5>
                 </div>
                 <div class="big-title">
-                    <h1>NIKMATI KENYAMANAN DALAM<br> PROSES IMPORT DAN FLEKSIBILITAS<br> UNTUK TRAKSAKSI BISNIS ANDA<br> BERSAMA JENDERAL IMPORT</h1>
+                    <h1>NIKMATI KENYAMANAN DALAM PROSES IMPORT DAN FLEKSIBILITAS UNTUK TRAKSAKSI BISNIS ANDA BERSAMA JENDERAL IMPORT</h1>
                 </div>
                 <img class="banner-desktop" src="assets/img/resource/banner-JI-looong.png" alt="Jenderal Import Business Product" />
                 <img class="banner-mobile" src="assets/img/resource/banner-JI-short.png" alt="Jenderal Import Business Product" />

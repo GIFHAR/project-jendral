@@ -6,10 +6,23 @@
     position: relative;
     display: block;
     background-color: var(--thm-white);
-    padding: 167px 0 180px;
+    padding: clamp(50px, 15vh, 167px) 0 clamp(60px, 16vh, 180px); /* Dynamic padding */
     overflow: hidden;
     z-index: 1;
+    background-image: url('{{ asset('assets/img/homejendral/backgroundutama.png') }}');
+    background-size: 70% auto; /* Scale to 70% of the width */
+    background-position: right center; /* Right-align the image */
+    background-repeat: no-repeat;
 }
+
+/* Additional adjustments for smaller screens */
+@media (max-width: 768px) {
+    .banner-one {
+        background-size: 100% auto; /* Scale to full width on smaller screens */
+        background-position: center; /* Center-align for small screens */
+    }
+}
+
 
 .banner-one__bg {
     position: absolute;
@@ -84,11 +97,32 @@
     position: relative;
     display: block;
     padding-bottom: 13px;
+    width: 60%;
 }
 
-.banner-one__content .big-title h2 {
-    font-size: 68px;
+.banner-one__content .big-title h1 {
+    font-size: 40px;
     line-height: 1.1em;
+}
+
+@media (max-width: 1024px) {
+    .banner-one__content .big-title h1 {
+        font-size: 35px;
+    }
+}
+
+/* Adjust padding for small screens */
+@media (max-width: 768px) {
+    .banner-one__content .big-title h1 {
+        font-size: 30px;
+    }
+}
+
+/* Adjust padding for very small screens */
+@media (max-width: 480px) {
+    .banner-one__content .big-title h1 {
+        font-size: 25px;
+    }
 }
 
 .banner-one__content .text {

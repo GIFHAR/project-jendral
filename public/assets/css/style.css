@@ -20,6 +20,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 /***
 ====================================================================
@@ -386,8 +387,8 @@
 ===============================*/
 
 :root {
-    --thm-body-font: 'Rubik', sans-serif;
-    --thm-heading-font: 'Rajdhani', sans-serif;
+    --thm-body-font: 'Poppins';
+    --thm-heading-font: 'Poppins';
     --thm-primary: #F68B21;
     --thm-primary-rgb: 246, 139, 33;
     --thm-secondary: #194627;
