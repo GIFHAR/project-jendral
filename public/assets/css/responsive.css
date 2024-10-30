@@ -2280,6 +2280,16 @@
 		display: none;
 	}
 
+	.testimonials-one__inner {
+		width: 80%;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	.testimonials-one__inner .text p {
+		font-size: 14px;
+	}
+
 
 	.banner-one__shape2 {
 		display: none;

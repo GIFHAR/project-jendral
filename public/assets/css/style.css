@@ -4001,4 +4001,8 @@ label {
     .info-item-time {
         width: 100%;
     }
+
+    .sec-title {
+        padding-bottom: 25px;
+    }
 }
