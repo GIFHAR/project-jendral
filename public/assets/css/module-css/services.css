@@ -630,7 +630,7 @@
 .service-details__content-text3-single {
     flex: 1 1 calc(50% - 10px);
     /* 50% lebar kolom, mengurangi gap */
-    max-width: 100;
+    max-width: 100%;
     /* Lebar maksimum item */
     box-sizing: border-box;
     /* Menghindari padding dan border mempengaruhi lebar total */
@@ -965,3 +965,20 @@
     font-size: 30px;
     line-height: 30px;
 }
+
+@media (max-width: 768px) {
+    .service-three__single {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    .service-details__content-text3 {
+        width: 100%;
+        margin: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+

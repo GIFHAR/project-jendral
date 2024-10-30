@@ -31,7 +31,7 @@
     -webkit-transform: translateX(101%);
     -ms-transform: translateX(101%);
     transform: translateX(101%);
-    z-index: 9999999;
+    z-index: 1000;
 }
 
 .mobile-menu-visible .mobile-menu {
@@ -539,6 +539,7 @@
     width: 220px;
     height: 100px;
     background-color: var(--thm-white);
+    margin-top: auto;
 }
 
 .logo-box-one a {

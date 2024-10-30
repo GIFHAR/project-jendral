@@ -147,7 +147,7 @@
             </div>
         </nav>
     </div>
-    <div class="menu-backdrop"></div>
+    {{-- <div class="menu-backdrop"></div> --}}
     <!-- End Mobile Menu -->
 
 </header>

@@ -326,7 +326,6 @@
     display: flex;
     align-items: center;
     padding-bottom: 30px;
-    /* Tambahkan padding bawah untuk memberi ruang antara teks dan garis */
 }
 
 .blog-one__sidebar-box ul li .content-box .btn-box a span {
@@ -1931,4 +1930,69 @@ Sidebar
 .sidebar__archive-list li a:hover::before {
     transform: scale(1.0);
     opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .blog-one {
+        position: relative;
+        display: block;
+        padding: 20px 0 20px;
+    }
+    
+
+    .blog-one__left-box-content .title-box h3 {
+        font-size: 25px;
+        line-height: 1em;
+        text-transform: capitalize;
+        margin-bottom: 21px;
+    }
+
+    .blog-one__left-box-content .btn-box {
+        padding-top: 20px;
+    }
+
+    .blog-one__left-box-content .btn-box .thm-btn .txt {
+        font-size: 13px;
+    }
+
+    .blog-one__sidebar-box ul li .content-box .title-box h3 {
+        font-size: 20px;
+        line-height: 1em;
+        margin-top: 5px;
+    }
+
+    .blog-one__sidebar-box ul li .content-box .btn-box a {
+        padding-bottom: 20px;
+    }
+    
+    .blog-one__sidebar-box ul li .content-box .btn-box a span {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        letter-spacing: 1.1px;
+        text-transform: uppercase;
+        transition: all 200ms linear;
+        transition-delay: 0.1s;
+    }
+
+    .blog-one__sidebar-box ul .blog-one__sidebar-box__inner {
+        padding-bottom: 50px;
+        margin-bottom: 30px;
+    }
+
+    .cta-one--style2 {
+        margin-top: 50px;
+    }
+
+    .service-blog-banner {
+        gap: 20px;
+    }
+
+    .blog-page1 {
+        padding: 80px 0 20px;
+    }
+
+    .blog-page1__content {
+        padding: 21px 20px 40px;
+    }
 }

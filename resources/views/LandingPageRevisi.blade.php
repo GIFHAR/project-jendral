@@ -84,7 +84,9 @@
 
 
     <!--Start Banner One-->
-    <section class="banner-one" style="background-image: url('{{ asset('assets/img/homejendral/backgroundutama.png') }}');  background-size: cover; background-position: center;">
+    <section class="banner-one">
+        {{-- <img class="banner-one-desktop" src="{{ asset('assets/img/homejendral/backgroundutama.png') }}" alt="Jenderal Import" />
+        <img class="banner-one-mobile" src="{{ asset('assets/img/homejendral/backgroundutamareduced.png') }}" alt="Jenderal Import" /> --}}
         <div class="container">
             <div class="banner-one__content wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                 <div class="sub-title">
@@ -194,13 +196,13 @@
                             <img src="{{ asset('assets\img\CAROUSEL\001 KONSUL.png') }}" alt="Picture 1" class="picture-keunggulanjendral">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{ asset('assets\img\CAROUSEL\002 MUDAH.png') }}" alt="Picture 2" class="picture-keunggulanjendral">
-                        </div>
-                        <div class="swiper-slide">
                             <img src="{{ asset('assets\img\CAROUSEL\003 TRANSPARAN.png') }}" alt="Picture 3" class="picture-keunggulanjendral">
                         </div>
                         <div class="swiper-slide">
                             <img src="{{ asset('assets\img\CAROUSEL\004 LIVE.png') }}" alt="Picture 4" class="picture-keunggulanjendral">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ asset('assets\img\CAROUSEL\002 MUDAH.png') }}" alt="Picture 2" class="picture-keunggulanjendral">
                         </div>
                         <div class="swiper-slide">
                             <img src="{{ asset('assets\img\CAROUSEL\005 TANPA.png') }}" alt="Picture 5" class="picture-keunggulanjendral">
@@ -695,6 +697,10 @@
         </div>
     </section>
     <!--End Testimonials One-->
+
+    <div>
+        @include('layout/footer')
+    </div>
 
     <!--whatsapp-->
     <section>

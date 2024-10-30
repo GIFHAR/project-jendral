@@ -71,7 +71,7 @@
                             <div class="blog-one__left-box-content">
 
                                 <div class="title-box">
-                                    <h3><a href="#">Konsultasi Bisnis dan Import</a></h3>
+                                    <h3>Konsultasi Bisnis dan Import</h3>
                                     <p>Konsultasikan kebutuhan impor bisnis kamu dengan tim berpengalaman
                                         kami untuk mendapatkan servis dan harga yang sesuai dengan kebutuhan bisnis kamu.</p>
                                 </div>
@@ -100,7 +100,7 @@
                                 <div class="content-box">
 
                                     <div class="title-box">
-                                        <h3><a href="#">Diskusikan Kebutuhan Kamu</a></h3>
+                                        <h3>Diskusikan Kebutuhan Kamu</h3>
                                     </div>
                                     <div class="btn-box">
                                         <a href="https://wa.link/mkbx1j">
@@ -121,7 +121,7 @@
                                 <div class="content-box">
 
                                     <div class="title-box">
-                                        <h3><a href="#">Pilihan Terbaik Untuk Pembelian dan Pengiriman</a></h3>
+                                        <h3>Pilihan Terbaik Untuk Pembelian dan Pengiriman</h3>
                                     </div>
                                     <div class="btn-box">
                                         <a href="https://wa.link/mkbx1j">
@@ -142,7 +142,7 @@
                                 <div class="content-box">
 
                                     <div class="title-box">
-                                        <h3><a href="#">Perhitungan HPP Barang Kamu</a></h3>
+                                        <h3>Perhitungan HPP Barang Kamu</h3>
                                     </div>
                                     <div class="btn-box">
                                         <a href="https://wa.link/mkbx1j">
@@ -267,7 +267,7 @@
                                 <span class="icon-shipping1"></span>
                             </div>
                             <div class="title">
-                                <h3><a href="service-details.html">Jalur Udara</a></h3>
+                                <h3>Jalur Udara</h3>
                             </div>
                             <div class="text">
                                 <p>
@@ -337,7 +337,7 @@
                                     <span class="icon-shipping1"></span>
                                 </div>
                                 <div class="title">
-                                    <h3><a href="service-details.html">Jalur Laut</a></h3>
+                                    <h3>Jalur Laut</h3>
                                 </div>
                                 <div class="text">
                                     <p>Untuk pengiriman dalam jumlah banyak, pengiriman lewat laut menjadi pilihan yang tepat karena harga yang murah dan kemampuannya untuk mengirim lebih banyak juga barang-barang berat</p>
@@ -360,7 +360,7 @@
                                             <span class="icon-packages3"></span>
                                         </div>
                                         <div class="content-box">
-                                            <h3><a href="#">Umum</a></h3>
+                                            <h3>Umum</h3>
                                             <p>Harga mulai dari Rp.4,500/cbm</p>
                                         </div>
                                     </div>
@@ -372,7 +372,7 @@
                                             <span class="icon-packages5"></span>
                                         </div>
                                         <div class="content-box">
-                                            <h3><a href="#">Garment</a></h3>
+                                            <h3>Garment</h3>
                                             <p>Harga mulai dari Rp.7,5000/cbm</p>
                                         </div>
                                     </div>
@@ -384,7 +384,7 @@
                                             <span class="icon-order1"></span>
                                         </div>
                                         <div class="content-box">
-                                            <h3><a href="#">Lartas Ringan</a></h3>
+                                            <h3>Lartas Ringan</h3>
                                             <p>Harga mulai dari Rp.5,000/cbm</p>
                                         </div>
                                     </div>
@@ -397,7 +397,7 @@
                                             <span class="icon-mobile1"></span>
                                         </div>
                                         <div class="content-box">
-                                            <h3><a href="#">Lartas Berat</a></h3>
+                                            <h3>Lartas Berat</h3>
                                             <p>Harga mulai dari Rp.6,000/cbm</p>
                                         </div>
                                     </div>
@@ -408,7 +408,7 @@
                                             <span class="icon-mobile1"></span>
                                         </div>
                                         <div class="content-box">
-                                            <h3><a href="#">Obat</a></h3>
+                                            <h3>Obat</h3>
                                             <p>Harga mulai dari Rp.8,500/cbm</p>
                                         </div>
                                     </div>
@@ -420,7 +420,7 @@
                                             <span class="icon-mobile1"></span>
                                         </div>
                                         <div class="content-box">
-                                            <h3><a href="#">Makanan</a></h3>
+                                            <h3>Makanan</h3>
                                             <p>Harga mulai dari Rp.7,000/cbm</p>
                                         </div>
                                     </div>
@@ -428,8 +428,8 @@
 
                                 <div class="info-item">
                                     <h3>Harga</h3>
-                                    <p>Dihitung mulai dari<strong>0.1 cbm</strong></p>
-                                    <p>Biaya konsolidasi:<strong>Rp. 50,000/0.1 cbm</strong></p>
+                                    <p>Dihitung mulai dari <strong>0.1 cbm</strong></p>
+                                    <p>Biaya konsolidasi: <br><strong>Rp. 50,000/0.1 cbm</strong></p>
                                     <p class="note">*Harga tergantung ketentuan dan kondisi</p>
                                 </div>
 
@@ -449,10 +449,9 @@
 
     <!-- end sea freight-->
 
-
-
-
-
+    <div>
+        @include('layout/footer')
+    </div>
 
     <script src="{{ asset('js/scripts.js') }}"></script>
     <!-- JS here -->

@@ -6,22 +6,25 @@
     position: relative;
     display: block;
     background-color: var(--thm-white);
-    padding: clamp(50px, 15vh, 167px) 0 clamp(60px, 16vh, 180px); /* Dynamic padding */
+    padding: clamp(35px, 20vh, 167px) 0 clamp(20px, 24vh, 180px);
+    /* padding: 167px 0 180px; */
     overflow: hidden;
     z-index: 1;
-    background-image: url('{{ asset('assets/img/homejendral/backgroundutama.png') }}');
-    background-size: 70% auto; /* Scale to 70% of the width */
-    background-position: right center; /* Right-align the image */
+    background-image: url('/assets/img/homejendral/backgroundutama.png');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
-/* Additional adjustments for smaller screens */
-@media (max-width: 768px) {
+/* Mobile background image and layout adjustments */
+@media (max-width: 1200px) {
     .banner-one {
-        background-size: 100% auto; /* Scale to full width on smaller screens */
-        background-position: center; /* Center-align for small screens */
+        background-image: url('/assets/img/homejendral/backgroundutamareduced2.png');
+        background-position: right;
+        padding: clamp(35px, 5vh, 167px) 0 clamp(20px, 4vh, 180px);
     }
 }
+
 
 
 .banner-one__bg {

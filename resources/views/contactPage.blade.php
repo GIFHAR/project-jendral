@@ -195,6 +195,10 @@
     </section>
     <!--Contact One End-->
 
+    <div>
+        @include('layout/footer')
+    </div>
+
 
 
     <!--Start Google Map One-->

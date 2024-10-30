@@ -346,12 +346,13 @@
 .info-item p {
     color: #000000;
     margin: 5px 0;
+    line-height: 1.6;
 }
 
 .info-item-time {
     width: 380px;
     padding: 20px;
-    height: 200px;
+    height: auto;
     background-color: #ffffff;
     border-radius: 10px;
 }
@@ -2067,7 +2068,7 @@ label {
 .project-one {
     position: relative;
     display: block;
-    padding: 140px 0 110px;
+    padding: 75px 0 20px;
     z-index: 1;
 }
 
@@ -3985,4 +3986,19 @@ label {
 .faq-one--faq .accordion-box-one .accordion .accord-btn.active:after {
     color: var(--thm-secondary);
     content: "\e94f";
+}
+
+@media (max-width: 768px) {
+    .airfreight {
+        padding: 0px 15px 20px;
+    }
+
+    .info-item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .info-item-time {
+        width: 100%;
+    }
 }

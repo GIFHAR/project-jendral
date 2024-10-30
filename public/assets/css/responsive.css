@@ -365,7 +365,7 @@
 
 
 	.blog-page__single {
-		margin-bottom: 60px;
+		margin-bottom: 20px;
 	}
 
 
@@ -859,7 +859,7 @@
 
 
 	.blog-page__single {
-		margin-bottom: 60px;
+		margin-bottom: 20px;
 	}
 
 	.blog-page1 .styled-pagination {
@@ -901,8 +901,8 @@
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
 	.sec-title h2 {
-		font-size: 38px;
-		line-height: 1.2em;
+		font-size: 30px;
+		line-height: 1em;
 	}
 
 	.sec-title h2 br {
@@ -1007,7 +1007,8 @@
 	.testimonials-one__single {
 		display: flex;
 		border: 2px solid #E3E3E3;
-		padding: 40px 40px 40px;
+		padding: 30px 40px 20px;
+		flex-direction: column;
 	}
 
 	.testimonials-one__single-img {
@@ -1400,7 +1401,7 @@
 	}
 
 	.service-details__content-text3-single {
-		max-width: 500px;
+		/* max-width: 500px; */
 		width: 100%;
 	}
 
@@ -1615,7 +1616,7 @@
 
 
 	.blog-page__single {
-		margin-bottom: 60px;
+		margin-bottom: 20px;
 	}
 
 
@@ -1773,7 +1774,8 @@
 	}
 
 	.logo-box-one {
-		height: 100px;
+		height: 75px;
+		width: 150px;
 	}
 
 
@@ -1862,7 +1864,8 @@
 	}
 
 	.logo-box-one {
-		height: 100px;
+		height: 75px;
+		width: 150px;
 	}
 
 
@@ -1953,6 +1956,7 @@
 		justify-content: space-between;
 		align-items: center;
 		flex-wrap: wrap;
+		height: 75px;
 	}
 
 	.main-header-one__inner-right__top {
@@ -1960,7 +1964,8 @@
 	}
 
 	.logo-box-one {
-		height: 100px;
+		height: 75px;
+		width: 150px;
 	}
 
 	.main-menu-right-box-one {
@@ -2071,6 +2076,7 @@
 		flex-direction: row-reverse;
 		justify-content: space-between;
 		align-items: center;
+		height: 75px;
 	}
 
 
