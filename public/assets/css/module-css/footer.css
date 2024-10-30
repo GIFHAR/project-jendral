@@ -65,3 +65,10 @@
         text-align: left;
     }
 }
+
+@media (max-width: 768px) {
+    .footer-logo img {
+        width: 200px;
+        margin-bottom: 25px;
+    }
+}

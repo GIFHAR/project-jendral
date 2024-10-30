@@ -26,6 +26,17 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/module-css/tracking.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+    <style>
+        body, html {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .content {
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
     <!-- preloader -->
@@ -46,7 +57,7 @@
 
     <div class="tracking-container">
         <form id="tracking-form" method="GET" class="tracking-header">
-            <input type="text" id="marking_code" name="marking_code" placeholder="Marking Code" class="tracking-input" value="{{ request()->marking_code }}">
+            <input type="text" id="marking_code" name="marking_code" placeholder="Enter your marking code..." class="tracking-input" value="{{ request()->marking_code }}">
             <button type="submit" class="tracking-button"><strong>Track</strong></button>
         </form>
         
@@ -122,7 +133,10 @@
             <p>{{ $error }}</p>
         @endif
     </div>
-    
+
+    <div>
+        @include('layout/footer')
+    </div>
 
     <script src="{{ asset('js/scripts.js') }}"></script>
     <!-- JS here -->

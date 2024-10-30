@@ -153,7 +153,7 @@
                     <div class="input-group-livetracking">
                         <form id="tracking-form" method="GET" class="tracking-header">
                             <div class="tracking-form-input">
-                                <input type="text" id="kodeMarking" placeholder="Kode Marking" aria-label="Kode Marking">
+                                <input type="text" id="kodeMarking" placeholder="Enter your marking code..." aria-label="Kode Marking">
                             </div>
                             <button id="cekResi" type="submit">Cek Resi</button>
                         </form>
