@@ -1975,8 +1975,13 @@ Sidebar
         transition-delay: 0.1s;
     }
 
-    .blog-one__sidebar-box ul .blog-one__sidebar-box__inner {
+    .blog-one__sidebar-box .blog-one__sidebar-box__inner {
         padding-bottom: 50px;
+        margin-bottom: 30px;
+    }
+
+    .blog-one__sidebar-box li + li .blog-one__sidebar-box__inner {
+        padding-bottom: 25px;
         margin-bottom: 30px;
     }
 

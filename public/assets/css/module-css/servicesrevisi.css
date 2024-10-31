@@ -84,7 +84,7 @@
 
 .img-box-services {
     width: 135px;
-    height: 170px;
+    aspect-ratio: 1 / 1.1;
 }
 
 .blog-services {
@@ -107,8 +107,56 @@
     }
     
     .first-child-banner {
-        width: 90%;
+        width: 100%;
+        overflow: hidden; /* Ensures content stays within this container */
     }
+    
+    .blog-one__sidebar-box {
+        max-width: 1200px; /* Adjust the maximum width as needed */
+        margin: 0 auto; /* Centers the container */
+        padding: 20px; /* Adds some padding */
+    }
+    
+    .content-container {
+        overflow: hidden;
+    }
+    
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .blog-onesidebar-boxinner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px; /* Space between image and text */
+        margin-bottom: 20px;
+    }
+    
+    .img-box-services {
+        width: 135px;
+        height: 150px;
+    }
+    
+    .content-box {
+        max-width: 400px; /* Adjust based on layout */
+        overflow: hidden;
+    }
+    
+    .title-box h3 {
+        font-size: 1.2rem;
+    }
+    
+    .btn-box a {
+        text-decoration: none;
+        color: inherit;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
 
     .service-blog-banner {
         width: 100%;
