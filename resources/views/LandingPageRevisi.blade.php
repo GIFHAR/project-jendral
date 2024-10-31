@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="{{ asset('assets/vendor/jarallax/jarallax.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendor/odometer/odometer.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/module-css/landingpage.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/module-css/services.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/module-css/servicesrevisi.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
@@ -597,6 +599,206 @@
     </section>
     End Video One-->
 
+    <!--Air Freight-->
+
+    <div class="airfreight">
+        <div class="container">
+            <div class="freight-row">
+            <!--Start Single Service Three-->
+            <div class="card-airfreight">
+                <div class="wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
+                    <div class="service-three__single">
+                        <div class="service-three__single-img">
+                            <img src="assets\img\LISTSERVICE\ASSET PHOTO\AIR FREIGHT.png" alt="#">
+                            <div class="service-three__single-img-bg"></div>
+                        </div>
+                        <div class="service-three__single-content">
+                            <div class="icon">
+                                <span class="icon-shipping1"></span>
+                            </div>
+                            <div class="title">
+                                <h3>Jalur Udara</h3>
+                            </div>
+                            <div class="text">
+                                <p>
+                                    Gunakan pengiriman udara untuk pengiriman yang lebih cepat. Untuk kebutuhan pengiriman cepat dengan barang yang tidak terlalu berat
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Three-->
+
+            <div class="freight-options">
+                <!-- Air Freight - Regular -->
+                <div class="freight-option">
+                    <h2>Jalur Udara - Reguler</h2>
+                    <div class="detail">
+                        <img src="assets/img/resource/icon-30kg.png" alt="Weight">
+                        <p>Barang dengan berat Min. 30 kg. Harga Pengiriman: Rp. 150,000</p>
+                    </div>
+                    <div class="detail">
+                        <img src="assets/img/resource/icon-100kg.png" alt="Category">
+                        <p>Barang dengan berat lebih dari 100 kg bisa dinego</p>
+                    </div>
+                    <div class="time-estimation regular">
+                        <p>Time Estimation: 14 Hari</p>
+                    </div>
+                </div>
+
+                <!-- Air Freight - Express -->
+                <div class="freight-option">
+                    <h2>Jalur Udara - Express</h2>
+                    <div class="detail">
+                        <img src="assets/img/resource/icon-1kg.png" alt="Price">
+                        <p>Barang dengan berat Min. 1 kg. Harga Pengiriman: Rp. 205,000</p>
+                    </div>
+                    <div class="detail">
+                        <img src="assets/img/resource/icon-100kg.png" alt="Category">
+                        <p>Barang dengan berat lebih dari 100 kg bisa dinego</p>
+                    </div>
+                    <div class="time-estimation express">
+                        <p>Time Estimation: 4-6 Hari</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--end air freight-->
+
+    <!--sea freight-->
+
+    <div class="container-seafreight">
+        <div class="container">
+            <div class="freight-row">
+                <div class="card-airfreight">
+                    <!--Start Single Service Three-->
+                    <div class="wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <div class="service-three__single">
+                            <div class="service-three__single-img">
+                                <img src="assets\img\LISTSERVICE\ASSET PHOTO\SEA LCL.png" alt="#">
+                                <div class="service-three__single-img-bg"></div>
+                            </div>
+                            <div class="service-three__single-content">
+                                <div class="icon">
+                                    <span class="icon-shipping1"></span>
+                                </div>
+                                <div class="title">
+                                    <h3>Jalur Laut</h3>
+                                </div>
+                                <div class="text">
+                                    <p>Untuk pengiriman dalam jumlah banyak, pengiriman lewat laut menjadi pilihan yang tepat karena harga yang murah dan kemampuannya untuk mengirim lebih banyak juga barang-barang berat</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Service Three-->
+
+                <!-- Start Content Text 3 -->
+                <div class="freight-options">
+                    <!-- Air Freight - Regular -->
+                    <div class="freight-option">
+                        <div class="">
+                            <div class="service-details__content-text3">
+                                <div class="service-details__content-text3-single">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <span class="icon-packages3"></span>
+                                        </div>
+                                        <div class="content-box">
+                                            <h3>Umum</h3>
+                                            <p>Harga mulai dari Rp.4,500/cbm</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="service-details__content-text3-single">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <span class="icon-packages5"></span>
+                                        </div>
+                                        <div class="content-box">
+                                            <h3>Garment</h3>
+                                            <p>Harga mulai dari Rp.7,5000/cbm</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="service-details__content-text3-single">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <span class="icon-order1"></span>
+                                        </div>
+                                        <div class="content-box">
+                                            <h3>Lartas Ringan</h3>
+                                            <p>Harga mulai dari Rp.5,000/cbm</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="service-details__content-text3-single">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <span class="icon-mobile1"></span>
+                                        </div>
+                                        <div class="content-box">
+                                            <h3>Lartas Berat</h3>
+                                            <p>Harga mulai dari Rp.6,000/cbm</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-details__content-text3-single">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <span class="icon-mobile1"></span>
+                                        </div>
+                                        <div class="content-box">
+                                            <h3>Obat</h3>
+                                            <p>Harga mulai dari Rp.8,500/cbm</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="service-details__content-text3-single">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <span class="icon-mobile1"></span>
+                                        </div>
+                                        <div class="content-box">
+                                            <h3>Makanan</h3>
+                                            <p>Harga mulai dari Rp.7,000/cbm</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="info-item">
+                                    <h3>Harga</h3>
+                                    <p>Dihitung mulai dari <strong>0.1 cbm</strong></p>
+                                    <p>Biaya konsolidasi: <br><strong>Rp. 50,000/0.1 cbm</strong></p>
+                                    <p class="note">*Harga tergantung ketentuan dan kondisi</p>
+                                </div>
+
+
+                                <div class="info-item-time">
+                                    <h3>Estimasi Waktu</h3>
+                                    <p class="time-estimation">3-4 Minggu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Content Text 3 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- end sea freight-->
+
     <!--Start Testimonials One-->
     <section class="testimonials-one">
         <div class="container">
@@ -662,7 +864,7 @@
                                         </div>
                                     </div>
                                     <div class="title-box">
-                                        <h3><a href="#">Fanny Pratama</a></h3>
+                                        <h3>Fanny Pratama</h3>
                                         <p>Customer</p>
                                     </div>
                                 </div>
@@ -720,7 +922,7 @@
                                         </div>
                                     </div>
                                     <div class="title-box">
-                                        <h3><a href="#">Fiqri</a></h3>
+                                        <h3>Fiqri</h3>
                                         <p>Customer</p>
                                     </div>
                                 </div>
@@ -778,7 +980,7 @@
                                         </div>
                                     </div>
                                     <div class="title-box">
-                                        <h3><a href="#">Immanuel O. D. P.</a></h3>
+                                        <h3>Immanuel O. D. P.</h3>
                                         <p>Customer</p>
                                     </div>
                                 </div>

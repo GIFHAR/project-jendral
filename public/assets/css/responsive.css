@@ -384,22 +384,6 @@
 		margin-bottom: 30px;
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
@@ -901,8 +885,8 @@
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
 	.sec-title h2 {
-		font-size: 30px;
-		line-height: 1em;
+		font-size: 25px;
+		line-height: 1.2;
 	}
 
 	.sec-title h2 br {
@@ -1285,7 +1269,7 @@
 
 	.contact-one__list-item {
 		max-width: 450px;
-		margin: 0 auto 50px;
+		margin: 0 auto;
 	}
 
 	.contact-one__socel-link {
@@ -1299,7 +1283,7 @@
 	}
 
 	.contact-one__list-item ul li .text {
-		margin-top: 17px;
+		margin-top: 10px;
 		padding-left: 0px;
 	}
 
@@ -2283,7 +2267,7 @@
 	.testimonials-one__inner {
 		width: 80%;
 		height: auto;
-		margin: 0 auto;
+		margin: 10px auto;
 	}
 
 	.testimonials-one__inner .text p {

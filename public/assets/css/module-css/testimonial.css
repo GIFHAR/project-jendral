@@ -2,7 +2,7 @@
 	Testimonials One Css
 ===============================*/
 .testimonials-one {
-    padding: 40px 0px 30px;
+    padding: 60px 0px 30px;
     z-index: 1;
 }
 
@@ -684,4 +684,12 @@
 .testimonials-page-one {
     padding: 140px 0px 110px;
     z-index: 10;
+}
+
+@media only screen and (max-width: 767px) {
+    .testimonials-one__single-img .title-box h3 {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 3px;
+    }
 }

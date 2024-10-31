@@ -289,17 +289,15 @@
     position: relative;
     display: block;
     margin-bottom: 40px;
-    margin-top: 50px;
     transform: translateX(0px);
     /* Initial horizontal translation */
     transition: all 200ms linear 0.1s;
     /* Smooth transition for transform */
 }
 
-.service-three__single:hover {
+/* .service-three__single:hover {
     transform: translate(110px, 0px);
-    /* Combine both translateX and translateY on hover */
-}
+} */
 
 .service-three__single-img {
     position: relative;
@@ -979,6 +977,34 @@
         flex-wrap: wrap;
         flex-direction: column;
         gap: 10px;
+    }
+
+    .service-three__single-content {
+        margin-right: 0px;
+    }
+
+    .service-three__single-content .text p {
+        font-size: 12px;
+        line-height: 2;
+    }
+
+    .service-three__single-content .text {
+        margin-top: 12px;
+        padding-top: 12px;
+    }
+
+    .freight-option .detail p {
+        font-size: 12px;
+        line-height: 2;
+    }
+
+    .service-details__content-text3-single .inner .content-box H3 {
+        font-size: 18px;
+    }
+    
+    .service-details__content-text3-single .inner .content-box p {
+        font-size: 12px;
+        line-height: 2;
     }
 }
 

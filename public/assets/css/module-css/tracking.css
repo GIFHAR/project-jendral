@@ -63,7 +63,8 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    height: 550px;
+    min-height: 550px;
+    height: auto;
 }
 
 .tracking-header {
@@ -181,6 +182,11 @@ body {
     .tracking-container {
         width: 90%;
         margin: 10px auto;
-        height: 400px;
+        min-height: 400px;
+        height: auto;
+    }
+
+    .timeline {
+        padding-left: 10px;
     }
 }

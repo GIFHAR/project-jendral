@@ -319,6 +319,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    margin-top: 20px;
 }
 
 .row {
@@ -4017,6 +4018,27 @@ label {
     }
 
     .sec-title {
-        padding-bottom: 25px;
+        padding-bottom: 10px;
+    }
+
+    .sec-title .sub-title {
+        margin-bottom: 6px;
+    }
+
+    .project-one__content-box .text p {
+        font-size: 12px;
+        line-height: 2;
+    }
+
+    .time-estimation {
+        margin-top: 0px;
+    }
+
+    .cta-one--style2 {
+        padding: 23px 0px;
+    }
+
+    .thm-btn .txt {
+        font-size: 12px;
     }
 }

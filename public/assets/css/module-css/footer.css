@@ -71,4 +71,13 @@
         width: 200px;
         margin-bottom: 25px;
     }
+
+    .footer-contact-info .text p, 
+    .footer-contact-info .text a {
+        font-size: 12px;
+    }
+
+    .footer-contact-info {
+        gap: 5px;
+    }
 }

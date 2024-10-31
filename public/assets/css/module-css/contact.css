@@ -50,7 +50,7 @@
     align-items: center; /* Center the content vertically (if needed) */
     flex-direction: column; /* Stack the elements vertically */
     text-align: center; /* Center the text inside the container */
-    margin: 0 auto;
+    margin: 0 auto 20px;
 }
 
 .contact-one__list-item {
@@ -367,7 +367,7 @@
 /* Mobile: 480px and below */
 @media (max-width: 480px) {
     .contact-one {
-        padding: 60px 15px; /* Further reduce padding for mobile */
+        padding: 10px 15px; /* Further reduce padding for mobile */
     }
 
     .contact-one__list-item ul li {
@@ -389,7 +389,8 @@
     }
 
     .contact-one__list-item ul li .text h4 {
-        font-size: 14px; /* Further reduce font size for headings */
+        font-size: 14px;
+        margin-bottom: 5px;
     }
 
     .contact-one__form {
@@ -417,6 +418,7 @@
 @media (max-width: 1200px) {
     .contact-one {
         width: 90%;
+        padding: 10px 15px;
     }
     
     .contact-one__socel-link {
@@ -452,6 +454,19 @@
 
     .contact-one__form .contact-one__input-box {
         width: 100%;
+    }
+
+    .contact-one__list-item ul li .text p {
+        font-size: 12px;
+    }
+
+    .contact-one__list-item ul li+li {
+        margin-top: 35px;
+    }
+
+    .contact-one__list-item ul li .text h4 {
+        font-size: 14px;
+        margin-bottom: 5px;
     }
 
 }
