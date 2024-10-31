@@ -774,6 +774,20 @@ h6 a {
     padding-bottom: 55px;
 }
 
+@media (min-width: 1200px) {
+    .sec-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 15px;
+    }
+
+    .sec-title h2 {
+        text-align: center;
+    }
+}
+
 .sec-title .sub-title {
     position: relative;
     display: block;
@@ -2061,9 +2075,9 @@ label {
 }
 
 
-/*=============================
+/* /* =============================
 	Project One CSS
-===============================*/
+===============================
 
 .project-one {
     position: relative;
@@ -2260,7 +2274,7 @@ label {
 
 .project-one__single-content .btn-box a:hover span {
     color: var(--thm-primary);
-}
+} */
 
 
 /*=============================
