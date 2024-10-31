@@ -1,8 +1,8 @@
 /* Basic footer styling */
 .footer {
-    background-color: var(--thm-secondary); /* Adjust for footer background color */
+    background-color: var(--thm-secondary);
     margin-top: 50px;
-    padding: 30px 20px 50px;
+    padding: 30px 20px 100px;
     color: #ffffff;
 }
 
