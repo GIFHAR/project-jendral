@@ -10,18 +10,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 75px 50px;
+    margin: 0 50px 75px 50px;
 }
 
 .live-tracking-box {
     width: 1200px;
     padding: 50px 40px 50px 40px;
     border: 1px solid #ccc;
-    border-radius: 15px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    margin-top: -130px;
 }
 
 .text-and-inputs {
@@ -116,13 +117,15 @@
 .container-textkenapajendral::before {
     content: "";
     position: absolute;
-    left: -20px;
-    top: 0;
-    width: 10px;
-    height: 40%;
+    left: 0;
+    top: -20px;
+    width: 100%;
+    height: 10px;
     background-color: #194627;
     z-index: 1;
+    border-radius: 3px;
 }
+
 
 .container-textkenapajendral h1 {
     text-align: center;
@@ -141,8 +144,12 @@
 }
 
 .container-textkenapajendral .highlight {
-    color: #194627;
+    color: #f15e44;
     font-weight: bold;
+}
+
+.container-textkenapajendral .light {
+    font-weight: lighter;
 }
 
 .project-one-row {

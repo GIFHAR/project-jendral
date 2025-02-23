@@ -176,7 +176,7 @@
                             <div class="tracking-form-input">
                                 <input type="text" id="kodeMarking" placeholder="Enter your marking code..." aria-label="Kode Marking">
                             </div>
-                            <button id="cekResi" type="submit">Cek Resi</button>
+                            <button id="cekResi" type="submit">Lacak Pengiriman</button>
                         </form>
                         
                         <script>
@@ -203,10 +203,9 @@
 
     <section class="swiper-banner-1">
         <div class="container-textkenapajendral">
-            <h1>Kenapa <span class="highlight">Jenderal Import</span> <br> Menjadi Partner Terbaik Import Anda</h1>
-            <p>Dipercayai oleh ratusan pelanggan baik individu maupun bisnis <br> sebagai partner import mereka. Dan berikut beberapa kelebihan <br> pelayanan yang kami berikan.</p>
+            <h1><span class="highlight">One-Stop </span><span class="light">Import Partner</span><br>Bersama memenuhi semua kebutuhan import Anda</h1>
+            <p>Hadir sebagai solusi semua kebutuhan impor, Jenderal Import menjadi salah satu penyedia jasa impor terpercaya yang telah membantu ratusan bisnis dan individu memulai perjalanan impor mereka. Dan berikut keunggulan layanan yang kami berikan.</p>
         </div>
-
 
         <section class="swiper-container-banner1">
             <div class="container-keunggulanjendral">
