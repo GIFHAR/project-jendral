@@ -2050,10 +2050,6 @@
 
 @media (max-width: 1199px) {
 
-	.sticky-menu {
-		position: static;
-	}
-
 	.menu-area__inner {
 		position: relative;
 		display: flex;

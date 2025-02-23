@@ -403,7 +403,7 @@
 .navbar-wrap ul li a {
     position: relative;
     display: block;
-    color: var(--thm-black);
+    color: #fff;
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;

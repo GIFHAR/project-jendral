@@ -136,6 +136,28 @@
     
         // Start automatic sliding
         startAutoSlide();
+
+        function updateImages() {
+        const slides = document.querySelectorAll(".slide img");
+
+        slides.forEach((img, index) => {
+            if (window.innerWidth < 1200) {
+                if (index === slides.length - 1) {
+                    img.src = `/assets/img/homejendral/mobile-1.png`;
+                } else {
+                    img.src = `/assets/img/homejendral/mobile-${index + 1}.png`;
+                }
+            } else {
+                if (index === slides.length - 1) {
+                    img.src = `/assets/img/homejendral/1.png`;
+                } else {
+                    img.src = `/assets/img/homejendral/${index + 1}.png`;
+                }
+            }
+        });
+    }
+    window.addEventListener("load", updateImages);
+    window.addEventListener("resize", updateImages);
     </script>
 
     <!--End Banner One-->
