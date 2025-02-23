@@ -331,7 +331,7 @@
     left: 0;
     width: 100%;
     margin: auto;
-    background: var(--thm-white);
+    background: rgba(0, 0, 0, 0.3);
     -webkit-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
     animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
     -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
@@ -515,7 +515,7 @@
     position: relative;
     display: block;
     z-index: 11;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
 }
 
 .main-header-one__inner {
@@ -538,7 +538,7 @@
     justify-content: center;
     width: 220px;
     height: 100px;
-    background-color: var(--thm-white);
+    /* background-color: var(--thm-white); */
     margin-top: auto;
 }
 
@@ -755,7 +755,7 @@
 
 .sticky-menu .logo-box-one {
     height: 90px;
-    background-color: var(--thm-white);
+    /* background-color: var(--thm-white); */
 }
 
 

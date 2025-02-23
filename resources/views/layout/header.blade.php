@@ -58,7 +58,7 @@
 
 <!--Start Main Header One -->
 <header class="main-header main-header-one">
-    <div id="sticky-header" class="menu-area">
+    <div id="sticky-header" class="menu-area sticky-menu">
         <div class="container">
             <div class="main-header-one__inner">
 

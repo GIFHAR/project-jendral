@@ -87,59 +87,87 @@
 
     <!--Start Banner One-->
     <section class="banner-one">
-        {{-- <img class="banner-one-desktop" src="{{ asset('assets/img/homejendral/backgroundutama.png') }}" alt="Jenderal Import" />
-        <img class="banner-one-mobile" src="{{ asset('assets/img/homejendral/backgroundutamareduced.png') }}" alt="Jenderal Import" /> --}}
-        <div class="container">
-            <div class="banner-one__content wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                <div class="sub-title">
-                    <h5>SELAMAT DATANG</h5>
-                </div>
-                <div class="big-title">
-                    <h1>NIKMATI KENYAMANAN DALAM PROSES IMPORT DAN FLEKSIBILITAS UNTUK TRAKSAKSI BISNIS ANDA BERSAMA JENDERAL IMPORT</h1>
-                </div>
-                <img class="banner-desktop" src="assets/img/resource/banner-JI-looong.png" alt="Jenderal Import Business Product" />
-                <img class="banner-mobile" src="assets/img/resource/banner-JI-short.png" alt="Jenderal Import Business Product" />
+        {{-- <div class="slideshow-container">
+            <div class="banner-bg fade">
+                <img src="/assets/img/homejendral/1.png" style="width: 100%">
+            </div>
+
+            <div class="banner-bg fade">
+                <img src="/assets/img/homejendral/2.png" style="width: 100%">
+            </div>
+
+            <div class="banner-bg fade">
+                <img src="/assets/img/homejendral/3.png" style="width: 100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div> --}}
+        
+        <div class="banner-container">
+            <div class="slides-wrapper">
+                <div class="slide"><img src="/assets/img/homejendral/1.png" alt="Slide 1"></div>
+                <div class="slide"><img src="/assets/img/homejendral/2.png" alt="Slide 2"></div>
+                <div class="slide"><img src="/assets/img/homejendral/3.png" alt="Slide 3"></div>
+                {{-- <div class="slide"><img src="/assets/img/homejendral/1.png" alt="Slide 1 Clone"></div> <!-- Clone --> --}}
             </div>
         </div>
-        <!-- Gallery of 7 images -->
-        {{-- <div class="gallery-container">
-            <div class="gallery-item">
-                <img src="{{ asset('assets/img/homejendral/konsul.png') }}" alt="Gambar 1">
-                <div class="caption">Konsultasi Bisnis</div>
-            </div>
+        
+        <br>
 
-            <div class="gallery-item">
-                <img src="{{ asset('assets/img/homejendral/jasapembelian.png') }}" alt="Gambar 2">
-                <div class="caption">Jasa Pembelian</div>
-            </div>
-
-            <div class="gallery-item">
-                <img src="{{ asset('assets/img/homejendral/cekharga.png') }}" alt="Gambar 3">
-                <div class="caption">Cek Harga</div>
-            </div>
-
-            <div class="gallery-item">
-                <img src="{{ asset('assets/img/homejendral/jasawarehouse.png') }}" alt="Gambar 4">
-                <div class="caption">Jasa Warehouse</div>
-            </div>
-
-            <div class="gallery-item">
-                <img src="{{ asset('assets/img/homejendral/udara.png') }}" alt="Gambar 5">
-                <div class="caption">Pengiriman Udara</div>
-            </div>
-
-            <div class="gallery-item">
-                <img src="{{ asset('assets/img/homejendral/laut.png') }}" alt="Gambar 6">
-                <div class="caption">Pengiriman Laut</div>
-            </div>
-
-            <div class="gallery-item">
-                <img src="{{ asset('assets/img/homejendral/tracking.png') }}" alt="Gambar 7">
-                <div class="caption">Tracking</div>
-            </div>
-        </div> --}}
-
+        <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
     </section>
+
+    <script>
+        // let slideIndex = 0;
+        // showSlides();
+
+        // function showSlides(){
+        //     let i;
+        //     let slides = document.getElementsByClassName("banner-bg");
+        //     let dots = document.getElementsByClassName("dot");
+        //     for (i=0; i < slides.length; i++) {
+        //         slides[i].style.display = "none";
+        //     }
+
+        //     slideIndex++;
+        //     if (slideIndex > slides.length) {slideIndex = 1}
+        //     slides[slideIndex-1].style.display="block";
+
+        //     for (i = 0; i < dots.length; i++) {
+        //         dots[i].className = dots[i].className.replace(" active", "");
+        //     }
+        // dots[slideIndex - 1].className += " active";
+        //     setTimeout(showSlides, 2000);
+        // }
+        // JavaScript
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+
+            // Hide all slides
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.opacity = "0";
+            }
+
+            // Show current slide
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.opacity = "1";
+
+            // Change image every 2 seconds
+            setTimeout(showSlides, 2000);
+        }
+
+    </script>
 
     <!--End Banner One-->
 
