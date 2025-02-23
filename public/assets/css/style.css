@@ -52,7 +52,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .banner-one {
@@ -436,7 +436,7 @@
     --thm-body-font-weight: 400;
     --thm-heading-font-color: #121212;
     --thm-heading-font-weight: 700;
-    --thm-body-background: #F4F4F4;
+    --thm-body-background: #fdf1e1;
     --thm-black-bg: #212121;
     --thm-white: #ffffff;
     --thm-black: #121212;
@@ -803,20 +803,32 @@ h6 a {
 	Sec Title CSS
 ===============================*/
 
-.sec-title {
+.sub-title {
+    margin-bottom: 20px;
+}
+
+.sec-title, .sec-title-child {
     position: relative;
     display: block;
-    margin-top: -7px;
+    margin: -7px auto 0 auto;
+    padding-top: 20px;
     padding-bottom: 55px;
+    width: 100%;
+}
+
+.sec-title p,
+.sec-title-child p {
+    font-size: 1.3em;
+    line-height: 1.6;
 }
 
 @media (min-width: 1200px) {
-    .sec-title {
+    .sec-title .sec-title-child {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-bottom: 25px;
     }
 
     .sec-title h2 {
@@ -827,16 +839,22 @@ h6 a {
 .sec-title .sub-title {
     position: relative;
     display: block;
-    margin-bottom: 14px;
 }
 
 .sec-title .sub-title h4 {
     color: var(--thm-secondary);
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 2em;
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+    line-height: 40px;
+}
+
+.sec-title .highlight {
+    color: #f15e44;
+    font-weight: bold;
+}
+
+.sec-title .light {
+    font-weight: lighter;
 }
 
 .sec-title h2 {
@@ -4037,6 +4055,52 @@ label {
     color: var(--thm-secondary);
     content: "\e94f";
 }
+
+.layanan-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+    position: relative;
+    margin: 50px 0 75px 0;
+    width: 100%;
+}
+
+.custom-button {
+    background-color: #f15e44;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 20%;
+}
+
+.line {
+    width: 20%;
+    height: 2px;
+    background-color: #194627;
+}
+
+.bottom-cover {
+    background-image: url('/assets/img/homejendral/bottomcover.png');
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
 
 @media (max-width: 768px) {
     .airfreight {

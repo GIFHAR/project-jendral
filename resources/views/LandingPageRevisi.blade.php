@@ -237,6 +237,15 @@
             </div>
         </section>
     </section>
+
+    <div class="container">
+        <div class="layanan-button">
+            <div class="line"></div>
+            <button class="custom-button">Lihat Layanan Kami</button>
+            <div class="line"></div>
+        </div>
+    </div>
+    
     
     <!-- Include Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -284,16 +293,13 @@
                     <div class="project-one__content-box">
                         <div class="sec-title">
                             <div class="sub-title">
-                                <h4>Jenderal Import</h4>
+                                <h4><span class="light">Membantu Menangani Berbagai</span><br><span class="highlight">Barang Dari China</span></h4>
                             </div>
-                            <h2>
-                                Melayani Jasa Import Barang dari China Terpercaya
-                            </h2>
-                        </div>
-                        <div class="text">
-                            <p>
-                                Selain sebagai jasa ekspedisi China ke Indonesia, kami juga memberikan layanan lainnya seperti:
-                            </p>
+                            <div class="text">
+                                <p>
+                                    Berikut beberapa layanan lainnya yang kami berikan selain jasa ekspedisi<br>dari China sebagai One-stop solution impor anda
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -304,7 +310,7 @@
                             <div class="project-one__single">
                                 <div class="project-one__single-img">
                                     <div class="inner">
-                                        <img src="/assets/img/LISTSERVICE/ASSET PHOTO DAN FONT/AIR FREIGHT.png" alt="Air Freight">
+                                        <img src="/assets/img/LISTSERVICE/ASSET PHOTO DAN FONT/2.png" alt="Air Freight">
                                     </div>
                                     <div class="overlay-icon">
                                         <a href="project-details.html"></a>
@@ -313,7 +319,7 @@
                                 <div class="project-one__single-content text-center">
                                     <div class="title-box">
                                         {{-- <h3><a href="project-details.html">Jalur Udara</a></h3> --}}
-                                        <p>Layanan Pengiriman barang impor via udara untuk ukuran barang kecil/sedang</p>
+                                        <p>Jasa pengiriman barang lewat laut dalam jumlah kecil/sedang & jumlah besar/full container</p>
                                     </div>
                                     {{-- <div class="btn-box">
                                         <a href="https://wa.link/mkbx1j">Hubungi kami <span class="icon-right-arrow-2"></span></a>
@@ -327,7 +333,7 @@
                             <div class="project-one__single">
                                 <div class="project-one__single-img">
                                     <div class="inner">
-                                        <img src="assets/img/LISTSERVICE/ASSET PHOTO DAN FONT/SEA LCL.png" alt="Sea Freight LCL">
+                                        <img src="assets/img/LISTSERVICE/ASSET PHOTO DAN FONT/3.png" alt="Sea Freight LCL">
                                     </div>
                                     <div class="overlay-icon">
                                         <a href="project-details.html"></a>
@@ -336,7 +342,7 @@
                                 <div class="project-one__single-content text-center">
                                     <div class="title-box">
                                         {{-- <h3><a href="project-details.html">Jalur Laut LCL</a></h3> --}}
-                                        <p>Layanan Pengiriman barang impor via laut untuk ukuran barang besar/bulk</p>
+                                        <p>Jasa pengiriman barang lewat udara untuk pengiriman yang lebih cepat</p>
                                     </div>
                                     {{-- <div class="btn-box">
                                         <a href="https://wa.link/mkbx1j">Hubungi kami <span class="icon-right-arrow-2"></span></a>
@@ -350,7 +356,7 @@
                             <div class="project-one__single">
                                 <div class="project-one__single-img">
                                     <div class="inner">
-                                        <img src="assets/img/LISTSERVICE/ASSET PHOTO DAN FONT/SEA FCL.png" alt="Sea Freight FCL">
+                                        <img src="assets/img/LISTSERVICE/ASSET PHOTO DAN FONT/4.png" alt="Sea Freight FCL">
                                     </div>
                                     <div class="overlay-icon">
                                         <a href="project-details.html"></a>
@@ -359,7 +365,7 @@
                                 <div class="project-one__single-content text-center">
                                     <div class="title-box">
                                         {{-- <h3><a href="project-details.html">Jalur Laut FCL</a></h3> --}}
-                                        <p>Layanan Pengiriman barang impor via laut dengan 1 kontainer full</p>
+                                        <p>Membantu pembelajaan dari marketplace China, juga pencarian suplier dan negosiasi</p>
                                     </div>
                                     {{-- <div class="btn-box">
                                         <a href="https://wa.link/mkbx1j">Hubungi kami <span class="icon-right-arrow-2"></span></a>
@@ -373,7 +379,7 @@
                             <div class="project-one__single">
                                 <div class="project-one__single-img">
                                     <div class="inner">
-                                        <img src="assets/img/LISTSERVICE/ASSET PHOTO DAN FONT/JASA BELANJA.png" alt="Warehousing">
+                                        <img src="assets/img/LISTSERVICE/ASSET PHOTO DAN FONT/5.png" alt="Warehousing">
                                     </div>
                                     <div class="overlay-icon">
                                         <a href="project-details.html"></a>
@@ -382,7 +388,7 @@
                                 <div class="project-one__single-content text-center">
                                     <div class="title-box">
                                         {{-- <h3><a href="project-details.html">Layanan Gudang</a></h3> --}}
-                                        <p>Layanan jasa belanja china membantu pembelian barang dari marketplace China</p>
+                                        <p>Jasa transfer pembayaran RMB ke suplier marketplace China</p>
                                     </div>
                                     {{-- <div class="btn-box">
                                         <a href="https://wa.link/mkbx1j">Hubungi kami <span class="icon-right-arrow-2"></span></a>
@@ -396,7 +402,7 @@
                             <div class="project-one__single">
                                 <div class="project-one__single-img">
                                     <div class="inner">
-                                        <img src="assets/img/LISTSERVICE/ASSET PHOTO DAN FONT/TF TO RMB.png" alt="Custom Clearance">
+                                        <img src="assets/img/LISTSERVICE/ASSET PHOTO DAN FONT/6.png" alt="Custom Clearance">
                                     </div>
                                     <div class="overlay-icon">
                                         <a href="project-details.html"></a>
@@ -405,7 +411,7 @@
                                 <div class="project-one__single-content text-center">
                                     <div class="title-box">
                                         {{-- <h3><a href="project-details.html">Custom Clearance</a></h3> --}}
-                                        <p>Layanan jasa titip transfer RMB ke supplier marketplace China</p>
+                                        <p>Layanan pengiriman impor dari China langsung sampai ke alamat tujuan Anda</p>
                                     </div>
                                     {{-- <div class="btn-box">
                                         <a href="https://wa.link/mkbx1j">Hubungi kami <span class="icon-right-arrow-2"></span></a>
@@ -413,13 +419,13 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- Insurance -->
-                        {{-- <div class="grid-item">
+
+                        <!-- Custom Clearance -->
+                        <div class="grid-item">
                             <div class="project-one__single">
                                 <div class="project-one__single-img">
                                     <div class="inner">
-                                        <img src="assets/img/LISTSERVICE/ASSET PHOTO DAN FONT/TF TO RMB.png" alt="Insurance">
+                                        <img src="assets/img/LISTSERVICE/ASSET PHOTO DAN FONT/1.png" alt="Custom Clearance">
                                     </div>
                                     <div class="overlay-icon">
                                         <a href="project-details.html"></a>
@@ -427,148 +433,34 @@
                                 </div>
                                 <div class="project-one__single-content text-center">
                                     <div class="title-box">
-                                        {{-- <h3><a href="project-details.html">Asuransi Pengiriman</a></h3>
-                                        <p>Perlindungan barang selama proses pengiriman dengan asuransi</p>
+                                        {{-- <h3><a href="project-details.html">Custom Clearance</a></h3> --}}
+                                        <p>Konsultasi dengan tim berpengalaman kami untuk semua kebutuhan impor Anda</p>
                                     </div>
                                     {{-- <div class="btn-box">
                                         <a href="https://wa.link/mkbx1j">Hubungi kami <span class="icon-right-arrow-2"></span></a>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
-                        </div> --}}
+                        </div>
                     </section>
-                    
-                    {{-- <div class="swiper-row-banner2">
-                        <section class="container-projectjendral">
-                            <div class="swiper-container-projectjendral project-swiper">
-                                <div class="swiper-wrapper">
-                                    <!-- Start Project One Single -->
-                                    <div class="swiper-slide">
-                                        <div class="swiper-slide-banner2">
-                                            <div class="wow fadeInUp" data-wow-delay=".1s">
-                                                <div class="project-one__single">
-                                                    <div class="project-one__single-img">
-                                                        <div class="inner">
-                                                            <img src="assets\img\LISTSERVICE\ASSET PHOTO\AIR FREIGHT.png" alt="#">
-                                                        </div>
-                                                        <div class="overlay-icon">
-                                                            <a href="project-details.html"></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="project-one__single-content text-center">
-                                                        <div class="title-box">
-                                                            <h3><a href="project-details.html">Jalur Udara</a></h3>
-                                                            <p>Layanan Pengiriman barang impor via udara untuk ukuran barang kecil/sedang</p>
-                                                        </div>
-                                                        <div class="btn-box">
-                                                            <a href="https://wa.link/mkbx1j">Hubungi kami <span class="icon-right-arrow-2"></span></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Project One Single -->
-                        
-                                    <!-- Start Project Two Single -->
-                                    <div class="swiper-slide">
-                                        <div class="swiper-slide-banner2">
-                                            <div class="wow fadeInUp" data-wow-delay=".1s">
-                                                <div class="project-one__single">
-                                                    <div class="project-one__single-img">
-                                                        <div class="inner">
-                                                            <img src="assets\img\LISTSERVICE\ASSET PHOTO\SEA LCL.png" alt="#">
-                                                        </div>
-                                                        <div class="overlay-icon">
-                                                            <a href="project-details.html"></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="project-one__single-content text-center">
-                                                        <div class="title-box">
-                                                            <h3><a href="project-details.html">Jalur Laut</a></h3>
-                                                            <p>Layanan Pengiriman barang impor via laut untuk ukuran barang kecil/sedang/berat</p>
-                                                        </div>
-                                                        <div class="btn-box">
-                                                            <a href="https://wa.link/mkbx1j">Hubungi kami <span class="icon-right-arrow-2"></span></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Project Two Single -->
-                        
-                                    <!-- Start Project Three Single -->
-                                    <div class="swiper-slide">
-                                        <div class="swiper-slide-banner2">
-                                            <div class="wow fadeInUp" data-wow-delay=".1s">
-                                                <div class="project-one__single">
-                                                    <div class="project-one__single-img">
-                                                        <div class="inner">
-                                                            <img src="assets/img/project/project-one__img3.jpg" alt="#">
-                                                        </div>
-                                                        <div class="overlay-icon">
-                                                            <a href="project-details.html"></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="project-one__single-content text-center">
-                                                        <div class="title-box">
-                                                            <h3><a href="project-details.html">Air Freight</a></h3>
-                                                            <p>Layanan kirim barang import dari china via udara</p>
-                                                        </div>
-                                                        <div class="btn-box">
-                                                            <a href="https://wa.link/mkbx1j">Hubungi kami <span class="icon-right-arrow-2"></span></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Project Three Single -->
-                        
-                                    <!-- Start Project Four Single -->
-                                    <div class="swiper-slide">
-                                        <div class="swiper-slide-banner2">
-                                            <div class="wow fadeInUp" data-wow-delay=".1s">
-                                                <div class="project-one__single">
-                                                    <div class="project-one__single-img">
-                                                        <div class="inner">
-                                                            <img src="assets/img/project/project-one__img4.jpg" alt="#">
-                                                        </div>
-                                                        <div class="overlay-icon">
-                                                            <a href="project-details.html"></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="project-one__single-content text-center">
-                                                        <div class="title-box">
-                                                            <h3><a href="project-details.html">Jasa Belanja</a></h3>
-                                                            <p>Layanan jasa belanja china membantu pembelian barang</p>
-                                                        </div>
-                                                        <div class="btn-box">
-                                                            <a href="https://wa.link/mkbx1j">Hubungi kami <span class="icon-right-arrow-2"></span></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Project Four Single -->
-                                </div>
-                                <!-- Add pagination and navigation controls (optional) -->
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </section>
-                        
-                        
-                        
-                        <!--End Project One Single--> 
-
-                    </div> --}}
                 </section>
-
+                <div class="sec-title-child">
+                    <div class="text">
+                        <p>
+                            Kami selalu memberikan penawaran harga terbaik untuk semua layanan pengiriman barang dari China yang kami sediakan. Anda bisa cek daftar harga yang kami berikan di sini
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <div class="container">
+        <div class="layanan-button">
+            <div class="line"></div>
+            <button class="custom-button">Pricelist</button>
+            <div class="line"></div>
+        </div>
+    </div>
     <!--End Project One-->
 
     <script>
@@ -605,217 +497,99 @@
         });
     </script>
 
-    <!--Start Video One
-    <section class="video-one">
-        <div class="video-one__bg" data-jarallax data-speed="0.1" data-imgPosition="0% 0%"
-            style="background-image: url(assets/img/resource/video-one__img1.jpg);"></div>
-        <div class="icon wow zoomIn animated" data-wow-delay="300ms" data-wow-duration="1500ms">
-            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=06dV9txztKY">
-                <span class="icon-play-button-arrowhead"></span>
-            </a>
-        </div>
-    </section>
-    End Video One-->
-
-    <!--Air Freight-->
-
-    <div class="airfreight">
+    <!--Start Project One-->
+    <section class="project-one">
         <div class="container">
-            <div class="freight-row">
-            <!--Start Single Service Three-->
-            <div class="card-airfreight">
-                <div class="wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
-                    <div class="service-three__single">
-                        <div class="service-three__single-img">
-                            <img src="assets\img\LISTSERVICE\ASSET PHOTO\AIR FREIGHT.png" alt="#">
-                            <div class="service-three__single-img-bg"></div>
-                        </div>
-                        <div class="service-three__single-content">
-                            <div class="icon">
-                                <span class="icon-shipping1"></span>
-                            </div>
-                            <div class="title">
-                                <h3>Jalur Udara</h3>
+            <div class="project-one-row">
+                <div class="header-project-one">
+                    <div class="project-one__content-box">
+                        <div class="sec-title">
+                            <div class="sub-title">
+                                <h4><span class="light">Proses Impor</span><br><span class="highlight">Pengiriman Barang Dari China</span></h4>
                             </div>
                             <div class="text">
                                 <p>
-                                    Gunakan pengiriman udara untuk pengiriman yang lebih cepat. Untuk kebutuhan pengiriman cepat dengan barang yang tidak terlalu berat
+                                    Proses pengiriman barang dari China ke Indonesia merupakan proses yang cukup rumit dan membingungkan, apalagi jika anda melakukannya sendiri. Bersama tim Jenderal yang sudah berpengalaman, kami akan membantu anda dalam seluruh prosesnya membuat Import menjadi lebih mudah.
+                                    <br>
+                                    <br>
+                                    Berikut gambaran sederhana dari proses import.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--End Single Service Three-->
-
-            <div class="freight-options">
-                <!-- Air Freight - Regular -->
-                <div class="freight-option">
-                    <h2>Jalur Udara - Reguler</h2>
-                    <div class="detail">
-                        <img src="assets/img/resource/icon-30kg.png" alt="Weight">
-                        <p>Barang dengan berat Min. 30 kg. Harga Pengiriman: Rp. 150,000</p>
-                    </div>
-                    <div class="detail">
-                        <img src="assets/img/resource/icon-100kg.png" alt="Category">
-                        <p>Barang dengan berat lebih dari 100 kg bisa dinego</p>
-                    </div>
-                    <div class="time-estimation regular">
-                        <p>Time Estimation: 14 Hari</p>
-                    </div>
-                </div>
-
-                <!-- Air Freight - Express -->
-                <div class="freight-option">
-                    <h2>Jalur Udara - Express</h2>
-                    <div class="detail">
-                        <img src="assets/img/resource/icon-1kg.png" alt="Price">
-                        <p>Barang dengan berat Min. 1 kg. Harga Pengiriman: Rp. 205,000</p>
-                    </div>
-                    <div class="detail">
-                        <img src="assets/img/resource/icon-100kg.png" alt="Category">
-                        <p>Barang dengan berat lebih dari 100 kg bisa dinego</p>
-                    </div>
-                    <div class="time-estimation express">
-                        <p>Time Estimation: 4-6 Hari</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <!--end air freight-->
-
-    <!--sea freight-->
-
-    <div class="container-seafreight">
-        <div class="container">
-            <div class="freight-row">
-                <div class="card-airfreight">
-                    <!--Start Single Service Three-->
-                    <div class="wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <div class="service-three__single">
-                            <div class="service-three__single-img">
-                                <img src="assets\img\LISTSERVICE\ASSET PHOTO\SEA LCL.png" alt="#">
-                                <div class="service-three__single-img-bg"></div>
-                            </div>
-                            <div class="service-three__single-content">
-                                <div class="icon">
-                                    <span class="icon-shipping1"></span>
+                <section class="swiper-container-banner1">
+                    <div class="container-keunggulanjendral">
+                        <!-- Swiper Container -->
+                        <div id="swiper-benefit" class="swiper-container-keunggulanjendral">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('assets\img\CAROUSEL-PROSES\1.png') }}" alt="Picture 1" class="picture-keunggulanjendral">
                                 </div>
-                                <div class="title">
-                                    <h3>Jalur Laut</h3>
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('assets\img\CAROUSEL-PROSES\2.png') }}" alt="Picture 3" class="picture-keunggulanjendral">
                                 </div>
-                                <div class="text">
-                                    <p>Untuk pengiriman dalam jumlah banyak, pengiriman lewat laut menjadi pilihan yang tepat karena harga yang murah dan kemampuannya untuk mengirim lebih banyak juga barang-barang berat</p>
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('assets\img\CAROUSEL-PROSES\3.png') }}" alt="Picture 4" class="picture-keunggulanjendral">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('assets\img\CAROUSEL-PROSES\4.png') }}" alt="Picture 2" class="picture-keunggulanjendral">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('assets\img\CAROUSEL-PROSES\5.png') }}" alt="Picture 5" class="picture-keunggulanjendral">
                                 </div>
                             </div>
+                            <!-- Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Navigation Arrows -->
+                            {{-- <div class="swiper-button-next"></div> --}}
+                            {{-- <div class="swiper-button-prev"></div> --}}
                         </div>
                     </div>
-                </div>
-                <!--End Single Service Three-->
-
-                <!-- Start Content Text 3 -->
-                <div class="freight-options">
-                    <!-- Air Freight - Regular -->
-                    <div class="freight-option">
-                        <div class="">
-                            <div class="service-details__content-text3">
-                                <div class="service-details__content-text3-single">
-                                    <div class="inner">
-                                        <div class="icon">
-                                            <span class="icon-packages3"></span>
-                                        </div>
-                                        <div class="content-box">
-                                            <h3>Umum</h3>
-                                            <p>Harga mulai dari Rp.4,500/cbm</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="service-details__content-text3-single">
-                                    <div class="inner">
-                                        <div class="icon">
-                                            <span class="icon-packages5"></span>
-                                        </div>
-                                        <div class="content-box">
-                                            <h3>Garment</h3>
-                                            <p>Harga mulai dari Rp.7,5000/cbm</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="service-details__content-text3-single">
-                                    <div class="inner">
-                                        <div class="icon">
-                                            <span class="icon-order1"></span>
-                                        </div>
-                                        <div class="content-box">
-                                            <h3>Lartas Ringan</h3>
-                                            <p>Harga mulai dari Rp.5,000/cbm</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="service-details__content-text3-single">
-                                    <div class="inner">
-                                        <div class="icon">
-                                            <span class="icon-mobile1"></span>
-                                        </div>
-                                        <div class="content-box">
-                                            <h3>Lartas Berat</h3>
-                                            <p>Harga mulai dari Rp.6,000/cbm</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="service-details__content-text3-single">
-                                    <div class="inner">
-                                        <div class="icon">
-                                            <span class="icon-mobile1"></span>
-                                        </div>
-                                        <div class="content-box">
-                                            <h3>Obat</h3>
-                                            <p>Harga mulai dari Rp.8,500/cbm</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="service-details__content-text3-single">
-                                    <div class="inner">
-                                        <div class="icon">
-                                            <span class="icon-mobile1"></span>
-                                        </div>
-                                        <div class="content-box">
-                                            <h3>Makanan</h3>
-                                            <p>Harga mulai dari Rp.7,000/cbm</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="info-item">
-                                    <h3>Harga</h3>
-                                    <p>Dihitung mulai dari <strong>0.1 cbm</strong></p>
-                                    <p>Biaya konsolidasi: <br><strong>Rp. 50,000/0.1 cbm</strong></p>
-                                    <p class="note">*Harga tergantung ketentuan dan kondisi</p>
-                                </div>
-
-
-                                <div class="info-item-time">
-                                    <h3>Estimasi Waktu</h3>
-                                    <p class="time-estimation">3-4 Minggu</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Content Text 3 -->
+                </section>
             </div>
         </div>
-    </div>
+    </section>
+    <!-- Include Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('#swiper-benefit', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 3,
+            spaceBetween: 20,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                1300: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+            },
+        });
+    </script>
+    <!--End Project One-->
 
-    <!-- end sea freight-->
+    <div class="bottom-cover"></div>
 
     <!--Start Testimonials One-->
     <section class="testimonials-one">
