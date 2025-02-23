@@ -87,29 +87,12 @@
 
     <!--Start Banner One-->
     <section class="banner-one">
-        {{-- <div class="slideshow-container">
-            <div class="banner-bg fade">
-                <img src="/assets/img/homejendral/1.png" style="width: 100%">
-            </div>
-
-            <div class="banner-bg fade">
-                <img src="/assets/img/homejendral/2.png" style="width: 100%">
-            </div>
-
-            <div class="banner-bg fade">
-                <img src="/assets/img/homejendral/3.png" style="width: 100%">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div> --}}
-        
         <div class="banner-container">
             <div class="slides-wrapper">
                 <div class="slide"><img src="/assets/img/homejendral/1.png" alt="Slide 1"></div>
                 <div class="slide"><img src="/assets/img/homejendral/2.png" alt="Slide 2"></div>
                 <div class="slide"><img src="/assets/img/homejendral/3.png" alt="Slide 3"></div>
-                {{-- <div class="slide"><img src="/assets/img/homejendral/1.png" alt="Slide 1 Clone"></div> <!-- Clone --> --}}
+                <div class="slide"><img src="/assets/img/homejendral/1.png" alt="Slide 1 Clone"></div>
             </div>
         </div>
         
@@ -123,50 +106,36 @@
     </section>
 
     <script>
-        // let slideIndex = 0;
-        // showSlides();
-
-        // function showSlides(){
-        //     let i;
-        //     let slides = document.getElementsByClassName("banner-bg");
-        //     let dots = document.getElementsByClassName("dot");
-        //     for (i=0; i < slides.length; i++) {
-        //         slides[i].style.display = "none";
-        //     }
-
-        //     slideIndex++;
-        //     if (slideIndex > slides.length) {slideIndex = 1}
-        //     slides[slideIndex-1].style.display="block";
-
-        //     for (i = 0; i < dots.length; i++) {
-        //         dots[i].className = dots[i].className.replace(" active", "");
-        //     }
-        // dots[slideIndex - 1].className += " active";
-        //     setTimeout(showSlides, 2000);
-        // }
-        // JavaScript
+        const slidesWrapper = document.querySelector('.slides-wrapper');
         let slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            let slides = document.getElementsByClassName("mySlides");
-
-            // Hide all slides
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.opacity = "0";
-            }
-
-            // Show current slide
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1;
-            }
-            slides[slideIndex - 1].style.opacity = "1";
-
-            // Change image every 2 seconds
-            setTimeout(showSlides, 2000);
+        let autoSlideInterval;
+    
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(autoSlide, 5000);
         }
-
+    
+        function autoSlide() {
+            slideIndex++;
+            if (slideIndex >= 4) {
+                // Smooth transition to clone slide
+                slidesWrapper.style.transform = `translateX(-75%)`;
+                // Instant reset after transition
+                setTimeout(() => {
+                    slidesWrapper.style.transition = 'none';
+                    slidesWrapper.style.transform = 'translateX(0%)';
+                    slideIndex = 0;
+                    // Re-enable transition after reset
+                    setTimeout(() => {
+                        slidesWrapper.style.transition = 'transform 1s ease-in-out';
+                    }, 10);
+                }, 1000);
+            } else {
+                slidesWrapper.style.transform = `translateX(-${slideIndex * 25}%)`;
+            }
+        }
+    
+        // Start automatic sliding
+        startAutoSlide();
     </script>
 
     <!--End Banner One-->

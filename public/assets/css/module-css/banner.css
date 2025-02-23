@@ -3,9 +3,9 @@
 ====================================*/
 
 .banner-one {
-    position: relative;
-    display: block;
-    background-color: var(--thm-white);
+    /* position: relative; */
+    /* display: block; */
+    /* background-color: var(--thm-white); */
     /* padding: clamp(35px, 20vh, 167px) 0 clamp(20px, 24vh, 180px); */
     /* padding: 167px 0 180px; */
     overflow: hidden;
@@ -21,7 +21,7 @@
     .banner-one {
         /* background-image: url('/assets/img/homejendral/backgroundutamareduced2.png'); */
         background-position: right;
-        padding: clamp(35px, 5vh, 167px) 0 clamp(20px, 4vh, 180px);
+        /* padding: clamp(35px, 5vh, 167px) 0 clamp(20px, 4vh, 180px); */
     }
 }
 
