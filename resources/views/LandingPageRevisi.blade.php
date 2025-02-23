@@ -213,19 +213,19 @@
                 <div id="swiper-benefit" class="swiper-container-keunggulanjendral">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="{{ asset('assets\img\CAROUSEL\001 KONSUL.png') }}" alt="Picture 1" class="picture-keunggulanjendral">
+                            <img src="{{ asset('assets\img\CAROUSEL\1.png') }}" alt="Picture 1" class="picture-keunggulanjendral">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{ asset('assets\img\CAROUSEL\003 TRANSPARAN.png') }}" alt="Picture 3" class="picture-keunggulanjendral">
+                            <img src="{{ asset('assets\img\CAROUSEL\2.png') }}" alt="Picture 3" class="picture-keunggulanjendral">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{ asset('assets\img\CAROUSEL\004 LIVE.png') }}" alt="Picture 4" class="picture-keunggulanjendral">
+                            <img src="{{ asset('assets\img\CAROUSEL\3.png') }}" alt="Picture 4" class="picture-keunggulanjendral">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{ asset('assets\img\CAROUSEL\002 MUDAH.png') }}" alt="Picture 2" class="picture-keunggulanjendral">
+                            <img src="{{ asset('assets\img\CAROUSEL\4.png') }}" alt="Picture 2" class="picture-keunggulanjendral">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{ asset('assets\img\CAROUSEL\005 TANPA.png') }}" alt="Picture 5" class="picture-keunggulanjendral">
+                            <img src="{{ asset('assets\img\CAROUSEL\5.png') }}" alt="Picture 5" class="picture-keunggulanjendral">
                         </div>
                     </div>
                     <!-- Pagination -->
