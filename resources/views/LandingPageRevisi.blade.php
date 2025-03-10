@@ -230,9 +230,6 @@
                         </div>
                         <!-- Pagination -->
                         <div class="swiper-pagination"></div>
-                        <!-- Navigation Arrows -->
-                        {{-- <div class="swiper-button-next"></div> --}}
-                        {{-- <div class="swiper-button-prev"></div> --}}
                     </div>
                 </div>
             </section>
@@ -522,7 +519,7 @@
                 <section class="swiper-container-banner1">
                     <div class="container-keunggulanjendral">
                         <!-- Swiper Container -->
-                        <div id="swiper-benefit" class="swiper-container-keunggulanjendral">
+                        <div id="swiper-process" class="swiper-container-keunggulanjendral">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <img src="{{ asset('assets\img\CAROUSEL-PROSES\1.png') }}" alt="Picture 1" class="picture-keunggulanjendral">
@@ -556,7 +553,7 @@
     
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper('#swiper-benefit', {
+        var swiper = new Swiper('#swiper-process', {
             loop: true,
             pagination: {
                 el: '.swiper-pagination',
