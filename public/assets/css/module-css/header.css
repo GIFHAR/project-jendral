@@ -334,7 +334,6 @@
     background: rgba(0, 0, 0, 0.3);
     -webkit-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
     animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
-    -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
     box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
     border-radius: 0;
     z-index: 99;
@@ -346,6 +345,13 @@
 
 .sticky-menu .navbar-wrap ul li a {
     padding: 33px 0;
+}
+
+@media (max-width:767.98px) {
+    .sticky-menu {
+        background: rgba(0, 0, 0, 0);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0);
+    }
 }
 
 
@@ -756,6 +762,13 @@
 .sticky-menu .logo-box-one {
     height: 90px;
     /* background-color: var(--thm-white); */
+}
+
+@media (max-width:767.98px) {
+    .sticky-menu .logo-box-one {
+        height: auto;
+        padding-top: 10px;
+    }
 }
 
 
