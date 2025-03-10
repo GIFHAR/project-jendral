@@ -4115,10 +4115,10 @@ label {
 }
 
 .quote {
-    font-size: 60px;
+    font-size: 130px;
     color: #e57342;
     position: absolute;
-    top: -25px;
+    top: -0px;
     left: 50%;
     transform: translateX(-50%);
 }

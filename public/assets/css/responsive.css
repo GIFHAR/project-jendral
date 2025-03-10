@@ -992,7 +992,7 @@
 	.testimonials-one__single {
 		display: flex;
 		/* border: 2px solid #E3E3E3; */
-		padding: 0px 10px 10px 10px;
+		padding: 40px 10px 10px 10px;
 		flex-direction: column;
 	}
 
