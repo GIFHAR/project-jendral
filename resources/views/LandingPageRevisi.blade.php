@@ -206,35 +206,36 @@
             <h1><span class="highlight">One-Stop </span><span class="light">Import Partner</span><br>Bersama memenuhi semua kebutuhan import Anda</h1>
             <p>Hadir sebagai solusi semua kebutuhan impor, Jenderal Import menjadi salah satu penyedia jasa impor terpercaya yang telah membantu ratusan bisnis dan individu memulai perjalanan impor mereka. Dan berikut keunggulan layanan yang kami berikan.</p>
         </div>
-
-        <section class="swiper-container-banner1">
-            <div class="container-keunggulanjendral">
-                <!-- Swiper Container -->
-                <div id="swiper-benefit" class="swiper-container-keunggulanjendral">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="{{ asset('assets\img\CAROUSEL\1.png') }}" alt="Picture 1" class="picture-keunggulanjendral">
+        <section class="green-bg">
+            <section class="swiper-container-banner1">
+                <div class="container-keunggulanjendral">
+                    <!-- Swiper Container -->
+                    <div id="swiper-benefit" class="swiper-container-keunggulanjendral">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets\img\CAROUSEL\1.png') }}" alt="Picture 1" class="picture-keunggulanjendral">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets\img\CAROUSEL\2.png') }}" alt="Picture 3" class="picture-keunggulanjendral">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets\img\CAROUSEL\3.png') }}" alt="Picture 4" class="picture-keunggulanjendral">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets\img\CAROUSEL\4.png') }}" alt="Picture 2" class="picture-keunggulanjendral">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets\img\CAROUSEL\5.png') }}" alt="Picture 5" class="picture-keunggulanjendral">
+                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('assets\img\CAROUSEL\2.png') }}" alt="Picture 3" class="picture-keunggulanjendral">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('assets\img\CAROUSEL\3.png') }}" alt="Picture 4" class="picture-keunggulanjendral">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('assets\img\CAROUSEL\4.png') }}" alt="Picture 2" class="picture-keunggulanjendral">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('assets\img\CAROUSEL\5.png') }}" alt="Picture 5" class="picture-keunggulanjendral">
-                        </div>
+                        <!-- Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Navigation Arrows -->
+                        {{-- <div class="swiper-button-next"></div> --}}
+                        {{-- <div class="swiper-button-prev"></div> --}}
                     </div>
-                    <!-- Pagination -->
-                    <div class="swiper-pagination"></div>
-                    <!-- Navigation Arrows -->
-                    {{-- <div class="swiper-button-next"></div> --}}
-                    {{-- <div class="swiper-button-prev"></div> --}}
                 </div>
-            </div>
+            </section>
         </section>
     </section>
 
@@ -297,7 +298,7 @@
                             </div>
                             <div class="text">
                                 <p>
-                                    Berikut beberapa layanan lainnya yang kami berikan selain jasa ekspedisi<br>dari China sebagai One-stop solution impor anda
+                                    Berikut beberapa layanan lainnya yang kami berikan selain jasa ekspedisi <br>dari China sebagai One-stop solution impor anda
                                 </p>
                             </div>
                         </div>
@@ -596,11 +597,11 @@
         <div class="container">
             <div class="sec-title text-center">
                 <div class="sub-title">
-                    <h4>Testimoni Pelanggan</h4>
+                    <h4>Testimoni</h4>
                 </div>
-                <h2>
-                    Jenderal Import
-                </h2>
+                <p>
+                    Dengarkan apa kata partner yang sudah menggunakan jasa kami, simak bagaimana service kami membantu mereka dengan kebutuhan impor dan betapa puasnya mereka.
+                </p>
             </div>
             <div class="testimonials-one__inner">
                 <div class="thm-swiper__slider swiper-container" data-swiper-options='{

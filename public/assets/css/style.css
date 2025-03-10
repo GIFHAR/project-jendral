@@ -865,6 +865,7 @@ h6 a {
 }
 
 
+
 /*=============================
 	Thm Btn
 ===============================*/
@@ -4205,6 +4206,7 @@ label {
 
     .sec-title {
         padding-bottom: 10px;
+        width: 80%;
     }
 
     .sec-title .sub-title {
@@ -4212,8 +4214,14 @@ label {
     }
 
     .project-one__content-box .text p {
-        font-size: 12px;
+        font-size: 16px;
         line-height: 2;
+        text-align: left;
+        white-space: normal;
+    }
+
+    .project-one__content-box .text br {
+        display: none;
     }
 
     .time-estimation {
@@ -4230,5 +4238,39 @@ label {
 
     .testimonial-card {
         height: auto;
+    }
+
+    .custom-button {
+        width: 80%;
+    }
+
+    .layanan-button {
+        margin: 20px 0;
+    }
+
+    .sec-title .sub-title h4 {
+        font-size: 1em;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .sec-title, .sec-title-child {
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 80%;
+    }
+
+    .sec-title p, .sec-title-child p {
+        font-size: 16px;
+        line-height: 2;
+        text-align: left;
+        white-space: normal;
+    }
+
+    .bottom-cover {
+        min-height: 40vh;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 }

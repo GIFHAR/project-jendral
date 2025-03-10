@@ -213,6 +213,12 @@
     width: 100%;
 }
 
+@media (max-width:767.98px) {
+    .container-textkenapajendral::before, .sec-title::before {
+        width: 50%;
+    }
+}
+
 /*=============================
 	Project One CSS
 ===============================*/
@@ -410,7 +416,8 @@
     }
 
     .project-one {
-        padding: 75px 0 20px;
+        padding: 45px 0 20px;
+        margin: 0;
     }
 
 
@@ -433,8 +440,8 @@
 
     .live-tracking-box {
         width: 1200px;
-        margin: 10px auto;
-        padding: 20px 20px;
+        padding: 10px 20px 0px 20px;
+        margin-top: -100px;
     }
 
     .live-tracking-box input[type="text"]::placeholder {
@@ -470,7 +477,7 @@
     .container-textkenapajendral p {
         line-height: 1.6;
         text-align: left;
-        font-size: 12px;
+        font-size: 16px;
         margin-left: 10px;
         margin-top: 10px;
     }
@@ -479,9 +486,18 @@
         width: 80%;
         overflow: hidden;
     }
+    
+    .green-bg {
+        background-color: #194627;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 
     .swiper-container-banner1 {
         width: 80%;
+        padding: 20px 0px;
+        align-self: center;
     }
 
     .header-project-one {
@@ -505,7 +521,7 @@
     .container-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        gap: 5px 20px;
     }
 
     .container-grid > *:last-child:nth-child(odd) {
@@ -525,7 +541,7 @@
 
 @media (max-width: 768px) {
     .swiper-container-banner1 {
-        width: 80%;
+        width: 90%;
     }
 
     .live-tracking-box p {
@@ -535,5 +551,9 @@
 
     .title-box p {
         font-size: 12px;
+    }
+
+    .grid-item, .project-one__single {
+        margin-bottom: 0px;
     }
 }
