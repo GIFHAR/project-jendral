@@ -784,9 +784,9 @@
                 }
                 
                 // Initialize swiper on smaller screens
-                if (window.innerWidth < 1200) {
-                    swiper = new Swiper(swiperElement, swiperOptions);
-                }
+                // if (window.innerWidth < 1200) {
+                swiper = new Swiper(swiperElement, swiperOptions);
+                // }
             }
     
             // Run on page load
