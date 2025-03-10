@@ -604,228 +604,136 @@
             </div>
             <div class="testimonials-one__inner">
                 <div class="thm-swiper__slider swiper-container" data-swiper-options='{
-                    "loop": true,
+                    "loop": false,
                     "pagination": {
                         "el": "#testimonial-one-pagination",
                         "type": "bullets",
                         "clickable": true
-                        },
+                    },
                     "navigation": {
                         "nextEl": "#testimonial-two__swiper-button-next",
                         "prevEl": "#testimonial-two__swiper-button-prev"
                     },
-                    "autoplay": { "delay": 5000 },
+                    "autoplay": { "delay": 3000 },
                     "breakpoints": {
-                        "0": {
-                            "spaceBetween": 30,
-                            "slidesPerView": 1
-                        },
-                        "375": {
-                            "spaceBetween": 30,
-                            "slidesPerView": 1
-                        },
-                        "575": {
-                            "spaceBetween": 30,
-                            "slidesPerView": 1
-                        },
-                        "768": {
-                            "spaceBetween": 30,
-                            "slidesPerView": 1
-                        },
-                        "992": {
-                            "spaceBetween": 30,
-                            "slidesPerView": 2
-                        },
-                        "1200": {
-                            "spaceBetween": 30,
-                            "slidesPerView": 2
-                        }
-                    }}'>
-
+                        "0": { "spaceBetween": 30, "slidesPerView": 1 },
+                        "375": { "spaceBetween": 30, "slidesPerView": 1 },
+                        "575": { "spaceBetween": 30, "slidesPerView": 1 },
+                        "768": { "spaceBetween": 30, "slidesPerView": 1 },
+                        "992": { "spaceBetween": 30, "slidesPerView": 2 },
+                        "1200": { "spaceBetween": 30, "slidesPerView": 2 }
+                    }
+                }'>
                     <div class="swiper-wrapper">
-                        <!--Start Single Testimonials One-->
+                        <!-- Testimonial 1 -->
                         <div class="swiper-slide">
                             <div class="testimonials-one__single">
-                                <div class="testimonials-one__single-img">
-                                    <div class="testimonials-one__single-img__inner">
-                                        <div class="inner">
-                                            <img src="assets/img/testimonial/profile.png" alt="">
-                                        </div>
-                                        <div class="overlay-box">
-                                            <span class="icon-quote-right"></span>
-                                        </div>
-                                    </div>
-                                    <div class="title-box">
-                                        <h3>Fanny Pratama</h3>
-                                        <p>Customer</p>
-                                    </div>
-                                </div>
-                                <div class="testimonials-one__single-content">
-                                    <div class="ster-icon">
-                                        <ul>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <p>Reviews (05)</p>
-                                    </div>
-                                    <div class="text">
-                                        <p>
-                                            Udah sampe kak. Terima Kasih atas banntuannya kak. Paket sesuai denngan pesanan, ukurann dan type sesuai dengan yang diharapkan. Sangat luar biasa. Sekali lagi terima kasih bannyak atas bantuannya
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End Single Testimonials One-->
-
-                        <!--Start Single Testimonials One-->
-                        <div class="swiper-slide">
-                            <div class="testimonials-one__single">
-                                <div class="testimonials-one__single-img">
-                                    <div class="testimonials-one__single-img__inner">
-                                        <div class="inner">
-                                            <img src="assets/img/testimonial/profile.png" alt="">
-                                        </div>
-                                        <div class="overlay-box">
-                                            <span class="icon-quote-right"></span>
-                                        </div>
-                                    </div>
-                                    <div class="title-box">
+                                <div class="testimonial-card">
+                                    <div class="quote">❝</div>
+                                    <div class="testimonial-content">
+                                        <p>Terimakasih tim, pengiriman cepat stok saya jadi aman customer juga ga pada cancel. Harga juga sesuai sama yang diobrolin di awal. Mantap pokoknya</p>
                                         <h3>Fiqri</h3>
-                                        <p>Customer</p>
-                                    </div>
-                                </div>
-                                <div class="testimonials-one__single-content">
-                                    <div class="ster-icon">
-                                        <ul>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <p>Reviews (05)</p>
-                                    </div>
-                                    <div class="text">
-                                        <p>
-                                            Sudah saya terima, pas banget sebelum hujan. Mantap jumlahya sesuai, beli disini lebih cepat sampai. Respon admin dalam komunikasi dan transaksi sangat baik, sangat amann transaksi bisa rekber melalui aplikasi online shop
-                                        </p>
+                                        <span>Bisnis Case HP</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!--End Single Testimonials One-->
-
-                        <!--Start Single Testimonials One-->
+    
+                        <!-- Testimonial 2 -->
                         <div class="swiper-slide">
                             <div class="testimonials-one__single">
-                                <div class="testimonials-one__single-img">
-                                    <div class="testimonials-one__single-img__inner">
-                                        <div class="inner">
-                                            <img src="assets/img/testimonial/profile.png" alt="">
-                                        </div>
-                                        <div class="overlay-box">
-                                            <span class="icon-quote-right"></span>
-                                        </div>
-                                    </div>
-                                    <div class="title-box">
-                                        <h3>Immanuel O. D. P.</h3>
-                                        <p>Customer</p>
-                                    </div>
-                                </div>
-                                <div class="testimonials-one__single-content">
-                                    <div class="ster-icon">
-                                        <ul>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <p>Reviews (05)</p>
-                                    </div>
-                                    <div class="text">
-                                        <p>
-                                            Pengirimannya cepet om…
-                                            Barang juga sampai lebih cepat dari estimasi…
-                                            Puas banget...
-                                            Next saya akan order lagi ya om…
-                                            Mantap...
-                                        </p>
+                                <div class="testimonial-card">
+                                    <div class="quote">❝</div>
+                                    <div class="testimonial-content">
+                                        <p>Waktu pertama mau impor bingung nyari barang sama suplier, terimakasih tim jendral sudah dibantu nyari suplier yang harganya pas jadi bisnis saya bisa naik profitnya</p>
+                                        <h3>Dery</h3>
+                                        <span>Pengusaha Kacamata</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!--End Single Testimonials One-->
-
+    
+                        <!-- Testimonial 3 -->
+                        <div class="swiper-slide">
+                            <div class="testimonials-one__single">
+                                <div class="testimonial-card">
+                                    <div class="quote">❝</div>
+                                    <div class="testimonial-content">
+                                        <p>Mantap servisnya dibantu dicarikan suplier yang lebih terpercaya dan murah, meski sempat deg-degan tapi barangnya cocok dan sesuai estimasi</p>
+                                        <h3>Edy</h3>
+                                        <span>Pengusaha Jetski</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Testimonial 4 -->
+                        <div class="swiper-slide">
+                            <div class="testimonials-one__single">
+                                <div class="testimonial-card">
+                                    <div class="quote">❝</div>
+                                    <div class="testimonial-content">
+                                        <p>Pelayanan cepat dan fast respon. Barang selalu aman dan tiba sesuai estimasi. Bisa beli satuan atau banyak tetap dilayani. Recommended. Terimakasih</p>
+                                        <h3>SVISORJOGJA</h3>
+                                        <span>Bisnis Visor Helm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Testimonial 5 -->
+                        <div class="swiper-slide">
+                            <div class="testimonials-one__single">
+                                <div class="testimonial-card">
+                                    <div class="quote">❝</div>
+                                    <div class="testimonial-content">
+                                        <p>Aman terpercaya, barang sesuai dan sampai pas sama estimasi. Pasti jadi langganan</p>
+                                        <h3>Wiguna</h3>
+                                        <span>Pengusaha Case Handphone</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let swiperElement = document.querySelector(".thm-swiper__slider");
+        let swiper;
+        
+        if (swiperElement) {
+            let swiperOptions = JSON.parse(swiperElement.getAttribute("data-swiper-options"));
+    
+            // Function to handle Swiper initialization based on screen size
+            function handleSwiper() {
+                // Always destroy previous swiper instance if it exists
+                if (swiper) {
+                    swiper.destroy(true, true);
+                    swiper = null;
+                }
+                
+                // Initialize swiper on smaller screens
+                if (window.innerWidth < 1200) {
+                    swiper = new Swiper(swiperElement, swiperOptions);
+                }
+            }
+    
+            // Run on page load
+            handleSwiper();
+    
+            // Run on window resize with debounce
+            let resizeTimer;
+            window.addEventListener("resize", function() {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(handleSwiper, 250);
+            });
+        }
+    });
+    </script>
     <!--End Testimonials One-->
 
     <div>

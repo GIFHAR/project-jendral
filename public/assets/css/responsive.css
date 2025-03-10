@@ -6,10 +6,11 @@
 
 .testimonials-one__single {
 	display: flex;
-	border: 2px solid #E3E3E3;
+	/* border: 2px solid #E3E3E3; */
 	padding: 40px 40px 40px;
 	flex-grow: 1;
     height: 100%;
+	width: auto;
 }
 
 @media only screen and (min-width: 1351px) and (max-width: 1800px) {}
@@ -990,8 +991,8 @@
 
 	.testimonials-one__single {
 		display: flex;
-		border: 2px solid #E3E3E3;
-		padding: 30px 40px 20px;
+		/* border: 2px solid #E3E3E3; */
+		padding: 0px 10px 10px 10px;
 		flex-direction: column;
 	}
 
