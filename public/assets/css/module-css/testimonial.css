@@ -1,6 +1,38 @@
 /*=============================
 	Testimonials One Css
 ===============================*/
+.desktop-testimonials {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .thm-swiper__slider {
+        display: none;
+    }
+    
+    .desktop-testimonials {
+        display: block;
+        width: 100%;
+    }
+    
+    .testimonials-row {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    .top-row .testimonials-one__single {
+        width: calc(33.333% - 0px);
+        /* max-width: 350px; */
+    }
+    
+    .bottom-row .testimonials-one__single {
+        width: calc(33.333% - 50px);
+        max-width: 35%;
+        margin: 0px;
+    }
+}
+
 .testimonials-one {
     padding: 60px 0px 30px;
     z-index: 1;

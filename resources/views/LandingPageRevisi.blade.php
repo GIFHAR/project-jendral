@@ -696,6 +696,72 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="desktop-testimonials">
+                    <div class="testimonials-row top-row">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonials-one__single">
+                            <div class="testimonial-card">
+                                <div class="quote">❝</div>
+                                <div class="testimonial-content">
+                                    <p>Terimakasih tim, pengiriman cepat stok saya jadi aman customer juga ga pada cancel. Harga juga sesuai sama yang diobrolin di awal. Mantap pokoknya</p>
+                                    <h3>Fiqri</h3>
+                                    <span>Bisnis Case HP</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonials-one__single">
+                            <div class="testimonial-card">
+                                <div class="quote">❝</div>
+                                <div class="testimonial-content">
+                                    <p>Waktu pertama mau impor bingung nyari barang sama suplier, terimakasih tim jendral sudah dibantu nyari suplier yang harganya pas jadi bisnis saya bisa naik profitnya</p>
+                                    <h3>Dery</h3>
+                                    <span>Pengusaha Kacamata</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="testimonials-one__single">
+                            <div class="testimonial-card">
+                                <div class="quote">❝</div>
+                                <div class="testimonial-content">
+                                    <p>Mantap servisnya dibantu dicarikan suplier yang lebih terpercaya dan murah, meski sempat deg-degan tapi barangnya cocok dan sesuai estimasi</p>
+                                    <h3>Edy</h3>
+                                    <span>Pengusaha Jetski</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonials-row bottom-row">
+                        <!-- Testimonial 4 -->
+                        <div class="testimonials-one__single">
+                            <div class="testimonial-card">
+                                <div class="quote">❝</div>
+                                <div class="testimonial-content">
+                                    <p>Pelayanan cepat dan fast respon. Barang selalu aman dan tiba sesuai estimasi. Bisa beli satuan atau banyak tetap dilayani. Recommended. Terimakasih</p>
+                                    <h3>SVISORJOGJA</h3>
+                                    <span>Bisnis Visor Helm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 5 -->
+                        <div class="testimonials-one__single">
+                            <div class="testimonial-card">
+                                <div class="quote">❝</div>
+                                <div class="testimonial-content">
+                                    <p>Aman terpercaya, barang sesuai dan sampai pas sama estimasi. Pasti jadi langganan</p>
+                                    <h3>Wiguna</h3>
+                                    <span>Pengusaha Case Handphone</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

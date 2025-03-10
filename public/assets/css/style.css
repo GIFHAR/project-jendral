@@ -4107,7 +4107,7 @@ label {
     background-color: #194627;
     color: white;
     padding: 40px 30px;
-    height: 350px;
+    height: 300px;
     width: auto;
     text-align: center;
     border-radius: 20px;
@@ -4128,6 +4128,7 @@ label {
     line-height: 1.5;
     margin-bottom: 20px;
     color: #fdf1e1;
+    padding-top: 10px;
 }
 
 .testimonial-content h3 {
