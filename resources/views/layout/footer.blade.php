@@ -1,26 +1,41 @@
 <footer class="footer">
     <div class="footer-container">
-        <!-- Background Section -->
-        <div class="footer--bg py-7 py-lg-8" 
-            style="position: absolute; 
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-image: url({{ asset('assets/img/footer/bg.png') }});  
-                background-size: cover; 
-                background-position: center; 
-                background-repeat: no-repeat;
-                z-index: 0;">
+    <!-- Background Section -->
+    <div class="footer--bg py-7 py-lg-8"></div>
+    
+    <!-- Content -->
+    <div class="footer-content">
+        <!-- Navigation Menu -->
+        <div class="footer-nav">
+            <a href="#">Home</a>
+            <a href="#">Service</a>
+            <a href="#">Pricelist</a>
+            <a href="#">Tracking</a>
+            <a href="#">Konsultasi</a>
         </div>
+        
+        <!-- Company Info -->
+        <div class="company-info">
+            <div class="company-address">Jl. Tasikmalaya No.02 Kecamatan Kacapiring Kelurahan Batununggal Kota Bandung, 40271</div>
 
-        <!-- Content -->
-        <div class="footer-content" style="position: relative; z-index: 1;">
-
-            <!-- Contact Info -->
-            <ul class="footer-contact-info">
-                <!-- ... (keep your contact info list the same) ... -->
-            </ul>
+            <div class="contact-item">
+                <span class="icon-open-mail"></span>
+                <span>jendralimport@gmail.com</span>
+            </div>
+            <div class="contact-item">
+                <span class="icon-phone-call-1"></span>
+                <span>+62 823-1819-2056</span>
+            </div>
+            <div class="contact-item">
+                <span class="icon-instagram"></span>
+                <span>@jenderalimport</span>
+            </div>
         </div>
+        
+        <!-- Copyright -->
+        <div class="copyright">
+        ©Jenderal Import One Stop Import Solution
+        </div>
+    </div>
     </div>
 </footer>
