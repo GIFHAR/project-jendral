@@ -4146,47 +4146,9 @@ label {
 
 @media (min-width: 1200px) {
     .swiper-container {
-        overflow: visible !important;
+        overflow: hidden !important; /* Keep original overflow */
     }
-
-    .swiper-wrapper {
-        display: grid !important;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto auto;
-        gap: 30px;
-        transform: none !important;
-        width: 100% !important;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .swiper-slide {
-        width: 100% !important;
-        height: auto !important;
-        margin: 0 !important;
-        opacity: 1 !important;
-    }
-
-    /* Position last two items in second row */
-    .swiper-slide:nth-child(4) {
-        grid-column: 1 / 2;
-        grid-row: 2;
-    }
-
-    .swiper-slide:nth-child(5) {
-        grid-column: 2 / 3;
-        grid-row: 2;
-    }
-
-    /* Center the bottom row */
-    .swiper-wrapper::after {
-        content: '';
-        flex: auto;
-        grid-column: 3 / 4;
-        grid-row: 2;
-        visibility: hidden;
-    }
-    }
+}
 
 
 
