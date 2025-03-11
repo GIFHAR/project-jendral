@@ -4146,7 +4146,7 @@ label {
 
 @media (min-width: 1200px) {
     .swiper-container {
-        overflow: hidden !important; /* Keep original overflow */
+        overflow: hidden !important;
     }
 }
 

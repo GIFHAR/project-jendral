@@ -1,44 +1,25 @@
 <footer class="footer">
     <div class="footer-container">
-        <div class="footer-logo">
-            <a href="/home">
-                <img src="{{asset('assets/img/headerjendral/logojendral.png')}}" alt="Logo">
-            </a>
+        <!-- Background Section -->
+        <div class="footer--bg py-7 py-lg-8" 
+            style="position: absolute; 
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url({{ asset('assets/img/footer/bg.png') }});  
+                background-size: cover; 
+                background-position: center; 
+                background-repeat: no-repeat;
+                z-index: 0;">
         </div>
-        <div class="footer-content">
+
+        <!-- Content -->
+        <div class="footer-content" style="position: relative; z-index: 1;">
+
+            <!-- Contact Info -->
             <ul class="footer-contact-info">
-                <li>
-                    <div class="icon">
-                        <span class="icon-open-mail"></span>
-                    </div>
-                    <div class="text">
-                        <p><a href="mailto:jendralimport@gmail.com">jendralimport@gmail.com</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon">
-                        <span class="fas fa-map-marker-alt"></span>
-                    </div>
-                    <div class="text">
-                        <p>Jl. Tasikmalaya No.2 Kacapiring, Kec. Batununggal, Kota Bandung, Jawa Barat 40271</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon">
-                        <span class="fab fa-instagram"></span>
-                    </div>
-                    <div class="text">
-                        <p>@jenderalimport</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon">
-                        <span class="fab fa-whatsapp"></span>
-                    </div>
-                    <div class="text">
-                        <p>+62 823-1819-2056</p>
-                    </div>
-                </li>
+                <!-- ... (keep your contact info list the same) ... -->
             </ul>
         </div>
     </div>
