@@ -101,24 +101,73 @@
     margin: 30px auto;
 }
 
-.card {
+.card-service {
     width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    transform-origin: center;
 }
 
-.card:nth-child(5) {
+/* Hover animation effects */
+.card-service:hover {
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.card-service::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 70%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.card-service:hover::before {
+    opacity: 1;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+
+.card-service:hover > * {
+    position: relative;
+    z-index: 2;
+}
+
+.card-service:nth-child(5) {
     grid-column: 2 / 3;
 }
 
-.card:nth-child(6) {
+.card-service:nth-child(6) {
     grid-column: 3 / 4;
 }
 
-.card img {
+.card-service img {
     width: 100%;
     height: auto;
     border-radius: 8px;

@@ -55,32 +55,32 @@
 
     <!--Start Service Card-->
     <div class="card-container">
-        <div class="card">
+        <div class="card-service">
             <a href="/seafreight">
                 <img src="assets/img/servicejendral/002 SEA FREIGHT.png" alt="Sea Freight">
             </a>
         </div>
-        <div class="card">
+        <div class="card-service">
             <a href="/airfreight">
                 <img src="assets/img/servicejendral/003 AIR FREIGHT.png" alt="Air Freight">
             </a>
         </div>
-        <div class="card">
+        <div class="card-service">
             <a href="/jasabelanja">
                 <img src="assets/img/servicejendral/004 JASA_.png" alt="Marketplace China">
             </a>
         </div>
-        <div class="card">
+        <div class="card-service">
             <a href="/rmbtransfer">
                 <img src="assets/img/servicejendral/005 TRANSFER.png" alt="Transfer to RMB">
             </a>
         </div>
-        <div class="card">
+        <div class="card-service">
             <a href="/d2d">
                 <img src="assets/img/servicejendral/006 DOOR TO DOOR.png" alt="Door-to-door Import">
             </a>
         </div>
-        <div class="card">
+        <div class="card-service">
             <a href="/konsultasi">
                 <img src="assets/img/servicejendral/001 KONSUL.png" alt="Consultation">
             </a>

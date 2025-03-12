@@ -239,7 +239,7 @@
     <div class="container">
         <div class="layanan-button">
             <div class="line"></div>
-            <button class="custom-button">Lihat Layanan Kami</button>
+                <button class="custom-button" onclick="window.location.href='/services'">Lihat Layanan Kami</button>
             <div class="line"></div>
         </div>
     </div>

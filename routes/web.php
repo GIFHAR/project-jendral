@@ -27,8 +27,7 @@ Route::get('/home', [App\Http\Controllers\HeaderController::class, 'home'])->nam
 
 // Route::get('/aboutus', [App\Http\Controllers\HeaderController::class, 'aboutus'])->name('aboutus');
 
-// Route::get('/services', [App\Http\Controllers\HeaderController::class, 'services'])->name('services');
-
+Route::get('/services', [App\Http\Controllers\HeaderController::class, 'services'])->name('services');
 Route::get('/seafreight', [App\Http\Controllers\HeaderController::class, 'seafreight'])->name('seafreight');
 Route::get('/airfreight', [App\Http\Controllers\HeaderController::class, 'airfreight'])->name('airfreight');
 Route::get('/jasabelanja', [App\Http\Controllers\HeaderController::class, 'jasabelanja'])->name('jasabelanja');

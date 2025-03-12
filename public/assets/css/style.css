@@ -4080,6 +4080,14 @@ label {
     width: 20%;
 }
 
+.custom-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    z-index: 10;
+    background-color: #ef8370;
+}
+
 .line {
     width: 20%;
     height: 2px;

@@ -16,10 +16,10 @@ class HeaderController extends Controller
     //     return view('aboutusPage');
     // }
 
-    // public function services()
-    // {
-    //     return view('services/seafreight');
-    // }
+    public function services()
+    {
+        return view('services/masterservice');
+    }
 
     public function seafreight()
     {
