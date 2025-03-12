@@ -41,4 +41,33 @@
         </div>
     </div>
 </div>
+
+<div class="category-container">
+    <div class="heading-container">
+        <h2 style="color: #194627">KATEGORI BARANG</h2>
+    </div>
+    <div class="kategori-card-container">
+        <div class="kategori-card">
+            <img src="assets/img/servicejendral/category/Phone Case & Acc.png" alt="Phone Case & Acc">
+        </div>
+        <div class="kategori-card">
+            <img src="assets/img/servicejendral/category/Tas.png" alt="Tas">
+        </div>
+        <div class="kategori-card">
+            <img src="assets/img/servicejendral/category/Sepatu.png" alt="Sepatu">
+        </div>
+        <div class="kategori-card">
+            <img src="assets/img/servicejendral/category/Tekstil.png" alt="Tekstil">
+        </div>
+        <div class="kategori-card">
+            <img src="assets/img/servicejendral/category/Garmen.png" alt="Garmen">
+        </div>
+        <div class="kategori-card">
+            <img src="assets/img/servicejendral/category/Lartas.png" alt="Barang Lartas">
+        </div>
+        <div class="kategori-card">
+            <img src="assets/img/servicejendral/category/Barang Umum.png" alt="Barang Umum">
+        </div>
+    </div>
+</div>
 @endsection

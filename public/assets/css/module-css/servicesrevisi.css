@@ -97,7 +97,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
-    width: 80%;
+    width: 70%;
     margin: 30px auto;
 }
 
@@ -126,9 +126,16 @@
 
 .service-container {
     display: flex;
-    max-width: 1200px;
+    max-width: 80%;
     margin: auto;
     gap: 20px;
+}
+
+.category-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    margin: 50px auto;
 }
 
 .image-section {
@@ -227,6 +234,33 @@ li {
 .benefits h3.subheading {
     margin-top: 0;
 }
+
+.kategori-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0px;
+    margin: 0px auto;
+}
+
+.kategori-card {
+    width: calc(25% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kategori-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.kategori-card-container:last-child {
+    justify-content: center;
+}
+
 
 @media (max-width: 1200px) {    
     .service-first-row{
