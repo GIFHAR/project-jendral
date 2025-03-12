@@ -66,7 +66,9 @@
             </a>
         </div>
         <div class="card">
-            <img src="assets/img/servicejendral/004 JASA_.png" alt="Marketplace China">
+            <a href="/jasabelanja">
+                <img src="assets/img/servicejendral/004 JASA_.png" alt="Marketplace China">
+            </a>
         </div>
         <div class="card">
             <img src="assets/img/servicejendral/005 TRANSFER.png" alt="Transfer to RMB">

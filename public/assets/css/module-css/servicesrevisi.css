@@ -128,6 +128,7 @@
     display: flex;
     max-width: 80%;
     margin: auto;
+    margin-bottom: 50px;
     gap: 20px;
 }
 
@@ -161,6 +162,8 @@
 
 .content-section p {
     padding-left: 10px;
+    margin-bottom: 7px;
+    font-size: 17px;
 }
 
 .heading-container {
@@ -269,6 +272,46 @@ h4 {
 
 .kategori-card-container:last-child {
     justify-content: center;
+}
+
+.contact-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-section .contact-button {
+    background-color: #f15e44;
+    color: white;
+    width: 50%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 40px auto 20px auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.contact-section .contact-button:hover {
+    background-color: #e84b2f;
+}
+
+.contact-section p {
+    font-size: 28px;
+}
+
+.contact-button:hover {
+    background-color: #d94e3a;
+}
+
+.consultation-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #114020;
+    margin-top: 10px;
 }
 
 

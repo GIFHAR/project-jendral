@@ -31,6 +31,11 @@ class HeaderController extends Controller
         return view('services/airfreight');
     }
 
+    public function jasabelanja()
+    {
+        return view('services/jasa');
+    }
+
     ////////////////////////////
 
     // public function konsultasibisnis()

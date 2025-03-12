@@ -3,7 +3,7 @@
 @section('content')
 <div class="service-container">
     <div class="image-section">
-        <img src="assets/img/servicejendral/FCL_LCL.png" alt="Sea Freight">
+        <img src="assets/img/servicejendral/Air Freight.png" alt="Sea Freight">
     </div>
     <div class="content-section">
         <div class="heading-container">
