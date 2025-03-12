@@ -46,6 +46,11 @@ class HeaderController extends Controller
         return view('services/door2door');
     }
 
+    public function konsultasi()
+    {
+        return view('services/konsultasi');
+    }
+
     ////////////////////////////
 
     // public function konsultasibisnis()

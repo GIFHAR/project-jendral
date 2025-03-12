@@ -81,7 +81,9 @@
             </a>
         </div>
         <div class="card">
-            <img src="assets/img/servicejendral/001 KONSUL.png" alt="Consultation">
+            <a href="/konsultasi">
+                <img src="assets/img/servicejendral/001 KONSUL.png" alt="Consultation">
+            </a>
         </div>
     </div>
     <!--End Service Cards-->

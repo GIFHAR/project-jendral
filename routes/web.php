@@ -34,6 +34,7 @@ Route::get('/airfreight', [App\Http\Controllers\HeaderController::class, 'airfre
 Route::get('/jasabelanja', [App\Http\Controllers\HeaderController::class, 'jasabelanja'])->name('jasabelanja');
 Route::get('/rmbtransfer', [App\Http\Controllers\HeaderController::class, 'rmbtransfer'])->name('rmbtransfer');
 Route::get('/d2d', [App\Http\Controllers\HeaderController::class, 'doortodoor'])->name('doortodoor');
+Route::get('/konsultasi', [App\Http\Controllers\HeaderController::class, 'konsultasi'])->name('konsultasi');
 
 // Route::get('/konsultasibisnis', [App\Http\Controllers\HeaderController::class, 'konsultasibisnis'])->name('konsultasibisnis');
 
