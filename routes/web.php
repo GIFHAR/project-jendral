@@ -29,13 +29,13 @@ Route::get('/home', [App\Http\Controllers\HeaderController::class, 'home'])->nam
 
 Route::get('/services', [App\Http\Controllers\HeaderController::class, 'services'])->name('services');
 
-// Route::get('/konsultasibisnis', [App\Http\Controllers\HeaderController::class, 'konsultasibisnis'])->name('konsultasibisnis');
+Route::get('/konsultasibisnis', [App\Http\Controllers\HeaderController::class, 'konsultasibisnis'])->name('konsultasibisnis');
 
-// Route::get('/jasapembelian', [App\Http\Controllers\HeaderController::class, 'jasapembelian'])->name('jasapembelian');
+Route::get('/jasapembelian', [App\Http\Controllers\HeaderController::class, 'jasapembelian'])->name('jasapembelian');
 
-// Route::get('/jasawarehouse', [App\Http\Controllers\HeaderController::class, 'jasawarehouse'])->name('jasawarehouse');
+Route::get('/jasawarehouse', [App\Http\Controllers\HeaderController::class, 'jasawarehouse'])->name('jasawarehouse');
 
-// Route::get('/jasapengiriman', [App\Http\Controllers\HeaderController::class, 'jasapengiriman'])->name('jasapengiriman');
+Route::get('/jasapengiriman', [App\Http\Controllers\HeaderController::class, 'jasapengiriman'])->name('jasapengiriman');
 
 // Route::get('/pricing', [App\Http\Controllers\HeaderController::class, 'pricing'])->name('pricing');
 
