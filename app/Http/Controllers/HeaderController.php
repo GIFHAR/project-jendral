@@ -36,6 +36,11 @@ class HeaderController extends Controller
         return view('services/jasa');
     }
 
+    public function rmbtransfer()
+    {
+        return view('services/rmb');
+    }
+
     ////////////////////////////
 
     // public function konsultasibisnis()

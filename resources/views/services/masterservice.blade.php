@@ -71,7 +71,9 @@
             </a>
         </div>
         <div class="card">
-            <img src="assets/img/servicejendral/005 TRANSFER.png" alt="Transfer to RMB">
+            <a href="/rmbtransfer">
+                <img src="assets/img/servicejendral/005 TRANSFER.png" alt="Transfer to RMB">
+            </a>
         </div>
         <div class="card">
             <img src="assets/img/servicejendral/006 DOOR TO DOOR.png" alt="Door-to-door Import">
