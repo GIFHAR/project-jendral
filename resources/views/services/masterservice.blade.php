@@ -76,7 +76,9 @@
             </a>
         </div>
         <div class="card">
-            <img src="assets/img/servicejendral/006 DOOR TO DOOR.png" alt="Door-to-door Import">
+            <a href="/d2d">
+                <img src="assets/img/servicejendral/006 DOOR TO DOOR.png" alt="Door-to-door Import">
+            </a>
         </div>
         <div class="card">
             <img src="assets/img/servicejendral/001 KONSUL.png" alt="Consultation">

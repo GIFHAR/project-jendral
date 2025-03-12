@@ -41,6 +41,11 @@ class HeaderController extends Controller
         return view('services/rmb');
     }
 
+    public function doortodoor()
+    {
+        return view('services/door2door');
+    }
+
     ////////////////////////////
 
     // public function konsultasibisnis()
