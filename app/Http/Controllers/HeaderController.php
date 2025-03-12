@@ -16,32 +16,42 @@ class HeaderController extends Controller
     //     return view('aboutusPage');
     // }
 
-    public function services()
+    // public function services()
+    // {
+    //     return view('services/seafreight');
+    // }
+
+    public function seafreight()
     {
         return view('services/seafreight');
     }
 
+    public function airfreight()
+    {
+        return view('services/airfreight');
+    }
+
     ////////////////////////////
 
-    public function konsultasibisnis()
-    {
-        return view('konsultasibisnisPage');
-    }
+    // public function konsultasibisnis()
+    // {
+    //     return view('konsultasibisnisPage');
+    // }
 
-    public function jasapembelian()
-    {
-        return view('jasapembelianPage');
-    }
+    // public function jasapembelian()
+    // {
+    //     return view('jasapembelianPage');
+    // }
 
-    public function jasawarehouse()
-    {
-        return view('jasawarehousePage');
-    }
+    // public function jasawarehouse()
+    // {
+    //     return view('jasawarehousePage');
+    // }
 
-    public function jasapengiriman()
-    {
-        return view('jasapengirimanPage');
-    }
+    // public function jasapengiriman()
+    // {
+    //     return view('jasapengirimanPage');
+    // }
 
     /////////////////////////////////
 

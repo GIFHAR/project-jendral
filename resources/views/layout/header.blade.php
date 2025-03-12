@@ -86,7 +86,7 @@
                                     <div class="navbar-wrap main-menu">
                                         <ul class="navigation">
                                             <li><a href="{{ route('home')}}">Home</a></li>
-                                            <li><a href="{{ route('services')}}">Services</a></li>
+                                            <li><a href="{{ route('seafreight')}}">Services</a></li>
                                             {{-- <li><a href="{{ route('pricing')}}">Pricing</a></li> --}}
                                             <li><a href="{{ route('tracking')}}">Tracking</a></li>
                                             <li><a href="{{ route('contact')}}">Contacts</a></li>

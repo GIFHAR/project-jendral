@@ -56,10 +56,14 @@
     <!--Start Service Card-->
     <div class="card-container">
         <div class="card">
-            <img src="assets/img/servicejendral/002 SEA FREIGHT.png" alt="Sea Freight">
+            <a href="/seafreight">
+                <img src="assets/img/servicejendral/002 SEA FREIGHT.png" alt="Sea Freight">
+            </a>
         </div>
         <div class="card">
-            <img src="assets/img/servicejendral/003 AIR FREIGHT.png" alt="Air Freight">
+            <a href="/airfreight">
+                <img src="assets/img/servicejendral/003 AIR FREIGHT.png" alt="Air Freight">
+            </a>
         </div>
         <div class="card">
             <img src="assets/img/servicejendral/004 JASA_.png" alt="Marketplace China">
