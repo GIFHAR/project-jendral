@@ -145,6 +145,31 @@
     padding: 1rem 0;
 }
 
+@media (max-width: 1200px) {
+    .footer-content {
+        flex-direction: row;
+        margin-bottom: 60%;
+        padding-top: 22vh;
+    }
+
+    .copyright {
+        display: none;
+    }
+
+    .footer--bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        background-size: cover;
+    }
+}
+
+/* .nav-info {
+    width: 100%;
+} */
+
 @media (min-width: 1200px) {
     .footer {
         min-height: 100vh;
@@ -189,6 +214,7 @@
     .footer-nav {
         grid-column: 1;
         grid-row: 1;
+        padding-top: 20vh;
     }
     
     .company-info {

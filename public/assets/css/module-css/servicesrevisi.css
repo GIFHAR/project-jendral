@@ -94,7 +94,7 @@
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
     width: 70%;
@@ -179,6 +179,14 @@
     margin: auto;
     margin-bottom: 50px;
     gap: 20px;
+}
+
+.service-container-consult {
+    display: flex;
+    margin: auto;
+    margin-bottom: 50px;
+    gap: 20px;
+    max-width: 40%
 }
 
 .category-container {
@@ -496,11 +504,38 @@ h4 {
 
     .card-container {
         grid-template-columns: repeat(2, 1fr);
+        padding: 0;
     }
     
-    .card:nth-child(5),
-    .card:nth-child(6) {
+    .card-service:nth-child(5),
+    .card-service:nth-child(6) {
         grid-column: auto;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-section {
+        width: 100%;
+    }
+
+    .kategori-card {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .kategori-card:nth-child(odd):last-child {
+        flex-basis: calc(50% - 20px);
+        margin: 0 auto;
+    }
+
+    .kategori-card:nth-child(odd):last-child img {
+        width: 50%;
+    }
+
+    .service-container-consult {
+        max-width: 80%
     }
 }
 

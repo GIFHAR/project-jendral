@@ -35,7 +35,7 @@
 
 </head>
 
-<body class="body-gray-bg">
+<body class="body-gray-bg color-fish-chrome">
     <!-- preloader -->
     <div id="preloader">
         <div id="loading-center">

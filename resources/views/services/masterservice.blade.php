@@ -29,7 +29,21 @@
     <link rel="stylesheet" href="{{ asset('assets/css/module-css/servicesrevisi.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+    <style>
+        .banner-three {
+            background-image: url('assets/img/servicejendral/servicebackground.png');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+        }
 
+        @media screen and (max-width: 1200px) {
+            .banner-three {
+                background-image: url('assets/img/servicejendral/servicebackground-mobile.png');
+                height: 250px;
+            }
+        }
+    </style>
 </head>
 
 <body class="body-gray-bg color-fish-chrome">
@@ -51,7 +65,7 @@
     <!--End Main Header One -->
 
     <!--Start Banner One-->
-    <section class="banner-three" style="background-image: url('assets/img/servicejendral/servicebackground.png'); background-size: cover; background-position: center; height: 500px;"></section>
+    <section class="banner-three"></section>
 
     <!--Start Service Card-->
     <div class="card-container">

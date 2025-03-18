@@ -1,7 +1,7 @@
 @extends('services.masterservice')
 
 @section('content')
-<div class="service-container" style="max-width: 40%">
+<div class="service-container-consult">
     <div>
         <div class="content-section">
             <div class="heading-container"></div>

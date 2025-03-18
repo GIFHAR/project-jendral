@@ -77,7 +77,7 @@ class HeaderController extends Controller
 
     public function pricing()
     {
-        return view('pricingPage');
+        return view('pricingList');
     }
 
     public function tracking()

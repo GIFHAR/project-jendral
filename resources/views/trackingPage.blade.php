@@ -36,9 +36,23 @@
         .content {
             flex: 1;
         }
+
+        .banner-three {
+            background-image: url('assets/img/headerjendral/LiveTrackingHeader.png');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .banner-three {
+                background-image: url('assets/img/headerjendral/LiveTrackingHeader-mobile.png');
+                height: 250px;
+            }
+        }
     </style>
 </head>
-<body>
+<body class="body-gray-bg color-fish-chrome">
     <!-- preloader -->
     <div id="preloader">
         <div id="loading-center">
@@ -54,11 +68,22 @@
     <div>
         @include('layout/header')
     </div>
+    <!--End Main Header One -->
+
+    <!--Start Banner One-->
+    <section class="banner-three"></section>
+
 
     <div class="tracking-container">
+        <div class="content-section">
+            <div class="heading-container">
+                <h2 class="highlight">LIVE TRACKING</h2>
+            </div>
+            <p>Silakan masukan kode resi anda di bawah ini</p>
+        </div>
         <form id="tracking-form" method="GET" class="tracking-header">
             <input type="text" id="marking_code" name="marking_code" placeholder="Enter your marking code..." class="tracking-input" value="{{ request()->marking_code }}">
-            <button type="submit" class="tracking-button"><strong>Track</strong></button>
+            <button type="submit" class="tracking-button"><strong>Lacak Pengiriman</strong></button>
         </form>
         
         <script>

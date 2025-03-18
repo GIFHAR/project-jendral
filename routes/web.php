@@ -43,7 +43,7 @@ Route::get('/konsultasi', [App\Http\Controllers\HeaderController::class, 'konsul
 
 // Route::get('/jasapengiriman', [App\Http\Controllers\HeaderController::class, 'jasapengiriman'])->name('jasapengiriman');
 
-// Route::get('/pricing', [App\Http\Controllers\HeaderController::class, 'pricing'])->name('pricing');
+Route::get('/pricing', [App\Http\Controllers\HeaderController::class, 'pricing'])->name('pricing');
 
 Route::match(['get', 'post'], '/calculatePricing', [App\Http\Controllers\HeaderController::class, 'pricing'])->name('calculatePricing');
 
