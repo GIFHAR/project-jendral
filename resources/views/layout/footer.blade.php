@@ -5,7 +5,19 @@
         
         <!-- Content -->
         <div class="footer-content">
-            {{-- <div class="nav-info"> --}}
+            <div class="footer-header">
+                <div class="footer-logo">
+                    <img src="/assets/img/headerjendral/logojendralHijau.png" alt="Jenderal Import">
+                </div>
+                <div class="footer-address">
+                    Jl. Tasikmalaya No.02, Kecamatan Kacapiring, Kelurahan Batununggal, Kota Bandung 40271
+                </div>
+            </div>
+            <div class="footer-title">
+                Jenderal Import by PT. Singberkah
+                Global Management
+            </div>
+            <div class="nav-info">
                 <!-- Navigation Menu -->
                 <div class="footer-nav">
                     <a href="{{ route('home')}}">Home</a>
@@ -21,18 +33,18 @@
 
                     <div class="contact-item">
                         <span class="icon-open-mail"></span>
-                        <span>jendralimport@gmail.com</span>
+                        <span><a href="mailto:jenderalimport@gmail.com">jendralimport@gmail.com</a></span>
                     </div>
                     <div class="contact-item">
                         <span class="icon-phone-call-1"></span>
-                        <span>+62 823-1819-2056</span>
+                        <span><a href="tel:62823-1819-2056">+62 823-1819-2056</a></span>
                     </div>
                     <div class="contact-item">
                         <span class="icon-instagram"></span>
-                        <span>@jenderalimport</span>
+                        <span><a href="https://www.instagram.com/jenderalimport">@jenderalimport</a></span>
                     </div>
                 </div>
-            {{-- </div> --}}
+            </div>
             
             <!-- Copyright -->
             <div class="copyright">

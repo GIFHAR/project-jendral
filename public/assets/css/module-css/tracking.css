@@ -197,4 +197,17 @@ body {
     .timeline {
         padding-left: 10px;
     }
+
+    .tracking-header {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .tracking-input {
+        width: 100%;
+    }
+
+    .tracking-button {
+        margin-left: auto;
+    }
 }

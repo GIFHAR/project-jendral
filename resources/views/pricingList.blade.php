@@ -116,9 +116,6 @@
             .banner-three {
                 background-image: url('assets/img/headerjendral/PricelistHeader-mobile.png');
                 height: 250px;
-                background-position: left center;
-                background-repeat: no-repeat;
-                background-size: auto;
             }
         }
     </style>
