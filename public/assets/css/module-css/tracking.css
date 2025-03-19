@@ -63,6 +63,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    height: auto;
 }
 
 .tracking-header {
@@ -80,15 +81,17 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     flex: 1;
+    margin-top: 10px;
 }
 
 .tracking-button {
-    background-color: #ffa500;
+    background-color: #194627;
     color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .tracking-button:hover {
@@ -155,7 +158,13 @@ body {
     border-radius: 50%;
 }
 
-
+.highlight {
+    color: #0A4707;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0;
+    border-bottom: none;
+}
 
 
 .completed .status-icon {
@@ -180,5 +189,23 @@ body {
     .tracking-container {
         width: 90%;
         margin: 10px auto;
+        height: auto;
+    }
+
+    .timeline {
+        padding-left: 10px;
+    }
+
+    .tracking-header {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .tracking-input {
+        width: 100%;
+    }
+
+    .tracking-button {
+        margin-left: auto;
     }
 }

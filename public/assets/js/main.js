@@ -124,8 +124,10 @@
     $(window).on("scroll", function () {
         var scroll = $(window).scrollTop();
         if (scroll < 245) {
-            $("#sticky-header").removeClass("sticky-menu");
-            $(".scroll-to-target").removeClass("open");
+            // $("#sticky-header").removeClass("sticky-menu");
+            // $(".scroll-to-target").removeClass("open");
+            $("#sticky-header").addClass("sticky-menu");
+            $(".scroll-to-target").addClass("open");
         } else {
             $("#sticky-header").addClass("sticky-menu");
             $(".scroll-to-target").addClass("open");

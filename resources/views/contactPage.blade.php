@@ -35,7 +35,7 @@
 
 </head>
 
-<body class="body-gray-bg">
+<body class="body-gray-bg color-fish-chrome">
     <!-- preloader -->
     <div id="preloader">
         <div id="loading-center">
@@ -95,7 +95,7 @@
                 <section class="contact-header">
                     <div class="sec-title text-center">
                         <div class="sub-title">
-                            <h4>Contact us</h4>
+                            <h4 style="margin: auto;">Contact us</h4>
                         </div>
                         <h2>
                             Get in Touch With Us
@@ -194,6 +194,10 @@
         </div>
     </section>
     <!--Contact One End-->
+
+    <div>
+        @include('layout/footer')
+    </div>
 
 
 

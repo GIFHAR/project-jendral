@@ -26,8 +26,33 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/module-css/tracking.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+    <style>
+        body, html {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .content {
+            flex: 1;
+        }
+
+        .banner-three {
+            background-image: url('assets/img/headerjendral/LiveTrackingHeader.png');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .banner-three {
+                background-image: url('assets/img/headerjendral/LiveTrackingHeader-mobile.png');
+                height: 250px;
+            }
+        }
+    </style>
 </head>
-<body>
+<body class="body-gray-bg color-fish-chrome">
     <!-- preloader -->
     <div id="preloader">
         <div id="loading-center">
@@ -43,22 +68,45 @@
     <div>
         @include('layout/header')
     </div>
+    <!--End Main Header One -->
+
+    <!--Start Banner One-->
+    <section class="banner-three"></section>
+
 
     <div class="tracking-container">
+        <div class="content-section">
+            <div class="heading-container">
+                <h2 class="highlight">LIVE TRACKING</h2>
+            </div>
+            <p>Silakan masukan kode resi anda di bawah ini</p>
+        </div>
         <form id="tracking-form" method="GET" class="tracking-header">
-            <input type="text" id="marking_code" name="marking_code" placeholder="Marking Code" class="tracking-input" value="{{ request()->marking_code }}">
-            <button type="submit" class="tracking-button"><strong>Track</strong></button>
+            <input type="text" id="marking_code" name="marking_code" placeholder="Enter your marking code..." class="tracking-input" value="{{ request()->marking_code }}">
+            <button type="submit" class="tracking-button"><strong>Lacak Pengiriman</strong></button>
         </form>
         
         <script>
             document.getElementById('tracking-form').addEventListener('submit', function(event) {
-                event.preventDefault(); // Prevent default form submission
+                event.preventDefault();
                 
                 var markingCode = document.getElementById('marking_code').value; // Get the marking code value
         
                 if(markingCode) {
-                    // Redirect to the desired URL format
                     window.location.href = `/orders/${markingCode}`;
+                }
+            });
+
+            document.addEventListener("DOMContentLoaded", function() {
+                if (window.location.pathname.startsWith("/orders/")) {
+                    let banner = document.querySelector(".banner-three");
+                    if (banner) {
+                        if (window.innerWidth > 1200) {
+                            banner.style.height = "6vh";
+                        } else {
+                            banner.style.height = "11vh";
+                        }
+                    }
                 }
             });
         </script>
@@ -122,7 +170,10 @@
             <p>{{ $error }}</p>
         @endif
     </div>
-    
+
+    <div>
+        @include('layout/footer')
+    </div>
 
     <script src="{{ asset('js/scripts.js') }}"></script>
     <!-- JS here -->

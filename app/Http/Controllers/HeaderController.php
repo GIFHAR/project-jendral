@@ -18,8 +18,40 @@ class HeaderController extends Controller
 
     public function services()
     {
-        return view('ServicePageRevisi');
+        return view('services/masterservice');
     }
+
+    public function seafreight()
+    {
+        return view('services/seafreight');
+    }
+
+    public function airfreight()
+    {
+        return view('services/airfreight');
+    }
+
+    public function jasabelanja()
+    {
+        return view('services/jasa');
+    }
+
+    public function rmbtransfer()
+    {
+        return view('services/rmb');
+    }
+
+    public function doortodoor()
+    {
+        return view('services/door2door');
+    }
+
+    public function konsultasi()
+    {
+        return view('services/konsultasi');
+    }
+
+    ////////////////////////////
 
     // public function konsultasibisnis()
     // {
@@ -41,9 +73,11 @@ class HeaderController extends Controller
     //     return view('jasapengirimanPage');
     // }
 
+    /////////////////////////////////
+
     public function pricing()
     {
-        return view('pricingPage');
+        return view('pricingList');
     }
 
     public function tracking()

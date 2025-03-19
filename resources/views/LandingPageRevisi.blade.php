@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="{{ asset('assets/vendor/jarallax/jarallax.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendor/odometer/odometer.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/module-css/landingpage.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/module-css/services.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/module-css/servicesrevisi.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
@@ -84,58 +86,79 @@
 
 
     <!--Start Banner One-->
-    <section class="banner-one" style="background-image: url('{{ asset('assets/img/homejendral/backgroundutama.png') }}');  background-size: cover; background-position: center;">
-        <div class="container">
-            <div class="banner-one__content wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                <div class="sub-title">
-                    <h5>SELAMAT DATANG</h5>
-                </div>
-                <div class="big-title">
-                    <h1>NIKMATI KENYAMANAN DALAM<br> PROSES IMPORT DAN FLEKSIBILITAS<br> UNTUK TRAKSAKSI BISNIS ANDA<br> BERSAMA JENDERAL IMPORT</h1>
-                </div>
-                <img class="banner-desktop" src="assets/img/resource/banner-JI-looong.png" alt="Jenderal Import Business Product" />
-                <img class="banner-mobile" src="assets/img/resource/banner-JI-short.png" alt="Jenderal Import Business Product" />
+    <section class="banner-one">
+        <div class="banner-container">
+            <div class="slides-wrapper">
+                <div class="slide"><img src="/assets/img/homejendral/1.png" alt="Slide 1"></div>
+                <div class="slide"><img src="/assets/img/homejendral/2.png" alt="Slide 2"></div>
+                <div class="slide"><img src="/assets/img/homejendral/3.png" alt="Slide 3"></div>
+                <div class="slide"><img src="/assets/img/homejendral/1.png" alt="Slide 1 Clone"></div>
             </div>
         </div>
-        <!-- Gallery of 7 images -->
-        {{-- <div class="gallery-container">
-            <div class="gallery-item">
-                <img src="{{ asset('assets/img/homejendral/konsul.png') }}" alt="Gambar 1">
-                <div class="caption">Konsultasi Bisnis</div>
-            </div>
+        
+        <br>
 
-            <div class="gallery-item">
-                <img src="{{ asset('assets/img/homejendral/jasapembelian.png') }}" alt="Gambar 2">
-                <div class="caption">Jasa Pembelian</div>
-            </div>
-
-            <div class="gallery-item">
-                <img src="{{ asset('assets/img/homejendral/cekharga.png') }}" alt="Gambar 3">
-                <div class="caption">Cek Harga</div>
-            </div>
-
-            <div class="gallery-item">
-                <img src="{{ asset('assets/img/homejendral/jasawarehouse.png') }}" alt="Gambar 4">
-                <div class="caption">Jasa Warehouse</div>
-            </div>
-
-            <div class="gallery-item">
-                <img src="{{ asset('assets/img/homejendral/udara.png') }}" alt="Gambar 5">
-                <div class="caption">Pengiriman Udara</div>
-            </div>
-
-            <div class="gallery-item">
-                <img src="{{ asset('assets/img/homejendral/laut.png') }}" alt="Gambar 6">
-                <div class="caption">Pengiriman Laut</div>
-            </div>
-
-            <div class="gallery-item">
-                <img src="{{ asset('assets/img/homejendral/tracking.png') }}" alt="Gambar 7">
-                <div class="caption">Tracking</div>
-            </div>
-        </div> --}}
-
+        <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
     </section>
+
+    <script>
+        const slidesWrapper = document.querySelector('.slides-wrapper');
+        let slideIndex = 0;
+        let autoSlideInterval;
+    
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(autoSlide, 5000);
+        }
+    
+        function autoSlide() {
+            slideIndex++;
+            if (slideIndex >= 4) {
+                // Smooth transition to clone slide
+                slidesWrapper.style.transform = `translateX(-75%)`;
+                // Instant reset after transition
+                setTimeout(() => {
+                    slidesWrapper.style.transition = 'none';
+                    slidesWrapper.style.transform = 'translateX(0%)';
+                    slideIndex = 0;
+                    // Re-enable transition after reset
+                    setTimeout(() => {
+                        slidesWrapper.style.transition = 'transform 1s ease-in-out';
+                    }, 10);
+                }, 1000);
+            } else {
+                slidesWrapper.style.transform = `translateX(-${slideIndex * 25}%)`;
+            }
+        }
+    
+        // Start automatic sliding
+        startAutoSlide();
+
+        function updateImages() {
+        const slides = document.querySelectorAll(".slide img");
+
+        slides.forEach((img, index) => {
+            if (window.innerWidth < 1200) {
+                if (index === slides.length - 1) {
+                    img.src = `/assets/img/homejendral/mobile-1.png`;
+                } else {
+                    img.src = `/assets/img/homejendral/mobile-${index + 1}.png`;
+                }
+            } else {
+                if (index === slides.length - 1) {
+                    img.src = `/assets/img/homejendral/1.png`;
+                } else {
+                    img.src = `/assets/img/homejendral/${index + 1}.png`;
+                }
+            }
+        });
+    }
+    window.addEventListener("load", updateImages);
+    window.addEventListener("resize", updateImages);
+    </script>
 
     <!--End Banner One-->
 
@@ -151,9 +174,9 @@
                     <div class="input-group-livetracking">
                         <form id="tracking-form" method="GET" class="tracking-header">
                             <div class="tracking-form-input">
-                                <input type="text" id="kodeMarking" placeholder="Kode Marking" aria-label="Kode Marking">
+                                <input type="text" id="kodeMarking" placeholder="Enter your marking code..." aria-label="Kode Marking">
                             </div>
-                            <button id="cekResi" type="submit">Cek Resi</button>
+                            <button id="cekResi" type="submit">Lacak Pengiriman</button>
                         </form>
                         
                         <script>
@@ -180,41 +203,47 @@
 
     <section class="swiper-banner-1">
         <div class="container-textkenapajendral">
-            <h1>Kenapa <span class="highlight">Jenderal Import</span> <br> Menjadi Partner Terbaik Import Anda</h1>
-            <p>Dipercayai oleh ratusan pelanggan baik individu maupun bisnis <br> sebagai partner import mereka. Dan berikut beberapa kelebihan <br> pelayanan yang kami berikan.</p>
+            <h1><span class="highlight">One-Stop </span><span class="light">Import Partner</span><br>Bersama memenuhi semua kebutuhan import Anda</h1>
+            <p>Hadir sebagai solusi semua kebutuhan impor, Jenderal Import menjadi salah satu penyedia jasa impor terpercaya yang telah membantu ratusan bisnis dan individu memulai perjalanan impor mereka. Dan berikut keunggulan layanan yang kami berikan.</p>
         </div>
-
-
-        <section class="swiper-container-banner1">
-            <div class="container-keunggulanjendral">
-                <!-- Swiper Container -->
-                <div id="swiper-benefit" class="swiper-container-keunggulanjendral">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="{{ asset('assets\img\CAROUSEL\001 KONSUL.png') }}" alt="Picture 1" class="picture-keunggulanjendral">
+        <section class="green-bg">
+            <section class="swiper-container-banner1">
+                <div class="container-keunggulanjendral">
+                    <!-- Swiper Container -->
+                    <div id="swiper-benefit" class="swiper-container-keunggulanjendral">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets\img\CAROUSEL\1.png') }}" alt="Picture 1" class="picture-keunggulanjendral">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets\img\CAROUSEL\2.png') }}" alt="Picture 3" class="picture-keunggulanjendral">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets\img\CAROUSEL\3.png') }}" alt="Picture 4" class="picture-keunggulanjendral">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets\img\CAROUSEL\4.png') }}" alt="Picture 2" class="picture-keunggulanjendral">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets\img\CAROUSEL\5.png') }}" alt="Picture 5" class="picture-keunggulanjendral">
+                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('assets\img\CAROUSEL\002 MUDAH.png') }}" alt="Picture 2" class="picture-keunggulanjendral">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('assets\img\CAROUSEL\003 TRANSPARAN.png') }}" alt="Picture 3" class="picture-keunggulanjendral">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('assets\img\CAROUSEL\004 LIVE.png') }}" alt="Picture 4" class="picture-keunggulanjendral">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('assets\img\CAROUSEL\005 TANPA.png') }}" alt="Picture 5" class="picture-keunggulanjendral">
-                        </div>
+                        <!-- Pagination -->
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <!-- Pagination -->
-                    <div class="swiper-pagination"></div>
-                    <!-- Navigation Arrows -->
-                    {{-- <div class="swiper-button-next"></div> --}}
-                    {{-- <div class="swiper-button-prev"></div> --}}
                 </div>
-            </div>
+            </section>
         </section>
     </section>
+
+    <div class="container">
+        <div class="layanan-button">
+            <div class="line"></div>
+                <button class="custom-button" onclick="window.location.href='/services'">Lihat Layanan Kami</button>
+            <div class="line"></div>
+        </div>
+    </div>
+    
     
     <!-- Include Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -253,8 +282,6 @@
             },
         });
     </script>
-    
-    
 
     <!--Start Project One-->
     <section class="project-one">
@@ -264,153 +291,174 @@
                     <div class="project-one__content-box">
                         <div class="sec-title">
                             <div class="sub-title">
-                                <h4>Jenderal Import</h4>
+                                <h4><span class="light">Membantu Menangani Berbagai</span><br><span class="highlight">Barang Dari China</span></h4>
                             </div>
-                            <h2>
-                                Melayani Jasa Import Barang<br>Dari China Terpercaya
-                            </h2>
-                        </div>
-                        <div class="text">
-                            <p>
-                                Selain sebagai jasa ekspedisi China ke Indonesia, kami juga memberikan layanan lainnya seperti:
-                            </p>
+                            <div class="text">
+                                <p>
+                                    Berikut beberapa layanan lainnya yang kami berikan selain jasa ekspedisi <br>dari China sebagai One-stop solution impor anda
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <section class="swiper-container-banner2">
-                    <div class="swiper-row-banner2">
-                        <section class="container-projectjendral">
-                            <div class="swiper-container-projectjendral project-swiper">
-                                <div class="swiper-wrapper">
-                                    <!-- Start Project One Single -->
-                                    <div class="swiper-slide">
-                                        <div class="swiper-slide-banner2">
-                                            <div class="wow fadeInUp" data-wow-delay=".1s">
-                                                <div class="project-one__single">
-                                                    <div class="project-one__single-img">
-                                                        <div class="inner">
-                                                            <img src="assets\img\LISTSERVICE\ASSET PHOTO\AIR FREIGHT.png" alt="#">
-                                                        </div>
-                                                        <div class="overlay-icon">
-                                                            <a href="project-details.html"></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="project-one__single-content text-center">
-                                                        <div class="title-box">
-                                                            <h3><a href="project-details.html">Jalur Udara</a></h3>
-                                                            <p>Layanan Pengiriman barang impor via udara untuk ukuran barang kecil/sedang</p>
-                                                        </div>
-                                                        <div class="btn-box">
-                                                            <a href="https://wa.link/mkbx1j">Hubungi kami <span class="icon-right-arrow-2"></span></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                    <section class="container-grid">
+                        <!-- Air Freight -->
+                        <div class="grid-item">
+                            <div class="project-one__single">
+                                <div class="project-one__single-img">
+                                    <div class="inner">
+                                        <img src="/assets/img/LISTSERVICE/ASSET PHOTO DAN FONT/2.png" alt="Air Freight">
                                     </div>
-                                    <!-- End Project One Single -->
-                        
-                                    <!-- Start Project Two Single -->
-                                    <div class="swiper-slide">
-                                        <div class="swiper-slide-banner2">
-                                            <div class="wow fadeInUp" data-wow-delay=".1s">
-                                                <div class="project-one__single">
-                                                    <div class="project-one__single-img">
-                                                        <div class="inner">
-                                                            <img src="assets\img\LISTSERVICE\ASSET PHOTO\SEA LCL.png" alt="#">
-                                                        </div>
-                                                        <div class="overlay-icon">
-                                                            <a href="project-details.html"></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="project-one__single-content text-center">
-                                                        <div class="title-box">
-                                                            <h3><a href="project-details.html">Jalur Laut</a></h3>
-                                                            <p>Layanan Pengiriman barang impor via laut untuk ukuran barang kecil/sedang/berat</p>
-                                                        </div>
-                                                        <div class="btn-box">
-                                                            <a href="https://wa.link/mkbx1j">Hubungi kami <span class="icon-right-arrow-2"></span></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="overlay-icon">
+                                        <a href="project-details.html"></a>
                                     </div>
-                                    <!-- End Project Two Single -->
-                        
-                                    <!-- Start Project Three Single -->
-                                    {{-- <div class="swiper-slide">
-                                        <div class="swiper-slide-banner2">
-                                            <div class="wow fadeInUp" data-wow-delay=".1s">
-                                                <div class="project-one__single">
-                                                    <div class="project-one__single-img">
-                                                        <div class="inner">
-                                                            <img src="assets/img/project/project-one__img3.jpg" alt="#">
-                                                        </div>
-                                                        <div class="overlay-icon">
-                                                            <a href="project-details.html"></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="project-one__single-content text-center">
-                                                        <div class="title-box">
-                                                            <h3><a href="project-details.html">Air Freight</a></h3>
-                                                            <p>Layanan kirim barang import dari china via udara</p>
-                                                        </div>
-                                                        <div class="btn-box">
-                                                            <a href="https://wa.link/mkbx1j">Hubungi kami <span class="icon-right-arrow-2"></span></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Project Three Single -->
-                        
-                                    <!-- Start Project Four Single -->
-                                    <div class="swiper-slide">
-                                        <div class="swiper-slide-banner2">
-                                            <div class="wow fadeInUp" data-wow-delay=".1s">
-                                                <div class="project-one__single">
-                                                    <div class="project-one__single-img">
-                                                        <div class="inner">
-                                                            <img src="assets/img/project/project-one__img4.jpg" alt="#">
-                                                        </div>
-                                                        <div class="overlay-icon">
-                                                            <a href="project-details.html"></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="project-one__single-content text-center">
-                                                        <div class="title-box">
-                                                            <h3><a href="project-details.html">Jasa Belanja</a></h3>
-                                                            <p>Layanan jasa belanja china membantu pembelian barang</p>
-                                                        </div>
-                                                        <div class="btn-box">
-                                                            <a href="https://wa.link/mkbx1j">Hubungi kami <span class="icon-right-arrow-2"></span></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> --}}
-                                    <!-- End Project Four Single -->
                                 </div>
-                                <!-- Add pagination and navigation controls (optional) -->
-                                <div class="swiper-pagination"></div>
-                                {{-- <div class="swiper-button-next"></div> --}}
-                                {{-- <div class="swiper-button-prev"></div> --}}
+                                <div class="project-one__single-content text-center">
+                                    <div class="title-box">
+                                        {{-- <h3><a href="project-details.html">Jalur Udara</a></h3> --}}
+                                        <p>Jasa pengiriman barang lewat laut dalam jumlah kecil/sedang & jumlah besar/full container</p>
+                                    </div>
+                                    {{-- <div class="btn-box">
+                                        <a href="https://wa.link/mkbx1j">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                    </div> --}}
+                                </div>
                             </div>
-                        </section>
+                        </div>
                         
+                        <!-- Sea Freight -->
+                        <div class="grid-item">
+                            <div class="project-one__single">
+                                <div class="project-one__single-img">
+                                    <div class="inner">
+                                        <img src="assets/img/LISTSERVICE/ASSET PHOTO DAN FONT/3.png" alt="Sea Freight LCL">
+                                    </div>
+                                    <div class="overlay-icon">
+                                        <a href="project-details.html"></a>
+                                    </div>
+                                </div>
+                                <div class="project-one__single-content text-center">
+                                    <div class="title-box">
+                                        {{-- <h3><a href="project-details.html">Jalur Laut LCL</a></h3> --}}
+                                        <p>Jasa pengiriman barang lewat udara untuk pengiriman yang lebih cepat</p>
+                                    </div>
+                                    {{-- <div class="btn-box">
+                                        <a href="https://wa.link/mkbx1j">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                    </div> --}}
+                                </div>
+                            </div>
+                        </div>
                         
+                        <!-- Express Delivery -->
+                        <div class="grid-item">
+                            <div class="project-one__single">
+                                <div class="project-one__single-img">
+                                    <div class="inner">
+                                        <img src="assets/img/LISTSERVICE/ASSET PHOTO DAN FONT/4.png" alt="Sea Freight FCL">
+                                    </div>
+                                    <div class="overlay-icon">
+                                        <a href="project-details.html"></a>
+                                    </div>
+                                </div>
+                                <div class="project-one__single-content text-center">
+                                    <div class="title-box">
+                                        {{-- <h3><a href="project-details.html">Jalur Laut FCL</a></h3> --}}
+                                        <p>Membantu pembelajaan dari marketplace China, juga pencarian suplier dan negosiasi</p>
+                                    </div>
+                                    {{-- <div class="btn-box">
+                                        <a href="https://wa.link/mkbx1j">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                    </div> --}}
+                                </div>
+                            </div>
+                        </div>
                         
-                        <!--End Project One Single--> 
+                        <!-- Warehousing -->
+                        <div class="grid-item">
+                            <div class="project-one__single">
+                                <div class="project-one__single-img">
+                                    <div class="inner">
+                                        <img src="assets/img/LISTSERVICE/ASSET PHOTO DAN FONT/5.png" alt="Warehousing">
+                                    </div>
+                                    <div class="overlay-icon">
+                                        <a href="project-details.html"></a>
+                                    </div>
+                                </div>
+                                <div class="project-one__single-content text-center">
+                                    <div class="title-box">
+                                        {{-- <h3><a href="project-details.html">Layanan Gudang</a></h3> --}}
+                                        <p>Jasa transfer pembayaran RMB ke suplier marketplace China</p>
+                                    </div>
+                                    {{-- <div class="btn-box">
+                                        <a href="https://wa.link/mkbx1j">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                    </div> --}}
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Custom Clearance -->
+                        <div class="grid-item">
+                            <div class="project-one__single">
+                                <div class="project-one__single-img">
+                                    <div class="inner">
+                                        <img src="assets/img/LISTSERVICE/ASSET PHOTO DAN FONT/6.png" alt="Custom Clearance">
+                                    </div>
+                                    <div class="overlay-icon">
+                                        <a href="project-details.html"></a>
+                                    </div>
+                                </div>
+                                <div class="project-one__single-content text-center">
+                                    <div class="title-box">
+                                        {{-- <h3><a href="project-details.html">Custom Clearance</a></h3> --}}
+                                        <p>Layanan pengiriman impor dari China langsung sampai ke alamat tujuan Anda</p>
+                                    </div>
+                                    {{-- <div class="btn-box">
+                                        <a href="https://wa.link/mkbx1j">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                    </div> --}}
+                                </div>
+                            </div>
+                        </div>
 
-                    </div>
+                        <!-- Custom Clearance -->
+                        <div class="grid-item">
+                            <div class="project-one__single">
+                                <div class="project-one__single-img">
+                                    <div class="inner">
+                                        <img src="assets/img/LISTSERVICE/ASSET PHOTO DAN FONT/1.png" alt="Custom Clearance">
+                                    </div>
+                                    <div class="overlay-icon">
+                                        <a href="project-details.html"></a>
+                                    </div>
+                                </div>
+                                <div class="project-one__single-content text-center">
+                                    <div class="title-box">
+                                        {{-- <h3><a href="project-details.html">Custom Clearance</a></h3> --}}
+                                        <p>Konsultasi dengan tim berpengalaman kami untuk semua kebutuhan impor Anda</p>
+                                    </div>
+                                    {{-- <div class="btn-box">
+                                        <a href="https://wa.link/mkbx1j">Hubungi kami <span class="icon-right-arrow-2"></span></a>
+                                    </div> --}}
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </section>
-
+                <div class="sec-title-child">
+                    <div class="text">
+                        <p>
+                            Kami selalu memberikan penawaran harga terbaik untuk semua layanan pengiriman barang dari China yang kami sediakan. Anda bisa cek daftar harga yang kami berikan di sini
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <div class="container">
+        <div class="layanan-button">
+            <div class="line"></div>
+            <button class="custom-button" onclick="window.location.href='/pricing'">Pricelist</button>
+            <div class="line"></div>
+        </div>
+    </div>
     <!--End Project One-->
 
     <script>
@@ -447,254 +495,314 @@
         });
     </script>
 
-    <!--Start Video One
-    <section class="video-one">
-        <div class="video-one__bg" data-jarallax data-speed="0.1" data-imgPosition="0% 0%"
-            style="background-image: url(assets/img/resource/video-one__img1.jpg);"></div>
-        <div class="icon wow zoomIn animated" data-wow-delay="300ms" data-wow-duration="1500ms">
-            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=06dV9txztKY">
-                <span class="icon-play-button-arrowhead"></span>
-            </a>
+    <!--Start Project One-->
+    <section class="project-one">
+        <div class="container">
+            <div class="project-one-row">
+                <div class="header-project-one">
+                    <div class="project-one__content-box">
+                        <div class="sec-title">
+                            <div class="sub-title">
+                                <h4><span class="light">Proses Impor</span><br><span class="highlight">Pengiriman Barang Dari China</span></h4>
+                            </div>
+                            <div class="text">
+                                <p>
+                                    Proses pengiriman barang dari China ke Indonesia merupakan proses yang cukup rumit dan membingungkan, apalagi jika anda melakukannya sendiri. Bersama tim Jenderal yang sudah berpengalaman, kami akan membantu anda dalam seluruh prosesnya membuat Import menjadi lebih mudah.
+                                    <br>
+                                    <br>
+                                    Berikut gambaran sederhana dari proses import.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="swiper-container-banner1">
+                    <div class="container-keunggulanjendral">
+                        <!-- Swiper Container -->
+                        <div id="swiper-process" class="swiper-container-keunggulanjendral">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('assets\img\CAROUSEL-PROSES\1.png') }}" alt="Picture 1" class="picture-keunggulanjendral">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('assets\img\CAROUSEL-PROSES\2.png') }}" alt="Picture 3" class="picture-keunggulanjendral">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('assets\img\CAROUSEL-PROSES\3.png') }}" alt="Picture 4" class="picture-keunggulanjendral">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('assets\img\CAROUSEL-PROSES\4.png') }}" alt="Picture 2" class="picture-keunggulanjendral">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('assets\img\CAROUSEL-PROSES\5.png') }}" alt="Picture 5" class="picture-keunggulanjendral">
+                                </div>
+                            </div>
+                            <!-- Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Navigation Arrows -->
+                            {{-- <div class="swiper-button-next"></div> --}}
+                            {{-- <div class="swiper-button-prev"></div> --}}
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
     </section>
-    End Video One-->
+    <!-- Include Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('#swiper-process', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 3,
+            spaceBetween: 20,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                1300: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+            },
+        });
+    </script>
+    <!--End Project One-->
+
+    <div class="bottom-cover"></div>
 
     <!--Start Testimonials One-->
     <section class="testimonials-one">
         <div class="container">
             <div class="sec-title text-center">
                 <div class="sub-title">
-                    <h4>Testimoni Pelanggan</h4>
+                    <h4>Testimoni</h4>
                 </div>
-                <h2>
-                    Jenderal Import
-                </h2>
+                <p>
+                    Dengarkan apa kata partner yang sudah menggunakan jasa kami, simak bagaimana service kami membantu mereka dengan kebutuhan impor dan betapa puasnya mereka.
+                </p>
             </div>
             <div class="testimonials-one__inner">
                 <div class="thm-swiper__slider swiper-container" data-swiper-options='{
-                    "loop": true,
+                    "loop": false,
                     "pagination": {
                         "el": "#testimonial-one-pagination",
                         "type": "bullets",
                         "clickable": true
-                        },
+                    },
                     "navigation": {
                         "nextEl": "#testimonial-two__swiper-button-next",
                         "prevEl": "#testimonial-two__swiper-button-prev"
                     },
-                    "autoplay": { "delay": 5000 },
+                    "autoplay": { "delay": 3000 },
                     "breakpoints": {
-                        "0": {
-                            "spaceBetween": 30,
-                            "slidesPerView": 1
-                        },
-                        "375": {
-                            "spaceBetween": 30,
-                            "slidesPerView": 1
-                        },
-                        "575": {
-                            "spaceBetween": 30,
-                            "slidesPerView": 1
-                        },
-                        "768": {
-                            "spaceBetween": 30,
-                            "slidesPerView": 1
-                        },
-                        "992": {
-                            "spaceBetween": 30,
-                            "slidesPerView": 2
-                        },
-                        "1200": {
-                            "spaceBetween": 30,
-                            "slidesPerView": 2
-                        }
-                    }}'>
-
+                        "0": { "spaceBetween": 30, "slidesPerView": 1 },
+                        "375": { "spaceBetween": 30, "slidesPerView": 1 },
+                        "575": { "spaceBetween": 30, "slidesPerView": 1 },
+                        "768": { "spaceBetween": 30, "slidesPerView": 1 },
+                        "992": { "spaceBetween": 30, "slidesPerView": 2 },
+                        "1200": { "spaceBetween": 30, "slidesPerView": 2 }
+                    }
+                }'>
                     <div class="swiper-wrapper">
-                        <!--Start Single Testimonials One-->
+                        <!-- Testimonial 1 -->
                         <div class="swiper-slide">
                             <div class="testimonials-one__single">
-                                <div class="testimonials-one__single-img">
-                                    <div class="testimonials-one__single-img__inner">
-                                        <div class="inner">
-                                            <img src="assets/img/testimonial/profile.png" alt="">
-                                        </div>
-                                        <div class="overlay-box">
-                                            <span class="icon-quote-right"></span>
-                                        </div>
-                                    </div>
-                                    <div class="title-box">
-                                        <h3><a href="#">Fanny Pratama</a></h3>
-                                        <p>Customer</p>
-                                    </div>
-                                </div>
-                                <div class="testimonials-one__single-content">
-                                    <div class="ster-icon">
-                                        <ul>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <p>Reviews (05)</p>
-                                    </div>
-                                    <div class="text">
-                                        <p>
-                                            Udah sampe kak. Terima Kasih atas banntuannya kak. Paket sesuai denngan pesanan, ukurann dan type sesuai dengan yang diharapkan. Sangat luar biasa. Sekali lagi terima kasih bannyak atas bantuannya
-                                        </p>
+                                <div class="testimonial-card">
+                                    <div class="quote">❝</div>
+                                    <div class="testimonial-content">
+                                        <p>Terimakasih tim, pengiriman cepat stok saya jadi aman customer juga ga pada cancel. Harga juga sesuai sama yang diobrolin di awal. Mantap pokoknya</p>
+                                        <h3>Fiqri</h3>
+                                        <span>Bisnis Case HP</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!--End Single Testimonials One-->
-
-                        <!--Start Single Testimonials One-->
+    
+                        <!-- Testimonial 2 -->
                         <div class="swiper-slide">
                             <div class="testimonials-one__single">
-                                <div class="testimonials-one__single-img">
-                                    <div class="testimonials-one__single-img__inner">
-                                        <div class="inner">
-                                            <img src="assets/img/testimonial/profile.png" alt="">
-                                        </div>
-                                        <div class="overlay-box">
-                                            <span class="icon-quote-right"></span>
-                                        </div>
-                                    </div>
-                                    <div class="title-box">
-                                        <h3><a href="#">Fiqri</a></h3>
-                                        <p>Customer</p>
-                                    </div>
-                                </div>
-                                <div class="testimonials-one__single-content">
-                                    <div class="ster-icon">
-                                        <ul>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <p>Reviews (05)</p>
-                                    </div>
-                                    <div class="text">
-                                        <p>
-                                            Sudah saya terima, pas banget sebelum hujan. Mantap jumlahya sesuai, beli disini lebih cepat sampai. Respon admin dalam komunikasi dan transaksi sangat baik, sangat amann transaksi bisa rekber melalui aplikasi online shop
-                                        </p>
+                                <div class="testimonial-card">
+                                    <div class="quote">❝</div>
+                                    <div class="testimonial-content">
+                                        <p>Waktu pertama mau impor bingung nyari barang sama suplier, terimakasih tim jendral sudah dibantu nyari suplier yang harganya pas jadi bisnis saya bisa naik profitnya</p>
+                                        <h3>Dery</h3>
+                                        <span>Pengusaha Kacamata</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!--End Single Testimonials One-->
-
-                        <!--Start Single Testimonials One-->
+    
+                        <!-- Testimonial 3 -->
                         <div class="swiper-slide">
                             <div class="testimonials-one__single">
-                                <div class="testimonials-one__single-img">
-                                    <div class="testimonials-one__single-img__inner">
-                                        <div class="inner">
-                                            <img src="assets/img/testimonial/profile.png" alt="">
-                                        </div>
-                                        <div class="overlay-box">
-                                            <span class="icon-quote-right"></span>
-                                        </div>
-                                    </div>
-                                    <div class="title-box">
-                                        <h3><a href="#">Immanuel O. D. P.</a></h3>
-                                        <p>Customer</p>
-                                    </div>
-                                </div>
-                                <div class="testimonials-one__single-content">
-                                    <div class="ster-icon">
-                                        <ul>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-star-1"></span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <p>Reviews (05)</p>
-                                    </div>
-                                    <div class="text">
-                                        <p>
-                                            Pengirimannya cepet om…
-                                            Barang juga sampai lebih cepat dari estimasi…
-                                            Puas banget...
-                                            Next saya akan order lagi ya om…
-                                            Mantap...
-                                        </p>
+                                <div class="testimonial-card">
+                                    <div class="quote">❝</div>
+                                    <div class="testimonial-content">
+                                        <p>Mantap servisnya dibantu dicarikan suplier yang lebih terpercaya dan murah, meski sempat deg-degan tapi barangnya cocok dan sesuai estimasi</p>
+                                        <h3>Edy</h3>
+                                        <span>Pengusaha Jetski</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!--End Single Testimonials One-->
+    
+                        <!-- Testimonial 4 -->
+                        <div class="swiper-slide">
+                            <div class="testimonials-one__single">
+                                <div class="testimonial-card">
+                                    <div class="quote">❝</div>
+                                    <div class="testimonial-content">
+                                        <p>Pelayanan cepat dan fast respon. Barang selalu aman dan tiba sesuai estimasi. Bisa beli satuan atau banyak tetap dilayani. Recommended. Terimakasih</p>
+                                        <h3>SVISORJOGJA</h3>
+                                        <span>Bisnis Visor Helm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Testimonial 5 -->
+                        <div class="swiper-slide">
+                            <div class="testimonials-one__single">
+                                <div class="testimonial-card">
+                                    <div class="quote">❝</div>
+                                    <div class="testimonial-content">
+                                        <p>Aman terpercaya, barang sesuai dan sampai pas sama estimasi. Pasti jadi langganan</p>
+                                        <h3>Wiguna</h3>
+                                        <span>Pengusaha Case Handphone</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="desktop-testimonials">
+                    <div class="testimonials-row top-row">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonials-one__single">
+                            <div class="testimonial-card">
+                                <div class="quote">❝</div>
+                                <div class="testimonial-content">
+                                    <p>Terimakasih tim, pengiriman cepat stok saya jadi aman customer juga ga pada cancel. Harga juga sesuai sama yang diobrolin di awal. Mantap pokoknya</p>
+                                    <h3>Fiqri</h3>
+                                    <span>Bisnis Case HP</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonials-one__single">
+                            <div class="testimonial-card">
+                                <div class="quote">❝</div>
+                                <div class="testimonial-content">
+                                    <p>Waktu pertama mau impor bingung nyari barang sama suplier, terimakasih tim jendral sudah dibantu nyari suplier yang harganya pas jadi bisnis saya bisa naik profitnya</p>
+                                    <h3>Dery</h3>
+                                    <span>Pengusaha Kacamata</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="testimonials-one__single">
+                            <div class="testimonial-card">
+                                <div class="quote">❝</div>
+                                <div class="testimonial-content">
+                                    <p>Mantap servisnya dibantu dicarikan suplier yang lebih terpercaya dan murah, meski sempat deg-degan tapi barangnya cocok dan sesuai estimasi</p>
+                                    <h3>Edy</h3>
+                                    <span>Pengusaha Jetski</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonials-row bottom-row">
+                        <!-- Testimonial 4 -->
+                        <div class="testimonials-one__single">
+                            <div class="testimonial-card">
+                                <div class="quote">❝</div>
+                                <div class="testimonial-content">
+                                    <p>Pelayanan cepat dan fast respon. Barang selalu aman dan tiba sesuai estimasi. Bisa beli satuan atau banyak tetap dilayani. Recommended. Terimakasih</p>
+                                    <h3>SVISORJOGJA</h3>
+                                    <span>Bisnis Visor Helm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 5 -->
+                        <div class="testimonials-one__single">
+                            <div class="testimonial-card">
+                                <div class="quote">❝</div>
+                                <div class="testimonial-content">
+                                    <p>Aman terpercaya, barang sesuai dan sampai pas sama estimasi. Pasti jadi langganan</p>
+                                    <h3>Wiguna</h3>
+                                    <span>Pengusaha Case Handphone</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let swiperElement = document.querySelector(".thm-swiper__slider");
+        let swiper;
+        
+        if (swiperElement) {
+            let swiperOptions = JSON.parse(swiperElement.getAttribute("data-swiper-options"));
+    
+            // Function to handle Swiper initialization based on screen size
+            function handleSwiper() {
+                // Always destroy previous swiper instance if it exists
+                if (swiper) {
+                    swiper.destroy(true, true);
+                    swiper = null;
+                }
+                
+                // Initialize swiper on smaller screens
+                // if (window.innerWidth < 1200) {
+                swiper = new Swiper(swiperElement, swiperOptions);
+                // }
+            }
+    
+            // Run on page load
+            handleSwiper();
+    
+            // Run on window resize with debounce
+            let resizeTimer;
+            window.addEventListener("resize", function() {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(handleSwiper, 250);
+            });
+        }
+    });
+    </script>
     <!--End Testimonials One-->
+
+    <div>
+        @include('layout/footer')
+    </div>
 
     <!--whatsapp-->
     <section>

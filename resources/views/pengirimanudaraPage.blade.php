@@ -140,7 +140,7 @@
 
         <!--Start Main Header One -->
         <header class="main-header main-header-one" style="background-image: url('{{asset('assets/img/headerjendral/boxheader.png')}}');  background-size: cover; background-position: center; height: calc(644px * (150 / 644));">
-            <div id="sticky-header" class="menu-area">
+            <div id="sticky-header" class="menu-area sticky-menu">
                 <div class="container">
                     <div class="main-header-one__inner">
 

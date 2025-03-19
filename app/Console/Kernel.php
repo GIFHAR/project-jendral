@@ -12,13 +12,9 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
     {
-        {
-            $schedule->call(function () {
-                app(\App\Http\Controllers\GoogleSheetController::class)->importData();
-            })->daily();
-        }
-        
+        $schedule->command('import:googlesheet')->everyMinute();
     }
+
 
     /**
      * Register the commands for the application.

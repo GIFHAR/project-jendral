@@ -289,17 +289,15 @@
     position: relative;
     display: block;
     margin-bottom: 40px;
-    margin-top: 50px;
     transform: translateX(0px);
     /* Initial horizontal translation */
     transition: all 200ms linear 0.1s;
     /* Smooth transition for transform */
 }
 
-.service-three__single:hover {
+/* .service-three__single:hover {
     transform: translate(110px, 0px);
-    /* Combine both translateX and translateY on hover */
-}
+} */
 
 .service-three__single-img {
     position: relative;
@@ -630,7 +628,7 @@
 .service-details__content-text3-single {
     flex: 1 1 calc(50% - 10px);
     /* 50% lebar kolom, mengurangi gap */
-    max-width: 100;
+    max-width: 100%;
     /* Lebar maksimum item */
     box-sizing: border-box;
     /* Menghindari padding dan border mempengaruhi lebar total */
@@ -965,3 +963,48 @@
     font-size: 30px;
     line-height: 30px;
 }
+
+@media (max-width: 768px) {
+    .service-three__single {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    .service-details__content-text3 {
+        width: 100%;
+        margin: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .service-three__single-content {
+        margin-right: 0px;
+    }
+
+    .service-three__single-content .text p {
+        font-size: 12px;
+        line-height: 2;
+    }
+
+    .service-three__single-content .text {
+        margin-top: 12px;
+        padding-top: 12px;
+    }
+
+    .freight-option .detail p {
+        font-size: 12px;
+        line-height: 2;
+    }
+
+    .service-details__content-text3-single .inner .content-box H3 {
+        font-size: 18px;
+    }
+    
+    .service-details__content-text3-single .inner .content-box p {
+        font-size: 12px;
+        line-height: 2;
+    }
+}
+

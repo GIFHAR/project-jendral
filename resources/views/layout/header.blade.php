@@ -6,7 +6,7 @@
         </button>
     </div>
     <div class="logo-side">
-        <a href="home"><img src="{{asset('assets/img/headerjendral/logojendral.png')}}" alt="Logo"">
+        <a href="/home"><img src="{{asset('assets/img/headerjendral/logojendral.png')}}" alt="Logo"">
     </div>
     <div class="side-info">
         <div class="content-box">
@@ -58,15 +58,15 @@
 
 <!--Start Main Header One -->
 <header class="main-header main-header-one">
-    <div id="sticky-header" class="menu-area">
+    <div id="sticky-header" class="menu-area sticky-menu">
         <div class="container">
             <div class="main-header-one__inner">
 
                 <!--Start Main Header one Inner Left -->
                 <div class="main-header-one__inner-left">
                     <div class="logo-box-one">
-                        <a href="home">
-                            <img src="{{asset('assets/img/headerjendral/logojendralHijau.png')}}" alt="Logo">
+                        <a href="/home">
+                            <img src="{{asset('/assets/img/headerjendral/logojendralHijau.png')}}" alt="Logo">
                         </a>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                                         <ul class="navigation">
                                             <li><a href="{{ route('home')}}">Home</a></li>
                                             <li><a href="{{ route('services')}}">Services</a></li>
-                                            {{-- <li><a href="{{ route('pricing')}}">Pricing</a></li> --}}
+                                            <li><a href="{{ route('pricing')}}">Pricing</a></li>
                                             <li><a href="{{ route('tracking')}}">Tracking</a></li>
                                             <li><a href="{{ route('contact')}}">Contacts</a></li>
                                         </ul>
@@ -126,7 +126,7 @@
         <nav class="menu-box">
             <div class="close-btn"><i class="fas fa-times"></i></div>
             <div class="nav-logo">
-                <a href="home"><img src="assets/img/headerjendral/logojendralHijau.png" alt="Logo"></a>
+                <a href="/home"><img src="/assets/img/headerjendral/logojendralHijau.png" alt="Logo"></a>
             </div>
             <div class="menu-outer">
                 <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
@@ -135,7 +135,7 @@
                 <ul class="clearfix list-wrap">
                     <li>
                         <a href="https://wa.link/mkbx1j">
-                            <img src="assets/img/resource/icon-wa.png" alt="Weight Icon" class="icon-contact" />
+                            <img src="/assets/img/resource/icon-wa.png" alt="Weight Icon" class="icon-contact" />
                         </a>
                     </li>
                     <li>
@@ -147,7 +147,7 @@
             </div>
         </nav>
     </div>
-    <div class="menu-backdrop"></div>
+    {{-- <div class="menu-backdrop"></div> --}}
     <!-- End Mobile Menu -->
 
 </header>

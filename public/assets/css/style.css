@@ -20,6 +20,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 /***
 ====================================================================
@@ -47,9 +48,44 @@
 	Landing Page One
 ===============================*/
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
 .banner-one {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides-wrapper {
+    display: flex;
+    width: 400%;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    width: 25%;
+    flex-shrink: 0;
     position: relative;
 }
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain; /* Changed from cover to contain */
+}
+
 
 .gallery-container {
     display: flex;
@@ -266,7 +302,7 @@
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding: 80px 0 80px;
+    padding: 40px 0 0px;
     margin: 0 auto;
 }
 
@@ -318,6 +354,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    margin-top: 20px;
 }
 
 .row {
@@ -345,12 +382,13 @@
 .info-item p {
     color: #000000;
     margin: 5px 0;
+    line-height: 1.6;
 }
 
 .info-item-time {
     width: 380px;
     padding: 20px;
-    height: 200px;
+    height: auto;
     background-color: #ffffff;
     border-radius: 10px;
 }
@@ -386,8 +424,8 @@
 ===============================*/
 
 :root {
-    --thm-body-font: 'Rubik', sans-serif;
-    --thm-heading-font: 'Rajdhani', sans-serif;
+    --thm-body-font: 'Poppins';
+    --thm-heading-font: 'Poppins';
     --thm-primary: #F68B21;
     --thm-primary-rgb: 246, 139, 33;
     --thm-secondary: #194627;
@@ -398,7 +436,7 @@
     --thm-body-font-weight: 400;
     --thm-heading-font-color: #121212;
     --thm-heading-font-weight: 700;
-    --thm-body-background: #F4F4F4;
+    --thm-body-background: #fdf1e1;
     --thm-black-bg: #212121;
     --thm-white: #ffffff;
     --thm-black: #121212;
@@ -765,26 +803,58 @@ h6 a {
 	Sec Title CSS
 ===============================*/
 
-.sec-title {
+.sub-title {
+    margin-bottom: 20px;
+}
+
+.sec-title, .sec-title-child {
     position: relative;
     display: block;
-    margin-top: -7px;
+    margin: -7px auto 0 auto;
+    padding-top: 20px;
     padding-bottom: 55px;
+    width: 100%;
+}
+
+.sec-title p,
+.sec-title-child p {
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+@media (min-width: 1200px) {
+    .sec-title .sec-title-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 15px;
+        padding-bottom: 25px;
+    }
+
+    .sec-title h2 {
+        text-align: center;
+    }
 }
 
 .sec-title .sub-title {
     position: relative;
     display: block;
-    margin-bottom: 14px;
 }
 
 .sec-title .sub-title h4 {
     color: var(--thm-secondary);
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 2em;
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+    line-height: 40px;
+}
+
+.sec-title .highlight {
+    color: #f15e44;
+    font-weight: bold;
+}
+
+.sec-title .light {
+    font-weight: lighter;
 }
 
 .sec-title h2 {
@@ -793,6 +863,7 @@ h6 a {
     font-weight: 700;
     text-transform: capitalize;
 }
+
 
 
 /*=============================
@@ -2059,14 +2130,14 @@ label {
 }
 
 
-/*=============================
+/* /* =============================
 	Project One CSS
-===============================*/
+===============================
 
 .project-one {
     position: relative;
     display: block;
-    padding: 140px 0 110px;
+    padding: 75px 0 20px;
     z-index: 1;
 }
 
@@ -2258,7 +2329,7 @@ label {
 
 .project-one__single-content .btn-box a:hover span {
     color: var(--thm-primary);
-}
+} */
 
 
 /*=============================
@@ -3984,4 +4055,234 @@ label {
 .faq-one--faq .accordion-box-one .accordion .accord-btn.active:after {
     color: var(--thm-secondary);
     content: "\e94f";
+}
+
+.layanan-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+    position: relative;
+    margin: 50px 0 75px 0;
+    width: 100%;
+}
+
+.custom-button {
+    background-color: #f15e44;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 20%;
+}
+
+.custom-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    z-index: 10;
+    background-color: #ef8370;
+}
+
+.line {
+    width: 20%;
+    height: 2px;
+    background-color: #194627;
+}
+
+.bottom-cover {
+    background-image: url('/assets/img/homejendral/bottomcover.png');
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    position: relative;
+    background-color: #194627;
+    color: white;
+    padding: 40px 30px;
+    height: 300px;
+    width: auto;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px #e57342;
+}
+
+.quote {
+    font-size: 130px;
+    color: #e57342;
+    position: absolute;
+    top: -0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.testimonial-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #fdf1e1;
+    padding-top: 10px;
+}
+
+.testimonial-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fdf1e1;
+}
+
+.testimonial-content span {
+    font-size: 14px;
+    color: #fdf1e1;
+}
+
+.section-title {
+    color: #004d00;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.pricing-table th, .pricing-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.pricing-table th {
+    background-color: #004d00;
+    color: white;
+    font-weight: bold;
+}
+
+.pricing-table td ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.pricing-table td ul li {
+    font-size: 14px;
+}
+
+.note {
+    font-size: 14px;
+    color: red;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+    .swiper-container {
+        overflow: hidden !important;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .airfreight {
+        padding: 0px 15px 20px;
+    }
+
+    .info-item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .info-item-time {
+        width: 100%;
+    }
+
+    .sec-title {
+        padding-bottom: 10px;
+        width: 80%;
+    }
+
+    .sec-title .sub-title {
+        margin-bottom: 6px;
+    }
+
+    .project-one__content-box .text p {
+        font-size: 16px;
+        line-height: 2;
+        text-align: left;
+        white-space: normal;
+    }
+
+    .project-one__content-box .text br {
+        display: none;
+    }
+
+    .time-estimation {
+        margin-top: 0px;
+    }
+
+    .cta-one--style2 {
+        padding: 23px 0px;
+    }
+
+    .thm-btn .txt {
+        font-size: 12px;
+    }
+
+    .testimonial-card {
+        height: auto;
+    }
+
+    .custom-button {
+        width: 80%;
+    }
+
+    .layanan-button {
+        margin: 20px 0;
+    }
+
+    .sec-title .sub-title h4 {
+        font-size: 1em;
+        font-weight: 700;
+        line-height: 24px;
+        margin: auto;
+    }
+
+    .sec-title, .sec-title-child {
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 80%;
+    }
+
+    .sec-title p, .sec-title-child p {
+        font-size: 16px;
+        line-height: 2;
+        text-align: left;
+        white-space: normal;
+    }
+
+    .bottom-cover {
+        min-height: 40vh;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
 }

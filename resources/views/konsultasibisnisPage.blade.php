@@ -140,7 +140,7 @@
 
         <!--Start Main Header One -->
         <header class="main-header main-header-one" style="background-image: url('{{asset('assets/img/headerjendral/boxheader.png')}}');  background-size: cover; background-position: center; height: calc(644px * (150 / 644));">
-            <div id="sticky-header" class="menu-area">
+            <div id="sticky-header" class="menu-area sticky-menu">
                 <div class="container">
                     <div class="main-header-one__inner">
 
@@ -219,14 +219,13 @@
         <section class="banner-three" style="background-image: url('assets/img/servicejendral/servicebackground.png'); background-size: cover; background-position: right;">
             <div class="container-two">
                 <div class="banner-three__content wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                <div class="sub-title-konsultasibisnis">
-                    <h1 class="konsultasibisnis-heading">Konsultasi Bisnis Import</h1>
-                            <p>Jawab semua keraguan dan kebutuhan anda, <br>
-                                mulai bisnis dan transaksi impor bersama tim Profesional kami</p>
+                    <div class="sub-title-konsultasibisnis">
+                        <h1 class="konsultasibisnis-heading">Konsultasi Bisnis Import</h1>
+                                <p>Jawab semua keraguan dan kebutuhan anda, <br>
+                                    mulai bisnis dan transaksi impor bersama tim Profesional kami</p>
+                    </div>
                 </div>
             </div>
-        </div>
-
         </section>
 
         <section class="banner-four">
