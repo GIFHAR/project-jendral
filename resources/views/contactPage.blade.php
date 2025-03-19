@@ -95,7 +95,7 @@
                 <section class="contact-header">
                     <div class="sec-title text-center">
                         <div class="sub-title">
-                            <h4>Contact us</h4>
+                            <h4 style="margin: auto;">Contact us</h4>
                         </div>
                         <h2>
                             Get in Touch With Us

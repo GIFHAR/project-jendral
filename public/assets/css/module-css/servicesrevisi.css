@@ -537,6 +537,11 @@ h4 {
     .service-container-consult {
         max-width: 80%
     }
+
+    .contact-section .contact-button {
+        width: 100%;
+        padding: 10px 5px;
+    }
 }
 
     

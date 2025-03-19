@@ -455,7 +455,7 @@
     <div class="container">
         <div class="layanan-button">
             <div class="line"></div>
-            <button class="custom-button">Pricelist</button>
+            <button class="custom-button" onclick="window.location.href='/pricing'">Pricelist</button>
             <div class="line"></div>
         </div>
     </div>

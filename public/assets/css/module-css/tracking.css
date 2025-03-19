@@ -63,7 +63,6 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    min-height: 550px;
     height: auto;
 }
 
@@ -190,7 +189,6 @@ body {
     .tracking-container {
         width: 90%;
         margin: 10px auto;
-        min-height: 400px;
         height: auto;
     }
 

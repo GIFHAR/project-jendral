@@ -41,7 +41,7 @@
             background-image: url('assets/img/headerjendral/LiveTrackingHeader.png');
             background-size: cover;
             background-position: center;
-            height: 500px;
+            height: 400px;
         }
 
         @media screen and (max-width: 1200px) {
@@ -88,13 +88,25 @@
         
         <script>
             document.getElementById('tracking-form').addEventListener('submit', function(event) {
-                event.preventDefault(); // Prevent default form submission
+                event.preventDefault();
                 
                 var markingCode = document.getElementById('marking_code').value; // Get the marking code value
         
                 if(markingCode) {
-                    // Redirect to the desired URL format
                     window.location.href = `/orders/${markingCode}`;
+                }
+            });
+
+            document.addEventListener("DOMContentLoaded", function() {
+                if (window.location.pathname.startsWith("/orders/")) {
+                    let banner = document.querySelector(".banner-three");
+                    if (banner) {
+                        if (window.innerWidth > 1200) {
+                            banner.style.height = "6vh";
+                        } else {
+                            banner.style.height = "11vh";
+                        }
+                    }
                 }
             });
         </script>

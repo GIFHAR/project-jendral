@@ -4264,7 +4264,7 @@ label {
         font-size: 1em;
         font-weight: 700;
         line-height: 24px;
-        text-align: left;
+        margin: auto;
     }
 
     .sec-title, .sec-title-child {
